@@ -1,30 +1,35 @@
-# Document Intelligence Web Demo (Google Gemini)
+# 🛡️ GABAnode Labs: Core Document Accessibility Engine
 
-A sleek, premium web interface demonstrating document OCR and extraction. Built using Next.js and powered by the Google Gemini API. 
-This is completely ready to be deployed directly to Vercel for potential clients to test document parsing.
+Welcome to the internal source for the GABAnode Labs Document Accessibility Engine. This repository dictates the processing of intractable documents (PDFs, images) into strict WCAG 2.2 Level AA semantic Markdown structures.
 
-## 🚀 How to Run Locally
+## 🗂️ Lab Repository Structure
 
-The app should already be running on port 3001! If not:
+This repository is organized as a unified engineering lab, containing the standalone Vercel portal, integration packages, and batch-processing scripts:
 
-1. Ensure your `.env.local` file contains your API key:
-   ```txt
-   GOOGLE_API_KEY=AIzaSyA_...
-   ```
+```text
+gabanode-document-engine/
+├── app/                     # 🌐 The Core Web Engine
+│                            # Next.js App Router for the drag-drop portal
+│                            # /api/ocr/route.js handles Vercel Serverless cognitive routing.
+├── packages/                # 📦 External Consumer Integrations
+│   └── idioma-integration/  # Drop-in hooks & React components to link Idioma Chat to this Engine.
+├── scripts/                 # ⚙️ Automation & Tooling
+│   └── batch-scanner/       # Node.js processor for massive, headless directory sweeps.
+└── .env.local               # (Git Ignored) Stores Google Gemini cognitive keys.
+```
 
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
+## 🚀 1. The Core Web Engine (Next.js)
+The root of this project is a robust, production-ready Vercel application.
+* **To run locally:** `npm run dev`
+* **To deploy:** Push to Vercel (zero-config). Ensure `GOOGLE_API_KEY` is present in your environment parameters.
 
-3. Open [http://localhost:3001](http://localhost:3001)
+## 🧩 2. Implementing into Idioma Chat
+If you are moving this technology into your primary desktop application (Idioma Chat), see the documentation inside `packages/idioma-integration/README.md`. It provides the exact backend modifications and frontend React hooks needed for seamless integration.
 
-## ☁️ How to Deploy to Vercel
-
-1. Push this directory to a GitHub repository.
-2. Go to [Vercel.com](https://vercel.com) and click **Add New Project**.
-3. Import your GitHub repository.
-4. Under **Environment Variables**, add `GOOGLE_API_KEY` with your key from Google AI Studio.
-5. Click **Deploy**.
-
-That's it! Clients can now go directly to your `.vercel.app` URL, drop a PDF/Image, and instantly see the extracted Markdown. They do not need an API key.
+## 🛡️ 3. Running Batch CI/CD Scans
+For automated processing of existing un-remediated PDFs, use our batch script:
+```bash
+cd scripts/batch-scanner
+node batchWCAG.js
+```
+*Drop input PDFs into `input_pdfs/` and retrieve structured markdown in `output_md/`.*
