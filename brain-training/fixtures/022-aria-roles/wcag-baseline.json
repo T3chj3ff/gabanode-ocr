@@ -1,0 +1,41 @@
+{
+  "fixture": "022-aria-roles",
+  "html_size": 660,
+  "violations": {
+    "image_missing_alt": [
+      "council-logo.png",
+      "meeting-room.jpg"
+    ],
+    "link_empty_text": [],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [],
+    "text_only_lists": [],
+    "missing_lang_attribute": [
+      "HTML missing lang attribute"
+    ],
+    "missing_page_title": [
+      "Missing or empty <title> element"
+    ],
+    "duplicate_id": [],
+    "button_missing_label": [
+      "Button type=button has no accessible name",
+      "Button type=submit has no accessible name"
+    ],
+    "color_contrast_insufficient": [
+      "<p> color:#bbbbbb ratio 1.92:1 < 4.5:1 AA",
+      "<p> color:#999999 ratio 2.85:1 < 4.5:1 AA"
+    ],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 8
+  },
+  "timestamp": "2026-05-28T17:25:37.817312"
+}

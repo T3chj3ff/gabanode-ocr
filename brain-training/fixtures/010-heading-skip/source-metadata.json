@@ -1,0 +1,12 @@
+{
+  "fixture_id": "010-heading-skip",
+  "description": "Government permit guide with broken heading hierarchy: starts at h2, skips h3/h5",
+  "violation_targets": ["heading_hierarchy_broken", "missing_lang_attribute"],
+  "expected_violations": {
+    "heading_hierarchy_broken": 6,
+    "missing_lang_attribute": 1
+  },
+  "notes": "First heading is h2 (should be h1). Multiple skips: h2->h4 (skip h3), h4->h6 (skip h5). Lang attribute is empty.",
+  "created": "2026-05-18",
+  "phase": "3B-corpus-expansion"
+}

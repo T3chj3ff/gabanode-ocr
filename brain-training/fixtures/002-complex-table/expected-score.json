@@ -1,0 +1,8 @@
+{
+  "fixture": "002",
+  "doc_type": "complex-table",
+  "source_pdf": "PDFUA-Ref-2-02_Invoice.pdf",
+  "extraction_target": 85,
+  "healing_target": 85,
+  "combined_target": 85
+}

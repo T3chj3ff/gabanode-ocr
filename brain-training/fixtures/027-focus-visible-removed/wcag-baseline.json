@@ -1,0 +1,35 @@
+{
+  "fixture": "027-focus-visible-removed",
+  "html_size": 2523,
+  "violations": {
+    "image_missing_alt": [],
+    "link_empty_text": [],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [],
+    "text_only_lists": [],
+    "missing_lang_attribute": [],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [
+      ".agenda-link:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+      ".search-field:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+      ".filter-select:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+      ".notice-button:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+      ".download-link:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+      ".card-toggle:focus removes focus outline without visible replacement (WCAG 2.4.7)"
+    ],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 6
+  },
+  "timestamp": "2026-05-28T17:25:37.861160"
+}

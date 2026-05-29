@@ -1,0 +1,159 @@
+{
+  "generated": "2026-05-25T07:49:41.126243",
+  "engine": "v11-production-ready",
+  "fixtures": [
+    {
+      "id": "001-simple-text",
+      "baseline_violations": 5,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "002-complex-table",
+      "baseline_violations": 5,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "003-scanned-image",
+      "baseline_violations": 94,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "004-form-with-fields",
+      "baseline_violations": 3,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "005-multi-column",
+      "baseline_violations": 7,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "006-images-with-captions",
+      "baseline_violations": 12,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "007-nested-lists",
+      "baseline_violations": 56,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "008-mixed-content",
+      "baseline_violations": 139,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "009-edge-cases",
+      "baseline_violations": 25,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "010-heading-skip",
+      "baseline_violations": 6,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "011-form-no-labels",
+      "baseline_violations": 9,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "012-table-no-headers",
+      "baseline_violations": 3,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "013-combined-violations",
+      "baseline_violations": 13,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "014-gov-doc-realistic",
+      "baseline_violations": 15,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "015-missing-title",
+      "baseline_violations": 4,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "016-duplicate-ids",
+      "baseline_violations": 6,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "017-empty-buttons",
+      "baseline_violations": 8,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "018-grant-application",
+      "baseline_violations": 17,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "019-nested-tables",
+      "baseline_violations": 5,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "020-unicode-content",
+      "baseline_violations": 13,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    },
+    {
+      "id": "021-color-contrast",
+      "baseline_violations": 12,
+      "remaining_violations": 0,
+      "healing_pct": 100.0,
+      "axe_ready": true
+    }
+  ],
+  "summary": {
+    "total_fixtures": 21,
+    "all_at_100pct": true,
+    "total_baseline_violations": 457,
+    "total_remaining": 0
+  }
+}

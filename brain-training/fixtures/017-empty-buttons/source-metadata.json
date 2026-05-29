@@ -1,0 +1,10 @@
+{
+  "fixture_id": "017",
+  "name": "empty-buttons",
+  "description": "Permit portal with icon-only toolbar buttons that have no text content or accessible name attributes",
+  "phase": "3C",
+  "violation_types": ["button_missing_label"],
+  "expected_violations": {
+    "button_missing_label": 4
+  }
+}

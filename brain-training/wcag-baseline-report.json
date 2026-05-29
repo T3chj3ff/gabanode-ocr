@@ -1,0 +1,1503 @@
+{
+  "timestamp": "2026-05-28T17:25:37.881222",
+  "total_violations": 527,
+  "fixtures_tested": 30,
+  "violation_summary": {
+    "image_missing_alt": 207,
+    "link_empty_text": 144,
+    "heading_hierarchy_broken": 12,
+    "form_input_missing_label": 22,
+    "table_missing_header_scope": 12,
+    "no_main_landmark": 15,
+    "text_only_lists": 0,
+    "missing_lang_attribute": 18,
+    "missing_page_title": 5,
+    "duplicate_id": 6,
+    "button_missing_label": 15,
+    "color_contrast_insufficient": 14,
+    "skip_nav_missing": 10,
+    "tabindex_positive_value": 9,
+    "iframe_missing_title": 5,
+    "svg_missing_accessible_name": 5,
+    "focus_visible_removed": 6,
+    "autocomplete_missing": 9,
+    "aria_live_missing": 5,
+    "prefers_reduced_motion_missing": 8
+  },
+  "fixtures": [
+    {
+      "fixture": "001-simple-text",
+      "html_size": 14203,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 5
+      },
+      "timestamp": "2026-05-28T17:25:36.633793"
+    },
+    {
+      "fixture": "002-complex-table",
+      "html_size": 3161,
+      "violations": {
+        "image_missing_alt": [
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/002-complex-table/reference-tagged-1_1.jpg"
+        ],
+        "link_empty_text": [
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 5
+      },
+      "timestamp": "2026-05-28T17:25:36.639741"
+    },
+    {
+      "fixture": "003-scanned-image",
+      "html_size": 141226,
+      "violations": {
+        "image_missing_alt": [
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-1_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_3.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_4.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-3_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-3_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-4_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-4_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-5_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-5_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-6_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-6_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-6_3.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-7_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-7_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-7_3.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-8_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-9_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-9_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-10_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-11_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-12_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-12_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-13_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-13_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-13_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-14_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-14_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-15_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-15_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-15_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-16_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-16_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-16_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-17_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-17_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_3.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_4.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_5.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-21_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-21_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-22_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-22_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-23_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-25_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-25_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-26_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-26_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-27_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-27_2.jpg"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 94
+      },
+      "timestamp": "2026-05-28T17:25:36.698704"
+    },
+    {
+      "fixture": "004-form-with-fields",
+      "html_size": 1369,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 3
+      },
+      "timestamp": "2026-05-28T17:25:36.703148"
+    },
+    {
+      "fixture": "005-multi-column",
+      "html_size": 13735,
+      "violations": {
+        "image_missing_alt": [
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/005-multi-column/reference-tagged-1_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/005-multi-column/reference-tagged-2_1.png"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 7
+      },
+      "timestamp": "2026-05-28T17:25:36.714368"
+    },
+    {
+      "fixture": "006-images-with-captions",
+      "html_size": 7564,
+      "violations": {
+        "image_missing_alt": [
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/006-images-with-captions/reference-tagged-7_1.jpg"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 12
+      },
+      "timestamp": "2026-05-28T17:25:36.734382"
+    },
+    {
+      "fixture": "007-nested-lists",
+      "html_size": 229122,
+      "violations": {
+        "image_missing_alt": [
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-3_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-3_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-4_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-5_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-13_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-14_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-15_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-16_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-18_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-20_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-25_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_4.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_6.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_7.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-27_8.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-31_1.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/007-nested-lists/reference-tagged-32_1.png"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 56
+      },
+      "timestamp": "2026-05-28T17:25:36.958859"
+    },
+    {
+      "fixture": "008-mixed-content",
+      "html_size": 127598,
+      "violations": {
+        "image_missing_alt": [
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_6.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_7.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_8.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_9.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_10.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_11.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-1_12.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-2_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-2_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-2_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-3_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-3_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-3_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-3_4.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-3_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-4_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-5_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-5_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-6_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-6_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-6_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-7_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-7_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-8_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-8_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-9_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-9_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-10_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-10_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-11_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-12_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-12_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-12_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-12_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-13_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-13_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-14_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-14_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-14_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-14_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-14_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-14_6.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_6.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_7.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_8.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-15_9.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-16_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-16_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-16_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-16_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-16_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-17_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-17_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-17_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-17_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-17_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_4.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_5.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_6.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_7.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_8.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-18_9.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-19_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-19_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-20_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-20_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-21_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-21_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-22_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-23_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-24_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-25_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-25_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-26_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-26_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-27_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-27_2.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-27_3.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-27_4.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-27_5.png",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-28_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-29_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-29_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-30_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-30_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-30_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-31_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-31_2.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-31_3.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-32_1.jpg",
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/008-mixed-content/reference-tagged-32_2.png"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 139
+      },
+      "timestamp": "2026-05-28T17:25:37.136333"
+    },
+    {
+      "fixture": "009-edge-cases",
+      "html_size": 95987,
+      "violations": {
+        "image_missing_alt": [
+          "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/009-edge-cases/reference-tagged-8_1.jpg"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 25
+      },
+      "timestamp": "2026-05-28T17:25:37.337926"
+    },
+    {
+      "fixture": "010-heading-skip",
+      "html_size": 1083,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [
+          "First heading is 2, should be h1",
+          "h2 \u2192 h4 (skip detected)",
+          "h4 \u2192 h6 (skip detected)",
+          "h4 \u2192 h6 (skip detected)"
+        ],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 6
+      },
+      "timestamp": "2026-05-28T17:25:37.339311"
+    },
+    {
+      "fixture": "011-form-no-labels",
+      "html_size": 1153,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [
+          "Input type=text, id=",
+          "Input type=text, id=",
+          "Input type=email, id=",
+          "Input type=tel, id=",
+          "Input type=text, id=",
+          "Input type=text, id=",
+          "Input type=text, id=",
+          "Input type=, id=",
+          "Input type=, id="
+        ],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 10
+      },
+      "timestamp": "2026-05-28T17:25:37.348180"
+    },
+    {
+      "fixture": "012-table-no-headers",
+      "html_size": 1296,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [
+          "Table missing <th> elements",
+          "Table missing <th> elements",
+          "Table missing <th> elements"
+        ],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 4
+      },
+      "timestamp": "2026-05-28T17:25:37.350013"
+    },
+    {
+      "fixture": "013-combined-violations",
+      "html_size": 1286,
+      "violations": {
+        "image_missing_alt": [
+          "social-services-banner.jpg",
+          "bus-routes-map.png"
+        ],
+        "link_empty_text": [
+          "",
+          "routes.pdf"
+        ],
+        "heading_hierarchy_broken": [
+          "First heading is 3, should be h1",
+          "h3 \u2192 h5 (skip detected)"
+        ],
+        "form_input_missing_label": [
+          "Input type=text, id=",
+          "Input type=email, id=",
+          "Input type=text, id="
+        ],
+        "table_missing_header_scope": [
+          "Table missing <th> elements",
+          "Table missing <th> elements"
+        ],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 13
+      },
+      "timestamp": "2026-05-28T17:25:37.357916"
+    },
+    {
+      "fixture": "014-gov-doc-realistic",
+      "html_size": 2784,
+      "violations": {
+        "image_missing_alt": [
+          "budget-overview-chart.png",
+          "revenue-breakdown.jpg",
+          "expenditure-chart.png"
+        ],
+        "link_empty_text": [
+          "mailto:budget@maplewood.gov",
+          "fy2025-full-report.pdf"
+        ],
+        "heading_hierarchy_broken": [
+          "First heading is 2, should be h1",
+          "h2 \u2192 h4 (skip detected)",
+          "h4 \u2192 h6 (skip detected)"
+        ],
+        "form_input_missing_label": [
+          "Input type=text, id=",
+          "Input type=email, id=",
+          "Input type=, id="
+        ],
+        "table_missing_header_scope": [
+          "Table missing <th> elements",
+          "Table missing <th> elements"
+        ],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 15
+      },
+      "timestamp": "2026-05-28T17:25:37.419614"
+    },
+    {
+      "fixture": "015-missing-title",
+      "html_size": 802,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [
+          "Missing or empty <title> element"
+        ],
+        "duplicate_id": [],
+        "button_missing_label": [
+          "Button type=button has no accessible name",
+          "Button type=submit has no accessible name",
+          "Button type=button has no accessible name"
+        ],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 5
+      },
+      "timestamp": "2026-05-28T17:25:37.445900"
+    },
+    {
+      "fixture": "016-duplicate-ids",
+      "html_size": 1203,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [
+          "Duplicate id=\"page-1\"",
+          "Duplicate id=\"para-1\"",
+          "Duplicate id=\"item-1\"",
+          "Duplicate id=\"page-1\"",
+          "Duplicate id=\"para-1\"",
+          "Duplicate id=\"link-ref\""
+        ],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 7
+      },
+      "timestamp": "2026-05-28T17:25:37.718049"
+    },
+    {
+      "fixture": "017-empty-buttons",
+      "html_size": 1451,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [
+          "Input type=radio, id=",
+          "Input type=radio, id=",
+          "Input type=radio, id=",
+          "Input type=radio, id="
+        ],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [
+          "Button type=button has no accessible name",
+          "Button type=button has no accessible name",
+          "Button type=reset has no accessible name",
+          "Button type=submit has no accessible name"
+        ],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [
+          "Input \"applicant-email\" should include autocomplete=\"email\" (WCAG 1.3.5)",
+          "Input \"project-address\" should include autocomplete=\"street-address\" (WCAG 1.3.5)"
+        ],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 11
+      },
+      "timestamp": "2026-05-28T17:25:37.746467"
+    },
+    {
+      "fixture": "018-grant-application",
+      "html_size": 1217,
+      "violations": {
+        "image_missing_alt": [
+          "city-seal.png",
+          "grant-program-banner.jpg"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          ""
+        ],
+        "heading_hierarchy_broken": [
+          "First heading is 2, should be h1",
+          "h2 \u2192 h4 (skip detected)"
+        ],
+        "form_input_missing_label": [
+          "Input type=text, id=",
+          "Input type=text, id=",
+          "Input type=text, id="
+        ],
+        "table_missing_header_scope": [
+          "Table missing <th> elements"
+        ],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [
+          "Missing or empty <title> element"
+        ],
+        "duplicate_id": [],
+        "button_missing_label": [
+          "Button type=button has no accessible name",
+          "Button type=submit has no accessible name",
+          "Button type=reset has no accessible name"
+        ],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 17
+      },
+      "timestamp": "2026-05-28T17:25:37.749483"
+    },
+    {
+      "fixture": "019-nested-tables",
+      "html_size": 731,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [
+          "Table missing <th> elements",
+          "Table missing <th> elements",
+          "Table missing <th> elements"
+        ],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [
+          "Button type=button has no accessible name",
+          "Button type=submit has no accessible name"
+        ],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 6
+      },
+      "timestamp": "2026-05-28T17:25:37.756633"
+    },
+    {
+      "fixture": "020-unicode-content",
+      "html_size": 575,
+      "violations": {
+        "image_missing_alt": [
+          "notice-es.png",
+          "notice-zh.png",
+          "notice-ar.png"
+        ],
+        "link_empty_text": [
+          "",
+          "",
+          "",
+          "mailto:info@maplewood.gov"
+        ],
+        "heading_hierarchy_broken": [
+          "First heading is 2, should be h1"
+        ],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [
+          "Table missing <th> elements"
+        ],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [
+          "Missing or empty <title> element"
+        ],
+        "duplicate_id": [],
+        "button_missing_label": [
+          "Button type=button has no accessible name"
+        ],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 13
+      },
+      "timestamp": "2026-05-28T17:25:37.795693"
+    },
+    {
+      "fixture": "021-color-contrast",
+      "html_size": 878,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [
+          "Missing <main> landmark"
+        ],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [
+          "Missing or empty <title> element"
+        ],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [
+          "<h1> color:#aaaaaa ratio 2.32:1 < 3.0:1 AA",
+          "<p> color:lightgray ratio 1.50:1 < 4.5:1 AA",
+          "<p> color:#cccccc ratio 1.61:1 < 4.5:1 AA",
+          "<h2> color:silver ratio 1.82:1 < 3.0:1 AA",
+          "<p> color:#bbbbbb ratio 1.92:1 < 4.5:1 AA",
+          "<li> color:#aaaaaa ratio 2.32:1 < 4.5:1 AA",
+          "<li> color:#999999 ratio 2.85:1 < 4.5:1 AA",
+          "<li> color:gray ratio 3.95:1 < 4.5:1 AA",
+          "<a> color:#cccccc ratio 1.61:1 < 4.5:1 AA"
+        ],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 12
+      },
+      "timestamp": "2026-05-28T17:25:37.812515"
+    },
+    {
+      "fixture": "022-aria-roles",
+      "html_size": 660,
+      "violations": {
+        "image_missing_alt": [
+          "council-logo.png",
+          "meeting-room.jpg"
+        ],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [
+          "Missing or empty <title> element"
+        ],
+        "duplicate_id": [],
+        "button_missing_label": [
+          "Button type=button has no accessible name",
+          "Button type=submit has no accessible name"
+        ],
+        "color_contrast_insufficient": [
+          "<p> color:#bbbbbb ratio 1.92:1 < 4.5:1 AA",
+          "<p> color:#999999 ratio 2.85:1 < 4.5:1 AA"
+        ],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 8
+      },
+      "timestamp": "2026-05-28T17:25:37.817312"
+    },
+    {
+      "fixture": "023-skip-nav",
+      "html_size": 836,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [
+          "<p> color:#aaaaaa ratio 2.32:1 < 4.5:1 AA",
+          "<p> color:#bbbbbb ratio 1.92:1 < 4.5:1 AA",
+          "<p> color:#cccccc ratio 1.61:1 < 4.5:1 AA"
+        ],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 5
+      },
+      "timestamp": "2026-05-28T17:25:37.829595"
+    },
+    {
+      "fixture": "024-tabindex-abuse",
+      "html_size": 804,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [
+          "HTML missing lang attribute"
+        ],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [
+          "tabindex=\"4\" disrupts natural focus order",
+          "tabindex=\"3\" disrupts natural focus order",
+          "tabindex=\"2\" disrupts natural focus order",
+          "tabindex=\"1\" disrupts natural focus order",
+          "tabindex=\"5\" disrupts natural focus order",
+          "tabindex=\"6\" disrupts natural focus order",
+          "tabindex=\"7\" disrupts natural focus order",
+          "tabindex=\"8\" disrupts natural focus order",
+          "tabindex=\"9\" disrupts natural focus order"
+        ],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 11
+      },
+      "timestamp": "2026-05-28T17:25:37.833098"
+    },
+    {
+      "fixture": "025-iframe-no-title",
+      "html_size": 1576,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [
+          "<iframe src=\"budget-viewer.html\"> missing title attribute (WCAG 4.1.2)",
+          "<iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\"> missing title attribute (WCAG 4.1.2)",
+          "<iframe src=\"district-map.html\"> missing title attribute (WCAG 4.1.2)",
+          "<iframe src=\"permit-form.html\"> missing title attribute (WCAG 4.1.2)",
+          "<iframe src=\"community-survey.html\"> missing title attribute (WCAG 4.1.2)"
+        ],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 6
+      },
+      "timestamp": "2026-05-28T17:25:37.845251"
+    },
+    {
+      "fixture": "026-svg-accessibility",
+      "html_size": 3347,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [
+          "No skip navigation link before main content (WCAG 2.4.1)"
+        ],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [
+          "Inline <svg> has no accessible name \u2014 add <title>, aria-label, or role=\"presentation\" (WCAG 1.1.1)",
+          "Inline <svg> has no accessible name \u2014 add <title>, aria-label, or role=\"presentation\" (WCAG 1.1.1)",
+          "Inline <svg> has no accessible name \u2014 add <title>, aria-label, or role=\"presentation\" (WCAG 1.1.1)",
+          "Inline <svg> has no accessible name \u2014 add <title>, aria-label, or role=\"presentation\" (WCAG 1.1.1)",
+          "Inline <svg> has no accessible name \u2014 add <title>, aria-label, or role=\"presentation\" (WCAG 1.1.1)"
+        ],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 6
+      },
+      "timestamp": "2026-05-28T17:25:37.856916"
+    },
+    {
+      "fixture": "027-focus-visible-removed",
+      "html_size": 2523,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [
+          ".agenda-link:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+          ".search-field:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+          ".filter-select:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+          ".notice-button:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+          ".download-link:focus removes focus outline without visible replacement (WCAG 2.4.7)",
+          ".card-toggle:focus removes focus outline without visible replacement (WCAG 2.4.7)"
+        ],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 6
+      },
+      "timestamp": "2026-05-28T17:25:37.861160"
+    },
+    {
+      "fixture": "028-autocomplete-missing",
+      "html_size": 2085,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [
+          "Input \"given-name\" should include autocomplete=\"given-name\" (WCAG 1.3.5)",
+          "Input \"family_name\" should include autocomplete=\"family-name\" (WCAG 1.3.5)",
+          "Input \"email\" should include autocomplete=\"email\" (WCAG 1.3.5)",
+          "Input \"phone\" should include autocomplete=\"tel\" (WCAG 1.3.5)",
+          "Input \"address_line1\" should include autocomplete=\"street-address\" (WCAG 1.3.5)",
+          "Input \"zip\" should include autocomplete=\"postal-code\" (WCAG 1.3.5)",
+          "Input \"country\" should include autocomplete=\"country-name\" (WCAG 1.3.5)"
+        ],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [],
+        "total": 7
+      },
+      "timestamp": "2026-05-28T17:25:37.864048"
+    },
+    {
+      "fixture": "029-aria-live-missing",
+      "html_size": 1452,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [
+          "<div id=\"permit-status\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+          "<div id=\"notification-panel\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+          "<div id=\"toast-update\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+          "<div id=\"alert-message\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+          "<div id=\"status-banner\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)"
+        ],
+        "prefers_reduced_motion_missing": [],
+        "total": 5
+      },
+      "timestamp": "2026-05-28T17:25:37.864950"
+    },
+    {
+      "fixture": "030-prefers-reduced-motion",
+      "html_size": 2187,
+      "violations": {
+        "image_missing_alt": [],
+        "link_empty_text": [],
+        "heading_hierarchy_broken": [],
+        "form_input_missing_label": [],
+        "table_missing_header_scope": [],
+        "no_main_landmark": [],
+        "text_only_lists": [],
+        "missing_lang_attribute": [],
+        "missing_page_title": [],
+        "duplicate_id": [],
+        "button_missing_label": [],
+        "color_contrast_insufficient": [],
+        "skip_nav_missing": [],
+        "tabindex_positive_value": [],
+        "iframe_missing_title": [],
+        "svg_missing_accessible_name": [],
+        "focus_visible_removed": [],
+        "autocomplete_missing": [],
+        "aria_live_missing": [],
+        "prefers_reduced_motion_missing": [
+          "@keyframes pulseStatus has no prefers-reduced-motion override (WCAG 2.3.3)",
+          "@keyframes slideInToast has no prefers-reduced-motion override (WCAG 2.3.3)",
+          "@keyframes rotateSpinner has no prefers-reduced-motion override (WCAG 2.3.3)",
+          ".status-card uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+          ".toast uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+          ".loading-spinner uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+          ".metric-tile uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+          ".map-pin uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)"
+        ],
+        "total": 8
+      },
+      "timestamp": "2026-05-28T17:25:37.871846"
+    }
+  ]
+}

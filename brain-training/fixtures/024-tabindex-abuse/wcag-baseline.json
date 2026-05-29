@@ -1,0 +1,42 @@
+{
+  "fixture": "024-tabindex-abuse",
+  "html_size": 804,
+  "violations": {
+    "image_missing_alt": [],
+    "link_empty_text": [],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [],
+    "text_only_lists": [],
+    "missing_lang_attribute": [
+      "HTML missing lang attribute"
+    ],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [
+      "No skip navigation link before main content (WCAG 2.4.1)"
+    ],
+    "tabindex_positive_value": [
+      "tabindex=\"4\" disrupts natural focus order",
+      "tabindex=\"3\" disrupts natural focus order",
+      "tabindex=\"2\" disrupts natural focus order",
+      "tabindex=\"1\" disrupts natural focus order",
+      "tabindex=\"5\" disrupts natural focus order",
+      "tabindex=\"6\" disrupts natural focus order",
+      "tabindex=\"7\" disrupts natural focus order",
+      "tabindex=\"8\" disrupts natural focus order",
+      "tabindex=\"9\" disrupts natural focus order"
+    ],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 11
+  },
+  "timestamp": "2026-05-28T17:25:37.833098"
+}

@@ -1,0 +1,36 @@
+{
+  "fixture": "028-autocomplete-missing",
+  "html_size": 2085,
+  "violations": {
+    "image_missing_alt": [],
+    "link_empty_text": [],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [],
+    "text_only_lists": [],
+    "missing_lang_attribute": [],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [
+      "Input \"given-name\" should include autocomplete=\"given-name\" (WCAG 1.3.5)",
+      "Input \"family_name\" should include autocomplete=\"family-name\" (WCAG 1.3.5)",
+      "Input \"email\" should include autocomplete=\"email\" (WCAG 1.3.5)",
+      "Input \"phone\" should include autocomplete=\"tel\" (WCAG 1.3.5)",
+      "Input \"address_line1\" should include autocomplete=\"street-address\" (WCAG 1.3.5)",
+      "Input \"zip\" should include autocomplete=\"postal-code\" (WCAG 1.3.5)",
+      "Input \"country\" should include autocomplete=\"country-name\" (WCAG 1.3.5)"
+    ],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 7
+  },
+  "timestamp": "2026-05-28T17:25:37.864048"
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Resident Registration Form</title></head>
+<body>
+<main>
+<h1>Resident Registration Form</h1>
+<p>Please complete all fields to register as a Maplewood resident.</p>
+<form action="/register" method="post">
+  <p>
+    <input type="text" placeholder="First Name" aria-label="Text" id="first-name-1" name="first-name-1">
+  </p>
+  <p>
+    <input type="text" placeholder="Last Name" aria-label="Text" id="last-name-2" name="last-name-2">
+  </p>
+  <p>
+    <input type="email" placeholder="Email Address" aria-label="Email" id="email-address-3" name="email-address-3">
+  </p>
+  <p>
+    <input type="tel" placeholder="Phone Number" aria-label="Tel" id="phone-number-4" name="phone-number-4">
+  </p>
+  <p>
+    <input type="text" placeholder="Street Address" aria-label="Text" id="street-address-5" name="street-address-5">
+  </p>
+  <p>
+    <input type="text" placeholder="City" aria-label="Text" id="city-6" name="city-6">
+  </p>
+  <p>
+    <input type="text" placeholder="ZIP Code" aria-label="Text" id="zip-code-7" name="zip-code-7">
+  </p>
+  <p>
+    <textarea placeholder="Additional notes or comments" id="additional-notes-or-comments-8" name="additional-notes-or-comments-8"></textarea>
+  </p>
+  <p>
+    <select id="text-9" name="text-9">
+      <option value="">-- Select a district --</option>
+      <option value="north">North District</option>
+      <option value="south">South District</option>
+      <option value="east">East District</option>
+      <option value="west">West District</option>
+    </select>
+  </p>
+  <p>
+    <input type="submit" value="Register" aria-label="Submit">
+  </p>
+</form>
+</main>
+</body>
+</html>

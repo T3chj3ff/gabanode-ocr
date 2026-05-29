@@ -1,0 +1,8 @@
+{
+  "fixture_id": "014-gov-doc-realistic",
+  "description": "Realistic government budget report PDF-to-HTML: heading skips (h2->h4->h6), empty lang, no main, 2 tables without <th>, form with no labels, images without alt, empty anchor links",
+  "violation_targets": ["heading_hierarchy_broken", "missing_lang_attribute", "no_main_landmark", "table_missing_header_scope", "form_input_missing_label", "image_missing_alt", "link_empty_text"],
+  "notes": "Mirrors real-world PDF-to-HTML conversion artifacts from government document pipelines. Highest-value regression fixture.",
+  "created": "2026-05-18",
+  "phase": "3B-corpus-expansion"
+}

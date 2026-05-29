@@ -1,0 +1,32 @@
+{
+  "fixture": "001-simple-text",
+  "targetScores": {
+    "extraction": {
+      "heading_hierarchy": 10,
+      "table_fidelity": 15,
+      "image_descriptions": 10,
+      "list_preservation": 8,
+      "content_completeness": 12,
+      "no_hallucination": 20,
+      "markdown_validity": 15,
+      "wcag_compliance": 10,
+      "total": 100,
+      "percentage": 100
+    },
+    "healing": {
+      "violations_fixed": 20,
+      "false_positives": 0,
+      "content_preservation": 30,
+      "performance": 10,
+      "total": 60,
+      "percentage": 100
+    },
+    "combined": 100
+  },
+  "acceptanceThresholds": {
+    "extraction": 95,
+    "healing": 85,
+    "combined": 90
+  },
+  "notes": "Simple text fixture should score near-perfect. Baseline for accuracy measurement."
+}

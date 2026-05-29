@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Resident Registration Form</title></head>
+<body>
+<main>
+<h1>Resident Registration Form</h1>
+<p>Please complete all fields to register as a Maplewood resident.</p>
+<form action="/register" method="post">
+  <p>
+    <input type="text" placeholder="First Name" aria-label="Text">
+  </p>
+  <p>
+    <input type="text" placeholder="Last Name" aria-label="Text">
+  </p>
+  <p>
+    <input type="email" placeholder="Email Address" aria-label="Email">
+  </p>
+  <p>
+    <input type="tel" placeholder="Phone Number" aria-label="Tel">
+  </p>
+  <p>
+    <input type="text" placeholder="Street Address" aria-label="Text">
+  </p>
+  <p>
+    <input type="text" placeholder="City" aria-label="Text">
+  </p>
+  <p>
+    <input type="text" placeholder="ZIP Code" aria-label="Text">
+  </p>
+  <p>
+    <textarea placeholder="Additional notes or comments"></textarea>
+  </p>
+  <p>
+    <select>
+      <option value="">-- Select a district --</option>
+      <option value="north">North District</option>
+      <option value="south">South District</option>
+      <option value="east">East District</option>
+      <option value="west">West District</option>
+    </select>
+  </p>
+  <p>
+    <input type="submit" value="Register" aria-label="Submit">
+  </p>
+</form>
+</main>
+</body>
+</html>

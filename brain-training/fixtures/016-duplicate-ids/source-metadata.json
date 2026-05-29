@@ -1,0 +1,10 @@
+{
+  "fixture_id": "016",
+  "name": "duplicate-ids",
+  "description": "Employee handbook converted from PDF with duplicate id attributes — common pattern when PDF page anchors collide across multi-page documents",
+  "phase": "3C",
+  "violation_types": ["duplicate_id"],
+  "expected_violations": {
+    "duplicate_id": 7
+  }
+}

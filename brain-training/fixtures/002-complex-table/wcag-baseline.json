@@ -1,0 +1,37 @@
+{
+  "fixture": "002-complex-table",
+  "html_size": 3161,
+  "violations": {
+    "image_missing_alt": [
+      "/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/002-complex-table/reference-tagged-1_1.jpg"
+    ],
+    "link_empty_text": [
+      "",
+      ""
+    ],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [
+      "Missing <main> landmark"
+    ],
+    "text_only_lists": [],
+    "missing_lang_attribute": [
+      "HTML missing lang attribute"
+    ],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 5
+  },
+  "timestamp": "2026-05-28T17:25:36.639741"
+}

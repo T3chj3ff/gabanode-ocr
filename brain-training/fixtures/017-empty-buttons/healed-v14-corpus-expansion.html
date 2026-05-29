@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Permit Application Portal — City of Maplewood</title></head>
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+<main id="main-content">
+<h1>Building Permit Application</h1>
+<p>Complete all fields and submit your application for review.</p>
+
+<form action="/submit" method="post">
+  <fieldset>
+    <legend>Applicant Information</legend>
+    <label for="applicant-name">Full Name</label>
+    <input type="text" id="applicant-name" name="applicant-name">
+
+    <label for="applicant-email">Email Address</label>
+    <input type="email" id="applicant-email" name="applicant-email" autocomplete="email">
+
+    <label for="project-address">Project Address</label>
+    <input type="text" id="project-address" name="project-address" autocomplete="street-address">
+  </fieldset>
+
+  <fieldset>
+    <legend>Permit Type</legend>
+    <label><input type="radio" name="permit-type" value="residential" aria-label="Permit type Radio" id="radio-1"> Residential</label>
+    <label><input type="radio" name="permit-type" value="commercial" aria-label="Permit type Radio" id="radio-2"> Commercial</label>
+    <label><input type="radio" name="permit-type" value="electrical" aria-label="Permit type Radio" id="radio-3"> Electrical</label>
+    <label><input type="radio" name="permit-type" value="plumbing" aria-label="Permit type Radio" id="radio-4"> Plumbing</label>
+  </fieldset>
+
+  <!-- Toolbar buttons with icon-only content (no text, no aria-label) -->
+  <div class="toolbar">
+    <button type="button" aria-label="Button"></button>
+    <button type="button" aria-label="Button"></button>
+    <button type="reset" aria-label="Reset"></button>
+    <button type="submit" aria-label="Submit"></button>
+    <button title="Download PDF">Download</button>
+  </div>
+</form>
+</main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "fixture": "004",
+  "doc_type": "form-with-fields",
+  "source_pdf": "PDFUA-Ref-2-10_Form.pdf",
+  "extraction_target": 80,
+  "healing_target": 80,
+  "combined_target": 80
+}

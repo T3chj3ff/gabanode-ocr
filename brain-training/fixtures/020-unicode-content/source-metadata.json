@@ -1,0 +1,6 @@
+{
+  "fixture_id": "020",
+  "name": "unicode-content",
+  "phase": "3C-adversarial",
+  "description": "Multilingual government notice with Unicode content \u2014 tests that healer handles non-ASCII without corruption"
+}

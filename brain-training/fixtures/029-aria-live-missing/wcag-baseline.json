@@ -1,0 +1,34 @@
+{
+  "fixture": "029-aria-live-missing",
+  "html_size": 1452,
+  "violations": {
+    "image_missing_alt": [],
+    "link_empty_text": [],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [],
+    "text_only_lists": [],
+    "missing_lang_attribute": [],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [
+      "<div id=\"permit-status\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+      "<div id=\"notification-panel\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+      "<div id=\"toast-update\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+      "<div id=\"alert-message\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)",
+      "<div id=\"status-banner\"> appears to be a dynamic status region without aria-live or status/alert role (WCAG 4.1.3)"
+    ],
+    "prefers_reduced_motion_missing": [],
+    "total": 5
+  },
+  "timestamp": "2026-05-28T17:25:37.864950"
+}

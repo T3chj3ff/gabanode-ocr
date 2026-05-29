@@ -1,0 +1,8 @@
+{
+  "fixture_id": "013-combined-violations",
+  "description": "Community services directory combining all unhandled violation types: heading skip, lang missing, no main, table no headers, form no labels, img no alt, empty links",
+  "violation_targets": ["heading_hierarchy_broken", "missing_lang_attribute", "no_main_landmark", "table_missing_header_scope", "form_input_missing_label", "image_missing_alt", "link_empty_text"],
+  "notes": "Tests all violation types simultaneously. Good regression fixture for v10-extended.",
+  "created": "2026-05-18",
+  "phase": "3B-corpus-expansion"
+}

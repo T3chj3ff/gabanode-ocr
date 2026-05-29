@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Data Visualizations</title>
+</head>
+<body>
+  <main>
+    <h1>City Data Visualizations</h1>
+
+    <section>
+      <h2>Budget Allocation</h2>
+      <!-- VIOLATION: inline SVG missing accessible name — no <title> or aria-label (WCAG 1.1.1) -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+        <circle cx="200" cy="150" r="120" fill="#4e79a7" />
+        <circle cx="200" cy="150" r="120" fill="none"
+                stroke-dasharray="188 565" stroke="#f28e2b" stroke-width="120" />
+        <circle cx="200" cy="150" r="120" fill="none"
+                stroke-dasharray="113 565" stroke-dashoffset="-188" stroke="#e15759" stroke-width="120" />
+        <circle cx="200" cy="150" r="60" fill="white" />
+        <text x="200" y="155" text-anchor="middle" font-size="14">Budget 2024</text>
+      </svg>
+    </section>
+
+    <section>
+      <h2>Population Trend</h2>
+      <!-- VIOLATION: inline SVG missing accessible name (WCAG 1.1.1) -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="500" height="250" viewBox="0 0 500 250">
+        <polyline points="50,200 125,170 200,140 275,110 350,80 425,60"
+                  fill="none" stroke="#59a14f" stroke-width="3"/>
+        <circle cx="50"  cy="200" r="5" fill="#59a14f"/>
+        <circle cx="125" cy="170" r="5" fill="#59a14f"/>
+        <circle cx="200" cy="140" r="5" fill="#59a14f"/>
+        <circle cx="275" cy="110" r="5" fill="#59a14f"/>
+        <circle cx="350" cy="80"  r="5" fill="#59a14f"/>
+        <circle cx="425" cy="60"  r="5" fill="#59a14f"/>
+        <line x1="50" y1="220" x2="450" y2="220" stroke="#333" stroke-width="1"/>
+        <line x1="50" y1="20"  x2="50"  y2="220" stroke="#333" stroke-width="1"/>
+      </svg>
+    </section>
+
+    <section>
+      <h2>Service Icons</h2>
+      <p>Our departments offer the following services:</p>
+      <!-- VIOLATION: inline SVG icon used as meaningful content, no accessible name (WCAG 1.1.1) -->
+      <a href="/parks">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <rect x="28" y="36" width="8" height="20" fill="#8B4513"/>
+          <polygon points="32,4 8,36 56,36" fill="#2d8a2d"/>
+        </svg>
+        Parks &amp; Recreation
+      </a>
+      <!-- VIOLATION: inline SVG icon missing accessible name (WCAG 1.1.1) -->
+      <a href="/water">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <ellipse cx="32" cy="42" rx="22" ry="14" fill="#4fc3f7"/>
+          <path d="M32 8 C32 8 14 32 14 42 a18 18 0 0 0 36 0 C50 32 32 8 32 8z" fill="#0288d1"/>
+        </svg>
+        Water &amp; Utilities
+      </a>
+    </section>
+
+    <section>
+      <h2>Warning Indicator</h2>
+      <!-- VIOLATION: inline SVG used as standalone warning icon, no accessible name (WCAG 1.1.1) -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <polygon points="16,3 30,29 2,29" fill="#f5a623" stroke="#e08800" stroke-width="1"/>
+        <text x="16" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">!</text>
+      </svg>
+      <span>Scheduled maintenance this weekend — water service may be interrupted.</span>
+    </section>
+
+  </main>
+</body>
+</html>

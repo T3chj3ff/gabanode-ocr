@@ -1,0 +1,49 @@
+{
+  "fixture": "020-unicode-content",
+  "html_size": 575,
+  "violations": {
+    "image_missing_alt": [
+      "notice-es.png",
+      "notice-zh.png",
+      "notice-ar.png"
+    ],
+    "link_empty_text": [
+      "",
+      "",
+      "",
+      "mailto:info@maplewood.gov"
+    ],
+    "heading_hierarchy_broken": [
+      "First heading is 2, should be h1"
+    ],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [
+      "Table missing <th> elements"
+    ],
+    "no_main_landmark": [
+      "Missing <main> landmark"
+    ],
+    "text_only_lists": [],
+    "missing_lang_attribute": [
+      "HTML missing lang attribute"
+    ],
+    "missing_page_title": [
+      "Missing or empty <title> element"
+    ],
+    "duplicate_id": [],
+    "button_missing_label": [
+      "Button type=button has no accessible name"
+    ],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 13
+  },
+  "timestamp": "2026-05-28T17:25:37.795693"
+}

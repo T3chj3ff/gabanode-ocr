@@ -1,0 +1,37 @@
+{
+  "fixture": "030-prefers-reduced-motion",
+  "html_size": 2187,
+  "violations": {
+    "image_missing_alt": [],
+    "link_empty_text": [],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [],
+    "text_only_lists": [],
+    "missing_lang_attribute": [],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [
+      "@keyframes pulseStatus has no prefers-reduced-motion override (WCAG 2.3.3)",
+      "@keyframes slideInToast has no prefers-reduced-motion override (WCAG 2.3.3)",
+      "@keyframes rotateSpinner has no prefers-reduced-motion override (WCAG 2.3.3)",
+      ".status-card uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+      ".toast uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+      ".loading-spinner uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+      ".metric-tile uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)",
+      ".map-pin uses animation/transition with no prefers-reduced-motion override (WCAG 2.3.3)"
+    ],
+    "total": 8
+  },
+  "timestamp": "2026-05-28T17:25:37.871846"
+}
