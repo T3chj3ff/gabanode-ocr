@@ -1,0 +1,8 @@
+{
+  "fixture": "007",
+  "doc_type": "nested-lists",
+  "source_pdf": "PDFUA-Ref-2-08_BookChapter.pdf",
+  "extraction_target": 85,
+  "healing_target": 85,
+  "combined_target": 85
+}

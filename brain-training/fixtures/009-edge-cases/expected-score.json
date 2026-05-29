@@ -1,0 +1,8 @@
+{
+  "fixture": "009",
+  "doc_type": "edge-cases",
+  "source_pdf": "PDFUA-Ref-2-05_BookChapter-german.pdf",
+  "extraction_target": 77,
+  "healing_target": 77,
+  "combined_target": 77
+}

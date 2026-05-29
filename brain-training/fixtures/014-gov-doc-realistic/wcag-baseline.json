@@ -1,0 +1,50 @@
+{
+  "fixture": "014-gov-doc-realistic",
+  "html_size": 2784,
+  "violations": {
+    "image_missing_alt": [
+      "budget-overview-chart.png",
+      "revenue-breakdown.jpg",
+      "expenditure-chart.png"
+    ],
+    "link_empty_text": [
+      "mailto:budget@maplewood.gov",
+      "fy2025-full-report.pdf"
+    ],
+    "heading_hierarchy_broken": [
+      "First heading is 2, should be h1",
+      "h2 \u2192 h4 (skip detected)",
+      "h4 \u2192 h6 (skip detected)"
+    ],
+    "form_input_missing_label": [
+      "Input type=text, id=",
+      "Input type=email, id=",
+      "Input type=, id="
+    ],
+    "table_missing_header_scope": [
+      "Table missing <th> elements",
+      "Table missing <th> elements"
+    ],
+    "no_main_landmark": [
+      "Missing <main> landmark"
+    ],
+    "text_only_lists": [],
+    "missing_lang_attribute": [
+      "HTML missing lang attribute"
+    ],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 15
+  },
+  "timestamp": "2026-05-28T17:25:37.419614"
+}

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>2 FOURIER SERIES</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="generator" content="pdftohtml 0.36"/>
+<meta name="author" content="Rutgers University"/>
+<meta name="date" content="2019-04-10T11:21:49+00:00"/>
+<style type="text/css">
+<!--
+.xflip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+}
+.yflip {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+}
+.xyflip {
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: fliph + flipv;
+}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<main>
+<span id="anchor-1" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-1_1.jpg" alt="Page 1, figure 1"/><br/>
+<b>2&#160;FOURIER&#160;SERIES&#160;&#160;</b><br/>
+Mathematics&#160;compares&#160;the&#160;most&#160;diverse&#160;phenomena&#160;and&#160;discovers&#160;the&#160;secret&#160;analogies&#160;that&#160;unite&#160;them.&#160;&#160;<br/>
+-&#160;JOSEPH&#160;FOURIER&#160;&#160;<br/>
+<b>Topics&#160;to&#160;Review&#160;&#160;</b><br/>
+This&#160;chapter&#160;is&#160;independent&#160;of&#160;the&#160;previous&#160;one.&#160;The&#160;core&#160;material&#160;(Sections&#160;2&#160;1-2.&#160;4)&#160;requires&#160;only&#160;a&#160;basic&#160;knowledge&#160;of&#160;<br/>calculus.&#160;An&#160;elementary&#160;knowledge&#160;of&#160;complex&#160;numbers&#160;is&#160;required&#160;for&#160;Section&#160;2.6.&#160;Sections&#160;2.5,&#160;2.8,&#160;2.9,&#160;and&#160;2.10&#160;are&#160;self-<br/>contained&#160;advanced&#160;topics.&#160;The&#160;applications&#160;in&#160;Section&#160;2.7&#160;involve&#160;ordinary&#160;differential&#160;equations&#160;with&#160;constant&#160;coefficients.&#160;<br/>Background&#160;for&#160;this&#160;Section&#160;is&#160;found&#160;in&#160;Appendix&#160;A.2.&#160;&#160;<br/>
+<b>Looking&#160;Ahead&#160;... &#160;</b><br/>
+Fourier&#160;series,&#160;as&#160;presented&#160;in&#160;Sections&#160;2.1-2.4.&#160;arc&#160;essential&#160;for&#160;all&#160;that&#160;follows&#160;and&#160;cannot&#160;be&#160;omitted.&#160;&#160;<br/>
+Sections&#160;2.5&#160;and&#160;2.8-2.10&#160;contain&#160;theoretical&#160;properties&#160;of&#160;Fourier&#160;series.&#160;They&#160;may&#160;be&#160;omitted&#160;without&#160;affecting&#160;the&#160;continuity&#160;<br/>of&#160;the&#160;book.&#160;However,&#160;they&#160;are&#160;strongly&#160;recommended&#160;in&#160;a&#160;course&#160;emphasizing&#160;Fourier&#160;series.&#160;ln&#160;particular,&#160;the&#160;proof&#160;of&#160;the&#160;<br/>Fourier&#160;series&#160;representation&#160;theorem&#160;in&#160;Section&#160;2.8&#160;reveals&#160;interesting&#160;ideas&#160;from&#160;Fourier&#160;analysis.&#160;&#160;<br/>
+Section&#160;2.6&#160;serves&#160;as&#160;a&#160;good&#160;motivation&#160;for&#160;the&#160;Fourier&#160;transform&#160;in&#160;Chapter&#160;7.&#160;<br/>
+In&#160;Section&#160;2.7&#160;we&#160;study&#160;the&#160;forced&#160;oscillations&#160;of&#160;mechanical&#160;or&#160;electrical&#160;system.&#160;While&#160;the&#160;equations&#160;that&#160;arise&#160;are&#160;ordinary&#160;<br/>differential&#160;equations,&#160;their&#160;solutions&#160;require&#160;topics&#160;such&#160;as&#160;linearity&#160;of&#160;equations&#160;and&#160;superposition&#160;of&#160;solutions&#160;that&#160;are&#160;very&#160;<br/>useful&#160;in&#160;later&#160;chapters.&#160;<br/>
+Like&#160;the&#160;familiar&#160;Taylor&#160;series,&#160;Fourier&#160;series&#160;are&#160;special&#160;types&#160;of&#160;expansions&#160;of&#160;functions.&#160;With&#160;Taylor&#160;series,&#160;we&#160;are&#160;inter-ested&#160;<br/>in&#160;expanding&#160;a&#160;function&#160;in&#160;terms&#160;of&#160;the&#160;special&#160;set&#160;of&#160;func-tions&#160;1,&#160;x,&#160;x&#160;^&#160;2,&#160;x&#160;^&#160;3,&#160;...&#160;With&#160;Fourier&#160;series,&#160;we&#160;are&#160;interested&#160;in&#160;<br/>expanding&#160;a&#160;function&#160;in&#160;terms&#160;of&#160;the&#160;special&#160;set&#160;of&#160;functions&#160;1,&#160;cos&#160;x,&#160;cos&#160;2&#160;×&#160;x,&#160;cos&#160;3&#160;×&#160;x,&#160;...,&#160;sin&#160;×&#160;x,&#160;sin&#160;2&#160;×&#160;x,&#160;sin&#160;3&#160;×&#160;x,&#160;....&#160;&#160;Thus,&#160;a&#160;<br/>Fourier&#160;series&#160;expansion&#160;of&#160;a&#160;function&#160;f&#160;is&#160;an&#160;expression&#160;of&#160;the&#160;form&#160;&#160;<br/>
+f&#160;(x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;sin&#160;n&#160;×&#160;x).&#160;<br/>
+Fourier&#160;series&#160;arose&#160;naturally&#160;when&#160;we&#160;discussed&#160;the&#160;vibrations&#160;of&#160;a&#160;plucked&#160;string&#160;(Section&#160;1.2).&#160;As&#160;we&#160;will&#160;see&#160;in&#160;the&#160;following&#160;<br/>chapters,&#160;Fourier&#160;series&#160;are&#160;indeed&#160;the&#160;most&#160;suitable&#160;expansions&#160;for&#160;solving&#160;cer-tain&#160;classical&#160;problems&#160;in&#160;applied&#160;mathematics.&#160;<br/>They&#160;are&#160;fundamental&#160;to&#160;the&#160;description&#160;of&#160;important&#160;physical&#160;phenomena&#160;from&#160;diverse&#160;fields,&#160;such&#160;as&#160;mechanical&#160;and&#160;acoustic&#160;<br/>vibrations,&#160;heat&#160;transfer,&#160;planetary&#160;motion,&#160;optics,&#160;and&#160;signal&#160;processing,&#160;to&#160;name&#160;just&#160;a&#160;few.&#160;&#160;<br/>
+The&#160;importance&#160;of&#160;Fourier&#160;series&#160;stems&#160;from&#160;the&#160;work&#160;of&#160;the&#160;French&#160;mathematician&#160;Joseph&#160;Fourier,&#160;who&#160;claimed&#160;that&#160;any&#160;<br/>function&#160;defined&#160;on&#160;a&#160;finite&#160;interval&#160;has&#160;a&#160;Fourier&#160;series&#160;expansion.&#160;The&#160;purpose&#160;of&#160;this&#160;chapter&#160;is&#160;to&#160;investigate&#160;the&#160;validity&#160;of&#160;<br/>Fourier's&#160;claim&#160;and&#160;derive&#160;the&#160;basic&#160;properties&#160;of&#160;Fourier&#160;series,&#160;preparing&#160;the&#160;way&#160;for&#160;the&#160;important&#160;applications&#160;of&#160;the&#160;<br/>following&#160;chapters.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-2" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_1.png" alt="Page 2, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_2.png" alt="Page 2, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_3.png" alt="Page 2, figure 3"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-2_4.png" alt="Page 2, figure 4"/><br/>
+<b>2.1&#160;Periodic&#160;Functions&#160;&#160;</b><br/>
+As&#160;we&#160;saw&#160;in&#160;Section&#160;1.2,&#160;Fourier&#160;series&#160;are&#160;essential&#160;in&#160;solving&#160;certain&#160;partial&#160;differential&#160;equations.&#160;In&#160;this&#160;section&#160;we&#160;introduce&#160;<br/>some&#160;basic&#160;concepts&#160;that&#160;will&#160;be&#160;useful&#160;for&#160;our&#160;treatment&#160;of&#160;the&#160;general&#160;theory&#160;of&#160;Fourier&#160;series. &#160;<br/>
+Consider&#160;the&#160;function&#160;sin&#160;x&#160;whose&#160;graph&#160;is&#160;shown&#160;in&#160;Figure&#160;1.&#160;Since&#160;the&#160;values&#160;of&#160;sin&#160;x&#160;repeat&#160;every&#160;27r&#160;units,&#160;its&#160;graph&#160;is&#160;<br/>obtained&#160;by&#160;repeating&#160;the&#160;portion&#160;over&#160;any&#160;interval&#160;of&#160;length&#160;27r.&#160;This&#160;periodicity&#160;is&#160;expressed&#160;by&#160;the&#160;identity&#160;&#160;<br/>
+sin&#160;x&#160;=&#160;sin&#160;(x&#160;+&#160;2&#160;×&#160;π)&#160;for&#160;all&#160;x.&#160;<br/>
+In&#160;general,&#160;a&#160;function&#160;f&#160;satisfying&#160;the&#160;identity&#160;&#160;<br/>
+(1)&#160;f&#160;(x)&#160;=&#160;f&#160;(x&#160;+&#160;T)&#160;for&#160;all&#160;x,&#160;<br/>
+where&#160;T&#160;&gt;&#160;0,&#160;is&#160;called&#160;periodic,&#160;or&#160;more&#160;specifically,&#160;T-periodic&#160;(Figure&#160;2).&#160;The&#160;number&#160;T&#160;is&#160;called&#160;a&#160;period&#160;of&#160;f.&#160;If&#160;f&#160;is&#160;nonconstant,&#160;<br/>we&#160;define&#160;the&#160;fundamental&#160;period,&#160;or&#160;simply,&#160;the&#160;period&#160;of&#160;f&#160;to&#160;be&#160;the&#160;smallest&#160;positive&#160;number&#160;T&#160;for&#160;which&#160;(1)&#160;holds.&#160;For&#160;<br/>example,&#160;the&#160;functions&#160;3,&#160;sin&#160;x,&#160;sin&#160;2&#160;×&#160;x&#160;are&#160;all&#160;2&#160;×&#160;π-periodic.&#160;The&#160;period&#160;of&#160;sin&#160;x&#160;is&#160;2&#160;×&#160;π,&#160;while&#160;the&#160;period&#160;of&#160;sin&#160;2&#160;×&#160;x&#160;is&#160;π.&#160;&#160;<br/>
+Using&#160;(1)&#160;repeatedly,&#160;we&#160;get&#160;&#160;<br/>
+f&#160;(x)&#160;=&#160;f&#160;(x&#160;+&#160;T)&#160;=&#160;f&#160;(x&#160;+&#160;2&#160;×&#160;T)&#160;=&#160;…&#160;=&#160;f&#160;(x&#160;+&#160;n&#160;×&#160;T).&#160;<br/>
+Hence&#160;if&#160;T&#160;is&#160;a&#160;period,&#160;then&#160;n&#160;×&#160;T&#160;is&#160;also&#160;a&#160;period&#160;for&#160;any&#160;integer&#160;n&#160;&gt;&#160;0.&#160;In&#160;the&#160;case&#160;of&#160;the&#160;sine&#160;function,&#160;this&#160;amounts&#160;to&#160;saying&#160;that&#160;<br/>2×&#160;π,&#160;4&#160;×&#160;π,&#160;6&#160;×&#160;π,&#160;...&#160;are&#160;all&#160;periods&#160;of&#160;sin&#160;x,&#160;but&#160;only&#160;2&#160;×&#160;π&#160;is&#160;the&#160;fundamental&#160;period.&#160;Because&#160;the&#160;values&#160;of&#160;a&#160;T-periodic&#160;function&#160;<br/>repeat&#160;every&#160;T&#160;units,&#160;its&#160;graph&#160;is&#160;obtained&#160;by&#160;repeating&#160;the&#160;portion&#160;over&#160;any&#160;interval&#160;of&#160;length&#160;T&#160;(Figure&#160;2).&#160;As&#160;a&#160;consequence,&#160;to&#160;<br/>define&#160;a&#160;T-periodic&#160;function,&#160;it&#160;is&#160;enough&#160;to&#160;describe&#160;it&#160;over&#160;an&#160;interval&#160;of&#160;length&#160;T.&#160;Obviously,&#160;the&#160;interval&#160;can&#160;be&#160;chosen&#160;in&#160;many&#160;<br/>different&#160;ways.&#160;The&#160;following&#160;example&#160;illustrates&#160;these&#160;ideas.&#160;&#160;<br/>
+Figure&#160;1&#160;Graph&#160;of&#160;sin&#160;x.&#160;&#160;<br/>
+Figure&#160;2&#160;A&#160;T-periodic&#160;function.&#160;&#160;<br/>
+Figure&#160;3&#160;A&#160;2-periodic&#160;function.&#160;&#160;<br/>
+<b>EXAMPLE&#160;1&#160;Describing&#160;a&#160;periodic&#160;function&#160;&#160;</b><br/>
+Describe&#160;the&#160;2-periodic&#160;function&#160;f&#160;in&#160;Figure&#160;3&#160;in&#160;two&#160;different&#160;ways:&#160;&#160;<br/>
+(a)&#160;by&#160;considering&#160;its&#160;values&#160;on&#160;the&#160;interval&#160;0&#160;≤&#160;x&#160;&lt;&#160;2;&#160;&#160;<br/>(b)&#160;by&#160;considering&#160;its&#160;values&#160;on&#160;the&#160;interval&#160;negative&#160;1&#160;≤&#160;x&#160;&lt;&#160;1.&#160;&#160;<br/>
+<b>Solution&#160;&#160;</b><br/>
+(a)&#160;On&#160;the&#160;interval&#160;0&#160;≤&#160;x&#160;&lt;&#160;2&#160;the&#160;graph&#160;is&#160;a&#160;portion&#160;of&#160;the&#160;straight&#160;line&#160;y&#160;=&#160;negative&#160;x&#160;+&#160;1.&#160;Thus&#160;&#160;<br/>
+f&#160;(x)&#160;=&#160;negative&#160;x&#160;+&#160;1&#160;if&#160;0&#160;≤&#160;x&#160;&lt;&#160;2.&#160;<br/>
+Now&#160;the&#160;relation&#160;f&#160;(x&#160;+&#160;2)&#160;=&#160;f&#160;(x)&#160;describes&#160;f&#160;for&#160;all&#160;other&#160;values&#160;of&#160;x.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-3" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-3_1.jpg" alt="Page 3, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-3_2.jpg" alt="Page 3, figure 2"/><br/>
+(b)&#160;On&#160;the&#160;interval&#160;negative&#160;1&#160;≤&#160;r&#160;&lt;&#160;1,&#160;the&#160;graph&#160;consists&#160;of&#160;two&#160;straight&#160;lines&#160;(Figure&#160;3).&#160;We&#160;have&#160;&#160;<br/>
+f&#160;(x)&#160;=&#160;negative&#160;x&#160;−&#160;1&#160;if&#160;negative&#160;1&#160;≤&#160;x&#160;&lt;&#160;0,&#160;negative&#160;x&#160;+&#160;1&#160;if&#160;0&#160;≤&#160;x&#160;&lt;&#160;1.&#160;<br/>
+As&#160;in&#160;part&#160;(a),&#160;the&#160;relation&#160;f&#160;(x&#160;+&#160;2)&#160;=&#160;f&#160;(x)&#160;describes&#160;f&#160;for&#160;all&#160;values&#160;of&#160;x&#160;outside&#160;the&#160;interval&#160;[negative&#160;1,&#160;1).&#160;<br/>
+Although&#160;the&#160;formulas&#160;in&#160;Example&#160;1&#160;(a)&#160;and&#160;(b)&#160;are&#160;different,&#160;they&#160;describe&#160;the&#160;same&#160;periodic&#160;function.&#160;We&#160;use&#160;common&#160;sense&#160;in&#160;<br/>choosing&#160;the&#160;most&#160;convenient&#160;formula&#160;in&#160;a&#160;given&#160;situation&#160;(see&#160;Example&#160;2&#160;of&#160;this&#160;section&#160;for&#160;an&#160;illustration).&#160;&#160;<br/>
+<b>Piecewise&#160;Continuous&#160;and&#160;Piecewise&#160;Smooth&#160;Functions&#160;&#160;</b><br/>
+We&#160;now&#160;present&#160;a&#160;class&#160;of&#160;functions&#160;that&#160;is&#160;of&#160;great&#160;interest&#160;to&#160;us.&#160;The&#160;important&#160;terminology&#160;that&#160;we&#160;introduce&#160;will&#160;be&#160;used&#160;<br/>throughout&#160;the&#160;text.&#160;Consider&#160;the&#160;function&#160;f&#160;(x)&#160;in&#160;Figure&#160;3.&#160;This&#160;function&#160;is&#160;not&#160;continuous&#160;at&#160;x&#160;=&#160;0,&#160;±2,&#160;±4,&#160;....&#160;Take&#160;a&#160;point&#160;of&#160;<br/>discontinuity,&#160;say&#160;x&#160;=&#160;0.&#160;The&#160;limit&#160;of&#160;the&#160;function&#160;from&#160;the&#160;left&#160;is&#160;negative&#160;1,&#160;while&#160;the&#160;limit&#160;from&#160;the&#160;right&#160;is&#160;1.&#160;Symbolically,&#160;this&#160;is&#160;<br/>denoted&#160;by&#160;&#160;<br/>
+f&#160;(0^−)&#160;=&#160;lim&#160;as&#160;n&#160;→&#160;0^−&#160;of&#160;f&#160;(x)&#160;=&#160;negative&#160;1&#160;and&#160;f&#160;(0^+)&#160;=&#160;lim&#160;as&#160;n&#160;→&#160;0^+&#160;of&#160;f&#160;(x)&#160;=&#160;1.&#160;<br/>
+In&#160;general,&#160;we&#160;write&#160;&#160;<br/>
+f&#160;(c^−)&#160;=&#160;lim&#160;as&#160;n&#160;→&#160;c^−&#160;of&#160;f&#160;(x)&#160;<br/>
+to&#160;denote&#160;the&#160;fact&#160;that&#160;f&#160;approaches&#160;the&#160;number&#160;f&#160;(c^−)&#160;as&#160;x&#160;approaches&#160;c&#160;from&#160;below.&#160;Similarly,&#160;if&#160;the&#160;limit&#160;of&#160;f&#160;exists&#160;as&#160;x&#160;<br/>approaches&#160;c&#160;from&#160;above,&#160;we&#160;denote&#160;this&#160;limit&#160;f&#160;(c^+)&#160;and&#160;write&#160;&#160;<br/>
+f&#160;(c^+)&#160;=&#160;lim&#160;as&#160;n&#160;→&#160;c^−&#160;of&#160;f&#160;(x)&#160;<br/>
+(Figure&#160;4).&#160;Recall&#160;that&#160;a&#160;function&#160;f&#160;is&#160;continuous&#160;at&#160;c&#160;if&#160;&#160;<br/>
+f&#160;(c)&#160;=&#160;lim&#160;as&#160;n&#160;→&#160;c&#160;of&#160;f&#160;(x).&#160;<br/>
+In&#160;particular,&#160;f&#160;is&#160;continuous&#160;at&#160;c&#160;if&#160;and&#160;only&#160;if&#160;&#160;<br/>
+f&#160;(c^-)&#160;=&#160;f&#160;(c^+)&#160;=&#160;f&#160;(c).&#160;<br/>
+Figure&#160;4&#160;Left&#160;and&#160;right&#160;limits.&#160;&#160;<br/>
+<b>PIECEWISE&#160;CONTINUOUS&#160;FUNCTIONS&#160;</b><br/>
+A&#160;function&#160;f&#160;is&#160;said&#160;to&#160;be&#160;piecewise&#160;continuous&#160;on&#160;the&#160;interval&#160;[a,&#160;b]&#160;if&#160;&#160;<br/>
+<br/>
+f&#160;(a^+)&#160;and&#160;f&#160;(b^−)&#160;exist,&#160;and&#160;&#160;<br/>
+<br/>
+f&#160;is&#160;defined&#160;and&#160;continuous&#160;on&#160;(a,&#160;b)&#160;except&#160;at&#160;a&#160;finite&#160;number&#160;of&#160;points&#160;in&#160;(a,&#160;b)&#160;where&#160;the&#160;left&#160;and&#160;right&#160;limits&#160;exist.&#160;&#160;<br/>
+A&#160;periodic&#160;function&#160;is&#160;said&#160;to&#160;be&#160;piecewise&#160;continuous&#160;if&#160;it&#160;is&#160;piecewise&#160;continuous&#160;on&#160;every&#160;interval&#160;of&#160;the&#160;form&#160;[a,&#160;b].&#160;A&#160;periodic&#160;<br/>function&#160;is&#160;said&#160;&#160;<br/>
+<hr/>
+<span id="anchor-4" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-4_1.jpg" alt="Page 4, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-4_2.jpg" alt="Page 4, figure 2"/><br/>
+to&#160;be&#160;continuous&#160;if&#160;it&#160;is&#160;continuous&#160;on&#160;the&#160;entire&#160;real&#160;line.&#160;Note&#160;that&#160;continuity&#160;forces&#160;a&#160;certain&#160;behavior&#160;of&#160;the&#160;periodic&#160;function&#160;<br/>at&#160;the&#160;endpoints&#160;of&#160;any&#160;interval&#160;of&#160;length&#160;one&#160;period.&#160;For&#160;example,&#160;if&#160;f&#160;is&#160;T-periodic&#160;and&#160;continuous,&#160;then&#160;necessarily&#160;f&#160;(0^+)&#160;=&#160;f&#160;<br/>(T^−)&#160;(Figure&#160;5).&#160;&#160;<br/>
+The&#160;function&#160;in&#160;Example&#160;1&#160;enjoys&#160;another&#160;interesting&#160;property&#160;in&#160;addi-tion&#160;to&#160;being&#160;piecewise&#160;continuous.&#160;Because&#160;the&#160;slopes&#160;of&#160;<br/>the&#160;line&#160;segments&#160;on&#160;the&#160;graph&#160;of&#160;f&#160;are&#160;all&#160;equal&#160;to&#160;negative&#160;1,&#160;we&#160;conclude&#160;that&#160;f'&#160;=&#160;(x)&#160;negative&#160;1&#160;for&#160;all&#160;x&#160;≠&#160;0,&#160;±2,&#160;±4,&#160;....&#160;So&#160;the&#160;<br/>derivative&#160;f'&#160;(x)&#160;exists&#160;and&#160;is&#160;continuous&#160;for&#160;all&#160;x&#160;≠&#160;0,&#160;±2,&#160;±4,&#160;...,&#160;and&#160;at&#160;these&#160;exceptional&#160;points&#160;where&#160;the&#160;derivative&#160;does&#160;not&#160;<br/>exist,&#160;the&#160;left&#160;and&#160;right&#160;limits&#160;of&#160;f'&#160;(x)&#160;exist&#160;(indeed,&#160;they&#160;are&#160;equal&#160;to&#160;negative&#160;1).&#160;In&#160;other&#160;words,&#160;f'&#160;(x)&#160;is&#160;piecewise&#160;continuous.&#160;<br/>With&#160;this&#160;example&#160;in&#160;mind,&#160;we&#160;introduce&#160;a&#160;property&#160;that&#160;will&#160;be&#160;used&#160;very&#160;frequently.&#160;&#160;<br/>
+Figure&#160;5&#160;A&#160;continuous&#160;T-periodic&#160;function.&#160;<br/>
+<b>PIECEWISE&#160;SMOOTH&#160;FUNCTIONS&#160;&#160;</b><br/>
+A&#160;function&#160;f,&#160;defined&#160;on&#160;the&#160;interval&#160;[a,&#160;b],&#160;is&#160;said&#160;to&#160;be&#160;piecewise&#160;smooth&#160;if&#160;f&#160;and&#160;f'&#160;are&#160;piecewise&#160;continuous&#160;on&#160;[a,&#160;b].&#160;Thus&#160;f&#160;is&#160;<br/>piecewise&#160;smooth&#160;if&#160;<br/>
+<br/>
+f&#160;is&#160;piecewise&#160;continuous&#160;on&#160;[a,&#160;b],&#160;&#160;<br/>
+<br/>
+f'&#160;exists&#160;and&#160;is&#160;continuous&#160;in&#160;(a,&#160;b)&#160;except&#160;possibly&#160;at&#160;finitely&#160;many&#160;points&#160;c&#160;where&#160;the&#160;one-sided&#160;limits&#160;lim&#160;as&#160;n&#160;→&#160;c^−&#160;of&#160;f'&#160;<br/>(x)&#160;and&#160;lim&#160;as&#160;n&#160;→&#160;c^+&#160;of&#160;f'&#160;(x)&#160;exist.&#160;Furthermore,&#160;lim&#160;as&#160;n&#160;→&#160;a^+&#160;of&#160;f'&#160;(x)&#160;and&#160;lim&#160;as&#160;n&#160;→&#160;b^−&#160;of&#160;f'&#160;(x)&#160;exist.&#160;<br/>
+A&#160;periodic&#160;function&#160;is&#160;piecewise&#160;smooth&#160;if&#160;it&#160;is&#160;piecewise&#160;smooth&#160;on&#160;every&#160;interval&#160;[a,&#160;b].&#160;A&#160;function&#160;f&#160;is&#160;smooth&#160;if&#160;f&#160;and&#160;f'&#160;are&#160;<br/>continuous.&#160;&#160;<br/>
+The&#160;function&#160;sin&#160;x&#160;is&#160;smooth.&#160;The&#160;function&#160;in&#160;Example&#160;1&#160;is&#160;piecewise&#160;smooth&#160;but&#160;not&#160;smooth.&#160;The&#160;function&#160;x&#160;^&#160;1&#160;÷&#160;3&#160;for&#160;negative&#160;1&#160;<br/>≤&#160;x&#160;≤&#160;1&#160;is&#160;not&#160;piecewise&#160;smooth&#160;because&#160;neither&#160;the&#160;derivative&#160;nor&#160;its&#160;left&#160;or&#160;right&#160;limits&#160;exist&#160;at&#160;x&#160;=&#160;0.&#160;Additional&#160;examples&#160;are&#160;<br/>discussed&#160;in&#160;the&#160;exercises.&#160;&#160;<br/>
+The&#160;following&#160;useful&#160;theorem,&#160;whose&#160;content&#160;is&#160;intuitively&#160;clear,&#160;states&#160;that&#160;the&#160;definite&#160;integral&#160;of&#160;a&#160;T-periodic&#160;function&#160;is&#160;the&#160;<br/>same&#160;over&#160;any&#160;interval&#160;of&#160;length&#160;T&#160;(Figure&#160;6).&#160;&#160;<br/>
+<b>THEOREM&#160;1&#160;INTEGRAL&#160;OVER&#160;ONE&#160;PERIOD&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;is&#160;piecewise&#160;continuous&#160;and&#160;T-periodic.&#160;Then,&#160;for&#160;any&#160;real&#160;number&#160;a,&#160;we&#160;have&#160;&#160;<br/>
+∫&#160;from&#160;0&#160;to&#160;T&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;a&#160;to&#160;a&#160;+T&#160;of&#160;f&#160;(x)&#160;dx&#160;<br/>
+<b>Proof&#160;&#160;</b><br/>
+To&#160;simplify&#160;the&#160;proof,&#160;we&#160;suppose&#160;that&#160;f&#160;is&#160;continuous.&#160;For&#160;the&#160;general&#160;case,&#160;see&#160;Exercise&#160;26.&#160;Define&#160;<br/>
+F&#160;of&#160;a&#160;=&#160;∫&#160;from&#160;a&#160;to&#160;a&#160;+T&#160;of&#160;f&#160;(x)&#160;dx&#160;<br/>
+<hr/>
+<span id="anchor-5" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-5_1.jpg" alt="Page 5, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-5_2.jpg" alt="Page 5, figure 2"/><br/>
+By&#160;the&#160;fundamental&#160;theorem&#160;of&#160;calculus,&#160;we&#160;have&#160;F'&#160;(a)&#160;=&#160;f&#160;(a&#160;+&#160;T)&#160;–&#160;f&#160;(a)&#160;=&#160;0,&#160;because&#160;f&#160;is&#160;periodic&#160;with&#160;period&#160;T.&#160;Hence&#160;F&#160;(a)&#160;is&#160;<br/>constant&#160;for&#160;all&#160;a,&#160;and&#160;so&#160;F&#160;(0)&#160;=&#160;F&#160;(a),&#160;which&#160;implies&#160;the&#160;theorem.&#160;&#160;<br/>
+An&#160;alternative&#160;proof&#160;of&#160;Theorem&#160;1&#160;is&#160;presented&#160;in&#160;Exercise&#160;18.&#160;&#160;<br/>
+Figure&#160;6&#160;Areas&#160;over&#160;one&#160;period.&#160;&#160;<br/>
+<b>EXAMPLE&#160;2&#160;Integrating&#160;periodic&#160;functions&#160;&#160;</b><br/>
+Let&#160;f&#160;be&#160;the&#160;2-periodic&#160;function&#160;in&#160;Example&#160;1.&#160;Use&#160;Theorem&#160;1&#160;to&#160;compute&#160;&#160;<br/>
+(a)&#160;∫&#160;from&#160;negative&#160;1&#160;to&#160;1&#160;of&#160;f^2&#160;(x)&#160;dx,&#160;<br/>(b)&#160;∫&#160;from&#160;negative&#160;N&#160;to&#160;N&#160;of&#160;f^2&#160;(x)&#160;dx,&#160;N&#160;a&#160;positive&#160;integer.&#160;<br/>
+<b>Solution&#160;&#160;</b><br/>
+(a)&#160;Observe&#160;that&#160;f^2&#160;(x)&#160;is&#160;also&#160;2-periodic.&#160;Thus,&#160;by&#160;Theorem&#160;1,&#160;to&#160;compute&#160;the&#160;integral&#160;in&#160;(a)&#160;we&#160;may&#160;choose&#160;any&#160;interval&#160;of&#160;<br/>length&#160;2.&#160;Since&#160;on&#160;the&#160;interval&#160;(0,&#160;2)&#160;the&#160;function&#160;f&#160;(x)&#160;is&#160;given&#160;by&#160;a&#160;single&#160;formula,&#160;we&#160;choose&#160;to&#160;work&#160;on&#160;this&#160;interval,&#160;and,&#160;using&#160;<br/>the&#160;formula&#160;from&#160;Example&#160;1&#160;(a),&#160;we&#160;find&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;1&#160;to&#160;1&#160;of&#160;f^2&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;of&#160;f^2&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;of&#160;(negative&#160;x&#160;+&#160;1)&#160;^&#160;2&#160;dx&#160;=&#160;1&#160;÷&#160;3&#160;×&#160;(negative&#160;x&#160;+&#160;1)&#160;^&#160;<br/>
+3&#160;from&#160;0&#160;to&#160;2&#160;=&#160;2&#160;÷&#160;3&#160;<br/>
+(b)&#160;We&#160;break&#160;up&#160;the&#160;integral&#160;∫&#160;from&#160;negative&#160;N&#160;to&#160;N&#160;of&#160;into&#160;the&#160;sum&#160;of&#160;N&#160;integrals&#160;over&#160;intervals&#160;of&#160;length&#160;2,&#160;of&#160;the&#160;form&#160;∫&#160;from&#160;n&#160;<br/>to&#160;n&#160;+&#160;2,&#160;n&#160;=&#160;negative&#160;N,&#160;negative&#160;N&#160;+&#160;2,&#160;...,&#160;N&#160;−&#160;2,&#160;as&#160;follows:&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;N&#160;to&#160;N&#160;of&#160;f^2&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;negative&#160;N&#160;to&#160;negative&#160;N&#160;+&#160;2&#160;of&#160;f^2&#160;(x)&#160;dx&#160;+&#160;∫&#160;from&#160;negative&#160;N&#160;+&#160;2&#160;to&#160;negative&#160;N&#160;+&#160;4&#160;of&#160;<br/>
+f^2&#160;(x)&#160;dx&#160;+&#160;…&#160;+&#160;∫&#160;from&#160;N&#160;−&#160;2&#160;to&#160;N&#160;of&#160;f^2&#160;(x)&#160;dx&#160;<br/>
+Since&#160;f^2&#160;(x)&#160;is&#160;2-periodic,&#160;by&#160;Theorem&#160;1,&#160;each&#160;integral&#160;on&#160;the&#160;right&#160;side&#160;is&#160;equal&#160;to&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;1&#160;to&#160;1&#160;of&#160;f^2&#160;(x)&#160;dx,&#160;by&#160;(a).&#160;Hence&#160;the&#160;desired&#160;integral&#160;is&#160;N&#160;times&#160;2&#160;÷&#160;3&#160;or&#160;2&#160;×&#160;N&#160;÷&#160;3.&#160;<br/>
+<b>The&#160;Trigonometric&#160;System&#160;and&#160;Orthogonality&#160;&#160;</b><br/>
+The&#160;most&#160;important&#160;periodic&#160;functions&#160;are&#160;those&#160;in&#160;the&#160;(2&#160;×&#160;π-periodic)&#160;trigono-metric&#160;system&#160;&#160;<br/>
+1,&#160;cos&#160;x,&#160;cos&#160;2&#160;×&#160;x,&#160;cos&#160;3&#160;×&#160;x,&#160;...,&#160;cos&#160;m&#160;×&#160;x,&#160;…,&#160;sin&#160;×&#160;x,&#160;sin&#160;2&#160;×&#160;x,&#160;sin&#160;3&#160;×&#160;x,&#160;...,&#160;sin&#160;n&#160;×&#160;x,&#160;...&#160;<br/>
+You&#160;can&#160;easily&#160;check&#160;that&#160;these&#160;functions&#160;are&#160;periodic&#160;with&#160;period&#160;2&#160;×&#160;π.&#160;Another&#160;useful&#160;property&#160;enjoyed&#160;by&#160;the&#160;trigonometric&#160;<br/>system&#160;is&#160;orthogonality.&#160;We&#160;say&#160;that&#160;two&#160;functions&#160;f&#160;and&#160;g&#160;are&#160;orthogonal&#160;over&#160;the&#160;interval&#160;[a,&#160;b]&#160;if&#160;∫&#160;from&#160;a&#160;to&#160;b&#160;of&#160;f&#160;(x)&#160;×&#160;g&#160;(x)&#160;dx&#160;<br/>=&#160;0.&#160;The&#160;notion&#160;of&#160;orthogonality&#160;is&#160;extremely&#160;important&#160;and&#160;will&#160;be&#160;developed&#160;in&#160;detail&#160;in&#160;Chapter&#160;6.&#160;We&#160;introduce&#160;the&#160;<br/>terminology&#160;here&#160;for&#160;convenience.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-6" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-6_1.png" alt="Page 6, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-6_2.png" alt="Page 6, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-6_3.png" alt="Page 6, figure 3"/><br/>
+In&#160;what&#160;follows,&#160;the&#160;indices&#160;m&#160;and&#160;n&#160;are&#160;nonnegative&#160;integers.&#160;The&#160;orthogonality&#160;properties&#160;of&#160;the&#160;trigonometric&#160;system&#160;are&#160;<br/>expressed&#160;by&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;=&#160;0&#160;if&#160;m&#160;≠&#160;n,&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;dx&#160;=&#160;0&#160;for&#160;all&#160;m&#160;and&#160;n,&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;dx&#160;=&#160;0&#160;if&#160;m&#160;≠&#160;n.&#160;<br/>
+We&#160;also&#160;have&#160;the&#160;following&#160;useful&#160;identities:&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;cos^2&#160;m&#160;×&#160;x&#160;dx&#160;=&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;sin^2&#160;m&#160;×&#160;x&#160;dx&#160;=&#160;π&#160;for&#160;all&#160;m&#160;≠&#160;0.&#160;<br/>
+There&#160;are&#160;several&#160;possible&#160;ways&#160;to&#160;prove&#160;these&#160;identities.&#160;For&#160;example,&#160;to&#160;prove&#160;the&#160;first&#160;one,&#160;we&#160;can&#160;use&#160;a&#160;trigonometric&#160;<br/>identity&#160;and&#160;write&#160;&#160;<br/>
+cos&#160;m&#160;×&#160;x&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;(cos&#160;(m&#160;+&#160;n)&#160;×&#160;x&#160;+&#160;cos&#160;(m&#160;−&#160;n)&#160;×&#160;x).&#160;<br/>
+Since&#160;m&#160;±&#160;n&#160;≠&#160;0,&#160;we&#160;get&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;cos&#160;m&#160;×&#160;x&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;<br/>
+=&#160;1&#160;÷&#160;2&#160;×&#160;[1&#160;÷&#160;m&#160;+&#160;n&#160;×&#160;sin&#160;(m&#160;+&#160;n)&#160;×&#160;x+&#160;1&#160;÷&#160;m&#160;–&#160;n&#160;×&#160;sin&#160;(m&#160;–&#160;n)&#160;×&#160;x]&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;=&#160;0.&#160;<br/>
+We&#160;end&#160;this&#160;section&#160;by&#160;describing&#160;some&#160;interesting&#160;examples&#160;of&#160;periodic&#160;functions&#160;related&#160;to&#160;the&#160;greatest&#160;integer&#160;function,&#160;also&#160;<br/>known&#160;as&#160;the&#160;floor&#160;function,&#160;&#160;<br/>
+[x]&#160;=&#160;greatest&#160;integer&#160;not&#160;larger&#160;than&#160;x.&#160;&#160;<br/>
+As&#160;can&#160;be&#160;seen&#160;from&#160;Figure&#160;7,&#160;the&#160;function&#160;[x]&#160;is&#160;piecewise&#160;smooth&#160;with&#160;discontinuities&#160;at&#160;the&#160;integers.&#160;&#160;<br/>
+Figure&#160;7&#160;The&#160;greatest&#160;integer&#160;function&#160;[x].&#160;&#160;<br/>
+Figure&#160;8&#160;Graph&#160;of&#160;the&#160;1-periodic&#160;function&#160;x&#160;–&#160;[x].&#160;<br/>
+<b>EXAMPLE&#160;3&#160;A&#160;periodic&#160;function&#160;constructed&#160;with&#160;the&#160;floor&#160;function&#160;&#160;</b><br/>
+The&#160;fractional&#160;part&#160;of&#160;x&#160;is&#160;the&#160;function&#160;f&#160;(x)&#160;=&#160;x&#160;−&#160;[x].&#160;For&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;1,&#160;we&#160;have&#160;[x]&#160;=&#160;0,&#160;and&#160;so&#160;f&#160;(x)&#160;=&#160;x.&#160;Also,&#160;since&#160;[x&#160;+&#160;1]&#160;=&#160;1&#160;+&#160;[x],&#160;we&#160;<br/>get&#160;&#160;<br/>
+f&#160;(x&#160;+&#160;1)&#160;=&#160;x&#160;+&#160;1&#160;−&#160;[x&#160;+&#160;1]&#160;=&#160;x&#160;+&#160;1&#160;−&#160;1&#160;−&#160;[x]&#160;=&#160;x&#160;–&#160;[x]&#160;=&#160;f&#160;(x).&#160;<br/>
+Hence&#160;f&#160;is&#160;periodic&#160;with&#160;period&#160;1.&#160;Its&#160;graph&#160;(Figure&#160;8)&#160;is&#160;obtained&#160;by&#160;repeating&#160;the&#160;portion&#160;of&#160;the&#160;graph&#160;of&#160;x&#160;over&#160;the&#160;interval&#160;0&#160;&lt;&#160;x&#160;<br/>&lt;&#160;1.&#160;The&#160;function&#160;f&#160;is&#160;piecewise&#160;smooth&#160;with&#160;discontinuities&#160;at&#160;the&#160;integers. &#160;<br/>
+Further&#160;examples&#160;of&#160;periodic&#160;functions&#160;related&#160;to&#160;the&#160;greatest&#160;integer&#160;function&#160;are&#160;presented&#160;in&#160;Exercises&#160;19-23.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-7" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-7_1.png" alt="Page 7, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-7_2.png" alt="Page 7, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-7_3.png" alt="Page 7, figure 3"/><br/>
+<b>Exercises&#160;2.1&#160;&#160;</b><br/>
+(b)&#160;State&#160;and&#160;prove&#160;the&#160;orthogonality&#160;relations&#160;for&#160;this&#160;<br/>
+system&#160;on&#160;the&#160;interval&#160;[negative&#160;p,&#160;p].&#160;&#160;<br/>
+In&#160;Exercises&#160;1-2,&#160;find&#160;a&#160;period&#160;of&#160;the&#160;given&#160;function&#160;and&#160;<br/>sketch&#160;its&#160;graph.&#160;&#160;<br/>
+<b>7.&#160;Sums&#160;of&#160;periodic&#160;functions.&#160;&#160;</b><br/>
+<b>1.&#160;&#160;</b><br/>
+Show&#160;that&#160;if&#160;f_1,&#160;f_2,&#160;...,&#160;f_n,&#160;...&#160;are&#160;T-periodic&#160;functions,&#160;<br/>then&#160;a_1&#160;×&#160;f_1&#160;+&#160;a_2&#160;×&#160;f_2&#160;+&#160;…&#160;+&#160;a_n&#160;×&#160;f_n&#160;is&#160;also&#160;T-periodic.&#160;<br/>
+(a)&#160;cos&#160;x,&#160;&#160;<br/>
+More&#160;generally,&#160;show&#160;that&#160;if&#160;the&#160;series&#160;∑&#160;from&#160;n&#160;=&#160;0&#160;to&#160;∞&#160;<br/>
+(b)&#160;cos&#160;π&#160;×&#160;x,&#160;&#160;<br/>
+a_n&#160;×&#160;f_n&#160;(x)&#160;converges&#160;for&#160;all&#160;x&#160;in&#160;0&#160;&lt;&#160;x&#160;≤&#160;T,&#160;then&#160;its&#160;limit&#160;is&#160;a&#160;<br/>
+(c)&#160;cos&#160;2&#160;÷&#160;3&#160;×&#160;x,&#160;&#160;<br/>
+T-periodic&#160;function.&#160;&#160;<br/>
+(d)&#160;cos&#160;x&#160;+&#160;cos&#160;2&#160;×&#160;x.&#160;&#160;<br/>
+<b>8.&#160;Sums&#160;of&#160;periodic&#160;functions&#160;need&#160;not&#160;be&#160;</b><br/>
+<b>2.&#160;&#160;</b><br/>
+<b>periodic.&#160;&#160;</b><br/>
+(a)&#160;sin&#160;7&#160;×&#160;π&#160;×&#160;x,&#160;&#160;<br/>
+Let&#160;f&#160;(x)&#160;=&#160;cos&#160;x&#160;+&#160;cos&#160;π&#160;×&#160;x.&#160;&#160;<br/>
+(b)&#160;sin&#160;n&#160;×&#160;π&#160;×&#160;(n&#160;an&#160;integer),&#160;&#160;<br/>(c)&#160;cos&#160;m&#160;×&#160;x&#160;(m&#160;an&#160;integer),&#160;&#160;<br/>
+(a)&#160;Show&#160;that&#160;the&#160;equation&#160;f&#160;(x)&#160;=&#160;2&#160;has&#160;a&#160;unique&#160;<br/>
+(d)&#160;sin&#160;x&#160;+&#160;cos&#160;x,&#160;&#160;<br/>
+solution.&#160;&#160;<br/>
+(e)&#160;sin^2&#160;2&#160;×&#160;x.&#160;&#160;<br/>
+(b)&#160;Conclude&#160;from&#160;(a)&#160;that&#160;f&#160;is&#160;not&#160;periodic.&#160;Does&#160;this&#160;<br/>
+contradict&#160;Exercise&#160;7?&#160;The&#160;function&#160;f&#160;is&#160;called&#160;almost&#160;<br/>
+<b>3.&#160;&#160;</b><br/>
+periodic.&#160;These&#160;functions&#160;are&#160;of&#160;considerable&#160;<br/>interest&#160;and&#160;have&#160;many&#160;useful&#160;applications.&#160;&#160;<br/>
+(a)&#160;Find&#160;a&#160;formula&#160;that&#160;describes&#160;the&#160;function&#160;in&#160;Figure&#160;<br/>
+9.&#160;&#160;<br/>
+<b>9.&#160;Operations&#160;on&#160;periodic&#160;functions.&#160;&#160;</b><br/>
+(b)&#160;Describe&#160;the&#160;set&#160;of&#160;points&#160;where&#160;f&#160;is&#160;continuous.&#160;<br/>
+Compute&#160;f&#160;(x^+)&#160;and&#160;f&#160;(x^−)&#160;at&#160;all&#160;points&#160;x&#160;where&#160;f&#160;is&#160;<br/>
+(a)&#160;Let&#160;f&#160;and&#160;g&#160;be&#160;two&#160;T-periodic&#160;functions.&#160;Show&#160;that&#160;<br/>
+not&#160;continuous.&#160;Is&#160;the&#160;function&#160;piecewise&#160;<br/>
+the&#160;product&#160;f&#160;(x)&#160;×&#160;g&#160;(x)&#160;and&#160;the&#160;quotient&#160;f&#160;(x)&#160;÷&#160;g&#160;(x)&#160;<br/>
+continuous?&#160;&#160;<br/>
+(g&#160;(x)&#160;≠&#160;0)&#160;are&#160;also&#160;T-periodic.&#160;&#160;<br/>
+(c)&#160;Compute&#160;f'&#160;(x)&#160;at&#160;the&#160;points&#160;where&#160;the&#160;derivative&#160;<br/>
+(b)&#160;Show&#160;that&#160;if&#160;f&#160;has&#160;period&#160;T&#160;and&#160;a&#160;&gt;&#160;0,&#160;then&#160;f&#160;(π&#160;÷&#160;a)&#160;<br/>
+exists.&#160;Compute&#160;f'&#160;(x^+)&#160;and&#160;f'&#160;(x^−)&#160;at&#160;the&#160;points&#160;<br/>
+has&#160;period&#160;a&#160;×&#160;T&#160;and&#160;f&#160;(a&#160;×&#160;x)&#160;has&#160;period&#160;T&#160;÷&#160;a.&#160;&#160;<br/>
+where&#160;the&#160;derivative&#160;does&#160;not&#160;exist.&#160;Is&#160;the&#160;function&#160;<br/>
+(c)&#160;Show&#160;that&#160;if&#160;f&#160;has&#160;period&#160;T&#160;and&#160;g&#160;is&#160;any&#160;function&#160;(not&#160;<br/>
+piecewise&#160;smooth?&#160;&#160;<br/>
+necessarily&#160;periodic),&#160;then&#160;the&#160;composition&#160;go&#160;f&#160;(x)&#160;=&#160;<br/>g&#160;(f&#160;(x))&#160;has&#160;period&#160;T.&#160;&#160;<br/>
+Figure&#160;9&#160;for&#160;Exercise&#160;3.&#160;&#160;<br/>
+<b>10.&#160;&#160;</b><br/>
+<b>4.&#160;&#160;</b><br/>
+With&#160;the&#160;help&#160;of&#160;Exercises&#160;7&#160;and&#160;9,&#160;determine&#160;the&#160;period&#160;of&#160;<br/>
+Repeat&#160;Exercise&#160;3&#160;using&#160;the&#160;function&#160;in&#160;Figure&#160;10.&#160;&#160;<br/>
+the&#160;given&#160;function.&#160;&#160;<br/>
+Figure&#160;10&#160;for&#160;Exercise&#160;4.&#160;<br/>
+(a)&#160;sin&#160;2&#160;×&#160;x&#160;<br/>
+<b>5.&#160;&#160;</b><br/>
+(b)&#160;cos&#160;1&#160;÷&#160;2&#160;×&#160;x+3&#160;×&#160;sin&#160;2&#160;×&#160;x&#160;<br/>(c)&#160;1&#160;÷&#160;2&#160;+&#160;sin&#160;x&#160;<br/>
+Establish&#160;the&#160;orthogonality&#160;of&#160;the&#160;trigonometric&#160;system&#160;over&#160;<br/>
+(d)&#160;e&#160;^&#160;cos&#160;x&#160;<br/>
+the&#160;interval&#160;[negative&#160;π,&#160;π].&#160;&#160;<br/>
+<b>6.&#160;Trigonometric&#160;systems&#160;of&#160;arbitrary&#160;period.&#160;&#160;</b><br/>
+Let&#160;p&#160;&gt;&#160;0&#160;and&#160;consider&#160;the&#160;trigonometric&#160;system&#160;&#160;<br/>
+1,&#160;cos&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;cos&#160;2&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;cos&#160;3&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;...,&#160;cos&#160;m&#160;<br/>×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;...,&#160;&#160;<br/>
+sin&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;sin&#160;2&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;sin&#160;3&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;...,&#160;sin&#160;m&#160;×&#160;π&#160;÷&#160;<br/>p&#160;×&#160;x,&#160;...&#160;&#160;<br/>
+(a)&#160;What&#160;is&#160;a&#160;common&#160;period&#160;of&#160;the&#160;functions&#160;in&#160;this&#160;<br/>
+system?&#160;&#160;<br/>
+<hr/>
+<span id="anchor-8" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-8_1.png" alt="Page 8, figure 1"/><br/>
+In&#160;Exercises&#160;11-14,&#160;a&#160;π-periodic&#160;function&#160;is&#160;described&#160;over&#160;an&#160;<br/>
+∫&#160;from&#160;n&#160;×&#160;T&#160;to&#160;a&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;(n&#160;+&#160;1)&#160;×&#160;T&#160;to&#160;a&#160;+&#160;<br/>
+interval&#160;of&#160;length&#160;π.&#160;In&#160;each&#160;case&#160;plot&#160;the&#160;graph&#160;over&#160;three&#160;<br/>
+T&#160;of&#160;f&#160;(x)&#160;dx.&#160;<br/>
+periods&#160;and&#160;compute&#160;the&#160;integral&#160;&#160;<br/>
+(c)&#160;Use&#160;(a)&#160;and&#160;(b)&#160;to&#160;complete&#160;the&#160;proof&#160;of&#160;Theorem&#160;1.&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;÷&#160;2&#160;to&#160;π&#160;÷&#160;2&#160;of&#160;f&#160;(x)&#160;dx&#160;<br/>
+<b>The&#160;Greatest&#160;Integer&#160;Function&#160;&#160;</b><br/>
+<b>11.&#160;&#160;</b><br/>
+<b>19.&#160;&#160;</b><br/>
+f&#160;(x)&#160;=&#160;sin&#160;x,&#160;0&#160;≤&#160;x&#160;&lt;&#160;π.&#160;&#160;<br/>
+(a)&#160;Plot&#160;the&#160;function&#160;f&#160;(x)&#160;=&#160;x&#160;−&#160;p&#160;×&#160;[x&#160;÷&#160;p]&#160;for&#160;p&#160;=&#160;1,&#160;2,&#160;π.&#160;&#160;<br/>(b)&#160;Show&#160;that&#160;f&#160;is&#160;p-periodic.&#160;What&#160;is&#160;it&#160;equal&#160;to&#160;on&#160;the&#160;<br/>
+<b>12.&#160;&#160;</b><br/>
+interval&#160;0&lt;&#160;x&#160;&lt;&#160;p?&#160;&#160;<br/>
+f&#160;(x)&#160;=cos&#160;x,&#160;0&#160;≤&#160;x&#160;&lt;&#160;π.&#160;&#160;<br/>
+<b>20.&#160;&#160;</b><br/>
+<b>13.&#160;</b><br/>
+(a)&#160;Plot&#160;the&#160;function&#160;f&#160;(x)&#160;=&#160;x&#160;–&#160;2&#160;×&#160;p&#160;[x&#160;+&#160;p&#160;÷&#160;2&#160;×&#160;p]&#160;for&#160;p&#160;<br/>
+=&#160;1,&#160;2,&#160;π.&#160;&#160;<br/>
+f&#160;of&#160;x&#160;equals&#160;1&#160;if&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;π&#160;÷&#160;2,&#160;0&#160;if&#160;negative&#160;π&#160;÷&#160;2&#160;&lt;&#160;x&#160;&lt;&#160;0.&#160;<br/>
+(b)&#160;Show&#160;that&#160;f&#160;is&#160;2&#160;×&#160;p-periodic&#160;and&#160;f&#160;(x)&#160;=&#160;T&#160;for&#160;all&#160;x&#160;in&#160;<br/>
+<b>14.&#160;</b><br/>
+(negative&#160;p,&#160;p).&#160;As&#160;you&#160;will&#160;see&#160;in&#160;the&#160;following&#160;<br/>exercises,&#160;the&#160;function&#160;f&#160;is&#160;very&#160;useful&#160;in&#160;defining&#160;<br/>
+f&#160;(x)=x&#160;^&#160;2,&#160;negative&#160;π&#160;÷&#160;2&#160;≤&#160;x&#160;&lt;&#160;π&#160;÷&#160;2&#160;<br/>
+discontinuous&#160;periodic&#160;functions.&#160;&#160;<br/>
+<b>15.&#160;Antiderivatives&#160;of&#160;periodic&#160;functions.&#160;&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;is&#160;2&#160;×&#160;π-periodic&#160;and&#160;let&#160;a&#160;be&#160;a&#160;fixed&#160;real&#160;<br/>number.&#160;Define&#160;&#160;<br/>
+F&#160;(x)&#160;=&#160;∫&#160;from&#160;a&#160;to&#160;x&#160;of&#160;f&#160;(t)&#160;dt,&#160;for&#160;all&#160;x.&#160;&#160;<br/>
+Show&#160;that&#160;F&#160;is&#160;2&#160;×&#160;π-periodic&#160;if&#160;and&#160;only&#160;if&#160;∫&#160;from&#160;0&#160;to&#160;2×&#160;π&#160;of&#160;<br/>f&#160;(t)&#160;dt&#160;=&#160;0.&#160;[Hint:&#160;Theorem&#160;1.]&#160;&#160;<br/>
+<b>16.&#160;&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;is&#160;T-periodic&#160;and&#160;let&#160;F&#160;be&#160;an&#160;antiderivative&#160;of&#160;<br/>f,&#160;defined&#160;as&#160;in&#160;Exercise&#160;15.&#160;Show&#160;that&#160;F&#160;is&#160;T-periodic&#160;if&#160;and&#160;<br/>only&#160;if&#160;the&#160;integral&#160;of&#160;f&#160;over&#160;an&#160;interval&#160;of&#160;length&#160;T&#160;is&#160;0.&#160;&#160;<br/>
+<b>17.&#160;&#160;</b><br/>
+(a)&#160;Let&#160;f&#160;be&#160;as&#160;in&#160;Example&#160;1.&#160;Describe&#160;the&#160;function&#160;&#160;<br/>
+F(x)&#160;=&#160;∫&#160;from&#160;0&#160;to&#160;x&#160;of&#160;f&#160;(t)&#160;dt.&#160;&#160;<br/>[Hint:&#160;By&#160;Exercise&#160;16,&#160;it&#160;is&#160;enough&#160;to&#160;consider&#160;x&#160;in&#160;[0,&#160;<br/>2].]&#160;&#160;<br/>
+(b)&#160;Plot&#160;F&#160;over&#160;the&#160;interval&#160;[negative&#160;4,&#160;4].&#160;&#160;<br/>
+<b>18.&#160;&#160;</b><br/>
+Prove&#160;Theorem&#160;1&#160;as&#160;follows.&#160;&#160;<br/>
+(a)&#160;Show&#160;that&#160;for&#160;any&#160;nonzero&#160;integer&#160;n&#160;we&#160;have &#160;<br/>
+∫&#160;from&#160;0&#160;to&#160;T&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;n&#160;×&#160;T&#160;to&#160;(n&#160;+&#160;1)&#160;×&#160;T&#160;of&#160;<br/>f&#160;(x)&#160;dx&#160;<br/>[Hint:&#160;Change&#160;variables&#160;to&#160;s&#160;=&#160;x&#160;–&#160;n&#160;×&#160;T&#160;in&#160;the&#160;second&#160;<br/>integral.]&#160;&#160;<br/>
+(b)&#160;Let&#160;a&#160;be&#160;any&#160;real&#160;number,&#160;and&#160;let&#160;n&#160;be&#160;the&#160;(unique)&#160;<br/>
+integer&#160;such&#160;that&#160;n&#160;×&#160;T&#160;≤&#160;a&#160;&lt;&#160;(n&#160;+&#160;1)&#160;×&#160;T&#160;≤&#160;a+&#160;T.&#160;Use&#160;a&#160;<br/>change&#160;of&#160;variables&#160;to&#160;show&#160;that&#160;&#160;<br/>
+<hr/>
+<span id="anchor-9" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-9_1.jpg" alt="Page 9, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-9_2.jpg" alt="Page 9, figure 2"/><br/>
+<b>21.&#160;</b><br/>
+Figure&#160;11&#160;A&#160;piecewise&#160;continuous&#160;function&#160;and&#160;its&#160;<br/>components.&#160;<br/>
+Take&#160;p&#160;=1&#160;in&#160;Exercise&#160;20&#160;and&#160;consider&#160;the&#160;function&#160;g&#160;(x)&#160;=f&#160;(x)&#160;<br/>^&#160;2&#160;=&#160;(x&#160;–&#160;2&#160;×&#160;[x&#160;+&#160;1&#160;÷&#160;2])&#160;^&#160;2.&#160;&#160;<br/>
+<b>24.&#160;&#160;</b><br/>
+(a)&#160;Show&#160;that&#160;g&#160;is&#160;periodic&#160;with&#160;period&#160;2.&#160;[Hint:&#160;<br/>
+Show&#160;that&#160;if&#160;f&#160;is&#160;piecewise&#160;continuous&#160;and&#160;T-periodic,&#160;then&#160;f&#160;<br/>
+Exercises&#160;9&#160;(c)&#160;and&#160;20.]&#160;&#160;<br/>
+is&#160;bounded.&#160;[Hint:&#160;It&#160;is&#160;enough&#160;to&#160;restrict&#160;to&#160;the&#160;interval&#160;[0,&#160;<br/>
+(b)&#160;Show&#160;that&#160;g&#160;(x)&#160;=&#160;x&#160;^&#160;2,&#160;for&#160;negative&#160;1&#160;&lt;&#160;x&#160;&lt;&#160;1.&#160;<br/>
+T].&#160;Each&#160;component&#160;of&#160;f&#160;is&#160;continuous&#160;on&#160;a&#160;closed&#160;and&#160;<br/>
+(c)&#160;Plot&#160;g&#160;(x).&#160;&#160;<br/>
+bounded&#160;interval.&#160;From&#160;calculus,&#160;a&#160;continuous&#160;function&#160;on&#160;a&#160;<br/>closed&#160;and&#160;bounded&#160;interval&#160;is&#160;bounded.]&#160;&#160;<br/>
+<b>22.&#160;Triangular&#160;wave.&#160;&#160;</b><br/>
+<b>25.&#160;&#160;</b><br/>
+Take&#160;p&#160;=&#160;1&#160;in&#160;Exercise&#160;20&#160;and&#160;consider&#160;the&#160;function&#160;h&#160;(x)&#160;=&#160;|f&#160;<br/>(x)|&#160;=&#160;|x&#160;–&#160;2&#160;×&#160;[x&#160;+&#160;1&#160;÷&#160;2]|.&#160;&#160;<br/>
+Suppose&#160;that&#160;f&#160;is&#160;T-periodic&#160;and&#160;piecewise&#160;continuous.&#160;Let&#160;&#160;<br/>
+(a)&#160;Show&#160;that&#160;h&#160;is&#160;2-periodic.&#160;&#160;<br/>
+F&#160;(a)&#160;=&#160;∫&#160;from&#160;0&#160;to&#160;a&#160;of&#160;f&#160;(x)&#160;dx.&#160;&#160;<br/>
+(b)&#160;Plot&#160;the&#160;graph&#160;of&#160;h.&#160;&#160;<br/>
+(a)&#160;Show&#160;that&#160;F&#160;is&#160;continuous.&#160;[Hint:&#160;Use&#160;Exercise&#160;24.&#160;|f&#160;<br/>
+(x)|&#160;≤&#160;M&#160;for&#160;all&#160;x.&#160;Then&#160;|F&#160;(a&#160;+&#160;h)&#160;–&#160;F&#160;(a)|&#160;≤&#160;M&#160;×&#160;h.&#160;<br/>
+(c)&#160;Generalize&#160;(a)&#160;by&#160;finding&#160;a&#160;closed&#160;formula&#160;that&#160;describes&#160;<br/>
+Conclude&#160;that&#160;F&#160;(a&#160;+&#160;h)&#160;→&#160;F&#160;(a)&#160;as&#160;h&#160;→&#160;0.]&#160;&#160;<br/>
+the&#160;2&#160;×&#160;p-periodic&#160;trian-gular&#160;wave&#160;g&#160;(x)&#160;=&#160;|x|&#160;if&#160;negative&#160;p&#160;&lt;&#160;<br/>
+(b)&#160;Show&#160;that&#160;F'&#160;(a)&#160;=&#160;f&#160;(a)&#160;at&#160;all&#160;points&#160;a&#160;where&#160;f&#160;is&#160;<br/>
+x&#160;&lt;&#160;p,&#160;and&#160;g&#160;(x&#160;+&#160;2&#160;×&#160;p)&#160;=&#160;g&#160;(x)&#160;otherwise.&#160;&#160;<br/>
+continuous.&#160;[Hint:&#160;If&#160;f&#160;is&#160;continuous&#160;for&#160;all&#160;a,&#160;this&#160;is&#160;<br/>
+<b>23.&#160;Arbitrary&#160;shape.&#160;&#160;</b><br/>
+just&#160;the&#160;fundamental&#160;theorem&#160;of&#160;calculus.&#160;For&#160;the&#160;<br/>general&#160;case,&#160;use&#160;the&#160;components&#160;of&#160;f.&#160;To&#160;simplify&#160;<br/>
+(a)&#160;Suppose&#160;that&#160;the&#160;restriction&#160;of&#160;a&#160;2&#160;×&#160;p-periodic&#160;<br/>
+the&#160;proof,&#160;you&#160;can&#160;suppose&#160;that&#160;f&#160;has&#160;only&#160;two&#160;<br/>
+function&#160;to&#160;the&#160;interval&#160;(negative&#160;p,&#160;p)&#160;is&#160;given&#160;by&#160;a&#160;<br/>
+discontinuities&#160;inside&#160;(0,&#160;T).]&#160;&#160;<br/>
+function&#160;g&#160;(x).&#160;Show&#160;that&#160;the&#160;2&#160;×&#160;p-periodic&#160;function&#160;<br/>can&#160;be&#160;described&#160;on&#160;the&#160;entire&#160;real&#160;line&#160;by&#160;the&#160;<br/>
+<b>26.&#160;&#160;</b><br/>
+formula&#160;g&#160;(f&#160;(x)),&#160;where&#160;f&#160;is&#160;as&#160;in&#160;Exercise&#160;20.&#160;&#160;<br/>
+(a)&#160;Suppose&#160;that&#160;f&#160;is&#160;piecewise&#160;continuous&#160;and&#160;let&#160;F&#160;(a)&#160;<br/>
+(b)&#160;Plot&#160;and&#160;describe&#160;the&#160;function&#160;e&#160;^&#160;f&#160;(x),&#160;where&#160;f&#160;is&#160;as&#160;<br/>
+=&#160;∫&#160;from&#160;a&#160;to&#160;a&#160;+&#160;T&#160;of&#160;f&#160;(x)&#160;dx.&#160;Show&#160;that&#160;F&#160;is&#160;<br/>
+in&#160;Exercise&#160;20&#160;with&#160;p&#160;=&#160;1.&#160;&#160;<br/>
+continuous&#160;for&#160;all&#160;a&#160;and&#160;differentiable&#160;at&#160;a&#160;if&#160;f&#160;is&#160;<br/>
+<b>Piecewise&#160;Continuous,&#160;Piecewise&#160;Smooth&#160;</b><br/>
+continuous&#160;at&#160;a.&#160;&#160;<br/>
+(b)&#160;Show&#160;that&#160;F'&#160;(a)&#160;=&#160;0&#160;for&#160;all&#160;a&#160;where&#160;f&#160;is&#160;continuous.&#160;<br/>
+<b>Functions&#160;&#160;</b><br/>
+Conclude&#160;that&#160;F&#160;is&#160;piecewise&#160;constant.&#160;&#160;<br/>
+In&#160;the&#160;following&#160;exercises,&#160;we&#160;recall&#160;well-known&#160;properties&#160;<br/>
+(c)&#160;Show&#160;that&#160;F&#160;is&#160;constant.&#160;&#160;<br/>
+from&#160;calculus&#160;and&#160;extend&#160;them&#160;to&#160;piecewise&#160;continuous&#160;<br/>
+<b>27.&#160;&#160;</b><br/>
+functions.&#160;Figure&#160;11&#160;shows&#160;a&#160;piecewise&#160;continuous,&#160;T-<br/>periodic&#160;function,&#160;with&#160;discontinuities&#160;at&#160;two&#160;points&#160;x_1&#160;and&#160;<br/>
+Determine&#160;if&#160;the&#160;given&#160;function&#160;is&#160;piecewise&#160;continuous,&#160;<br/>
+x_2&#160;in&#160;(0,&#160;T).&#160;Define&#160;f_1&#160;(x)&#160;for&#160;x&#160;in&#160;[0,&#160;x_1]&#160;by&#160;f_1&#160;(0)&#160;=&#160;f&#160;<br/>
+piecewise&#160;smooth,&#160;or&#160;neither.&#160;Here&#160;x&#160;is&#160;in&#160;the&#160;interval&#160;<br/>
+(0^+),&#160;f_1&#160;(x)&#160;=&#160;f&#160;(x),&#160;if&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;x_1,&#160;and&#160;f_1&#160;(x_1)&#160;=&#160;f&#160;(x_1^−).&#160;<br/>
+[negative&#160;1,&#160;1]&#160;and&#160;f&#160;(0)&#160;=&#160;0&#160;in&#160;all&#160;cases.&#160;&#160;<br/>
+This&#160;makes&#160;f_1&#160;continuous&#160;on&#160;the&#160;closed&#160;interval&#160;[0,&#160;x_1].&#160;In&#160;<br/>
+(a)&#160;f&#160;(x)&#160;=sin&#160;1&#160;÷&#160;x.&#160;&#160;<br/>
+a&#160;similar&#160;way,&#160;we&#160;define&#160;f_2&#160;over&#160;the&#160;interval&#160;[x_1,&#160;x_2]&#160;and&#160;<br/>
+(b)&#160;f&#160;(x)&#160;=x&#160;×&#160;sin&#160;1&#160;÷&#160;x.&#160;&#160;<br/>
+f_3&#160;over&#160;[x_2,&#160;x_3].&#160;We&#160;will&#160;refer&#160;to&#160;f_1,&#160;f_2&#160;and&#160;f_3&#160;as&#160;the&#160;<br/>
+(c)&#160;f&#160;(x)&#160;=x&#160;^&#160;2&#160;×&#160;sin&#160;1&#160;÷&#160;x.&#160;&#160;<br/>
+continuous&#160;components&#160;of&#160;f.&#160;In&#160;general,&#160;if&#160;f&#160;has&#160;n&#160;<br/>
+(d)&#160;f&#160;(x)&#160;=x&#160;^&#160;3&#160;×&#160;sin&#160;1&#160;÷&#160;x.&#160;&#160;<br/>
+discontinuities&#160;inside&#160;the&#160;interval&#160;(0,&#160;T),&#160;then&#160;we&#160;will&#160;need&#160;n&#160;<br/>+&#160;1&#160;continuous&#160;components&#160;of&#160;f.&#160;<br/>
+<hr/>
+<span id="anchor-10" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-10_1.png" alt="Page 10, figure 1"/><br/>
+<b>2.2&#160;Fourier&#160;Series&#160;&#160;</b><br/>
+Fourier&#160;series&#160;are&#160;special&#160;expansions&#160;of&#160;2&#160;×&#160;π-periodic&#160;functions&#160;of&#160;the&#160;form&#160;&#160;<br/>
+(1)&#160;f&#160;(x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n×&#160;x).&#160;<br/>
+We&#160;encountered&#160;these&#160;expansions&#160;in&#160;Section&#160;1.2&#160;when&#160;we&#160;discussed&#160;the&#160;vibrations&#160;of&#160;a&#160;plucked&#160;string.&#160;As&#160;you&#160;will&#160;see&#160;in&#160;the&#160;<br/>following&#160;chapters,&#160;Fourier&#160;series&#160;are&#160;essential&#160;for&#160;the&#160;treatment&#160;of&#160;several&#160;other&#160;important&#160;applications.&#160;To&#160;be&#160;able&#160;to&#160;use&#160;<br/>Fourier&#160;series,&#160;we&#160;need&#160;to&#160;know&#160;&#160;<br/>
+which&#160;functions&#160;have&#160;Fourier&#160;series&#160;expansions?&#160;and&#160;if&#160;a&#160;function&#160;has&#160;a&#160;Fourier&#160;series,&#160;how&#160;do&#160;we&#160;compute&#160;the&#160;coefficients&#160;a_0,&#160;<br/>
+a_1,&#160;a_2,&#160;...,&#160;b_1,&#160;b_2,&#160;...?&#160;<br/>
+We&#160;will&#160;answer&#160;the&#160;second&#160;question&#160;in&#160;this&#160;section.&#160;As&#160;for&#160;the&#160;first&#160;question,&#160;its&#160;general&#160;treatment&#160;is&#160;well&#160;beyond&#160;the&#160;level&#160;of&#160;this&#160;<br/>text.&#160;We&#160;will&#160;present&#160;conditions&#160;that&#160;are&#160;sufficient&#160;for&#160;functions&#160;to&#160;have&#160;a&#160;Fourier&#160;series&#160;represen-tation.&#160;These&#160;conditions&#160;are&#160;<br/>simple&#160;and&#160;general&#160;enough&#160;to&#160;cover&#160;all&#160;cases&#160;of&#160;interest&#160;to&#160;us.&#160;We&#160;will&#160;focus&#160;on&#160;the&#160;applications&#160;and&#160;defer&#160;the&#160;proofs&#160;concerning&#160;<br/>the&#160;convergence&#160;of&#160;Fourier&#160;series&#160;to&#160;Sections&#160;2.8-2.10.&#160;&#160;<br/>
+<b>Euler&#160;Formulas&#160;for&#160;the&#160;Fourier&#160;Coefficients&#160;&#160;</b><br/>
+To&#160;derive&#160;the&#160;formulas&#160;for&#160;the&#160;coefficients&#160;that&#160;appear&#160;in&#160;(1),&#160;we&#160;proceed&#160;as&#160;Fourier&#160;himself&#160;did.&#160;We&#160;integrate&#160;both&#160;sides&#160;of&#160;(1)&#160;<br/>over&#160;the&#160;interval&#160;[negative&#160;π,&#160;π],&#160;assuming&#160;term-by-term&#160;integration&#160;is&#160;justified,&#160;and&#160;get&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;a_0&#160;dx&#160;+&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;x)&#160;<br/>
+dx.&#160;<br/>
+But&#160;because&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;=&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;dx&#160;=&#160;0&#160;for&#160;n&#160;1,&#160;2,&#160;...,&#160;it&#160;follows&#160;that&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;a_0&#160;dx&#160;=&#160;2&#160;×&#160;π&#160;×&#160;a_0,&#160;<br/>
+or&#160;<br/>
+a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;dx.&#160;<br/>
+(Note&#160;that&#160;a_0&#160;is&#160;the&#160;average&#160;of&#160;f&#160;on&#160;the&#160;interval&#160;[negative&#160;π,&#160;π].&#160;For&#160;the&#160;interpretation&#160;of&#160;the&#160;integral&#160;as&#160;an&#160;average,&#160;see&#160;Exercise&#160;<br/>6,&#160;Section&#160;2.5.)&#160;Similarly,&#160;starting&#160;with&#160;(1),&#160;we&#160;multiply&#160;both&#160;sides&#160;by&#160;cos&#160;m&#160;×&#160;x&#160;(m&#160;≥&#160;1),&#160;integrate&#160;term-by-term,&#160;use&#160;the&#160;<br/>orthogonality&#160;of&#160;the&#160;trigonometric&#160;system&#160;(Section&#160;2.1),&#160;&#160;<br/>
+<hr/>
+<span id="anchor-11" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-11_1.jpg" alt="Page 11, figure 1"/><br/>
+and&#160;get&#160;&#160;<br/>
+∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;m&#160;×&#160;x&#160;dx&#160;=&#160;{∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;a_0&#160;×&#160;cos&#160;m&#160;×&#160;x&#160;dx}&#160;=0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;{∫&#160;from&#160;<br/>
+negative&#160;π&#160;to&#160;π&#160;of&#160;a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;×&#160;cos&#160;m&#160;×&#160;x&#160;dx}&#160;=&#160;0&#160;for&#160;m&#160;≠&#160;n&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;{∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;b_n&#160;sin&#160;n&#160;×&#160;x&#160;×&#160;cos&#160;<br/>
+m&#160;×&#160;x&#160;dx}&#160;=&#160;0&#160;<br/>
+=&#160;a_m&#160;×&#160;{∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;cos^2&#160;m&#160;×&#160;x&#160;dx}&#160;=&#160;π&#160;=&#160;π&#160;×&#160;a_m.&#160;<br/>
+Hence&#160;&#160;<br/>
+a_m=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;m&#160;×&#160;x&#160;dx,&#160;(m&#160;=&#160;1,&#160;2,&#160;...).&#160;<br/>
+By&#160;a&#160;similar&#160;procedure,&#160;&#160;<br/>
+b_m&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;×&#160;sin&#160;m&#160;×&#160;x&#160;dx,&#160;(m&#160;=&#160;1,&#160;2,&#160;...).&#160;<br/>
+The&#160;following&#160;box&#160;summarizes&#160;our&#160;discussion&#160;and&#160;contains&#160;basic&#160;definitions.&#160;&#160;<br/>
+<b>EULER&#160;FORMULAS&#160;FOR&#160;THE&#160;FOURIER&#160;COEFFICIENTS&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;has&#160;the&#160;Fourier&#160;series&#160;representation&#160;&#160;<br/>
+f&#160;(x)=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;x).&#160;<br/>
+Then&#160;the&#160;coefficients&#160;a_0,&#160;a_n,&#160;and&#160;b_n&#160;are&#160;called&#160;the&#160;Fourier&#160;coefficients&#160;off&#160;and&#160;are&#160;given&#160;by&#160;the&#160;following&#160;Euler&#160;formulas: &#160;<br/>
+(2)&#160;a_0&#160;=&#160;1&#160;÷&#160;2×&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;dx,&#160;<br/>
+(3)&#160;a_n=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx,&#160;(n&#160;=&#160;1,&#160;2,&#160;...),&#160;<br/>
+(4)&#160;b_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(x)&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;dx,&#160;(n&#160;=&#160;1,&#160;2,&#160;...).&#160;<br/>
+Because&#160;all&#160;the&#160;integrands&#160;in&#160;(2)-(4)&#160;are&#160;2&#160;×&#160;π&#160;-periodic,&#160;we&#160;can&#160;use&#160;Theorem&#160;1,&#160;Section&#160;2.1,&#160;to&#160;rewrite&#160;these&#160;formulas&#160;using&#160;<br/>integrals&#160;over&#160;the&#160;interval&#160;[0,&#160;2&#160;×&#160;π]&#160;(or&#160;any&#160;other&#160;interval&#160;of&#160;length&#160;2&#160;×&#160;π).&#160;Such&#160;alternative&#160;formulas&#160;are&#160;sometimes&#160;useful. &#160;<br/>
+<hr/>
+<span id="anchor-12" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-12_1.jpg" alt="Page 12, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-12_2.jpg" alt="Page 12, figure 2"/><br/>
+<b>ALTERNATIVE&#160;EULER&#160;FORMULAS&#160;</b><br/>
+(5)&#160;a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;f&#160;(x)&#160;dx,&#160;<br/>
+(6)&#160;a_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx,&#160;and&#160;b_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;f&#160;(x)&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;dx,&#160;n&#160;≥&#160;1.&#160;<br/>
+The&#160;Fourier&#160;coefficients&#160;were&#160;known&#160;to&#160;Euler&#160;before&#160;Fourier&#160;and&#160;for&#160;this&#160;reason&#160;they&#160;bear&#160;Euler's&#160;name.&#160;Euler&#160;used&#160;them&#160;to&#160;<br/>derive&#160;particular&#160;Fourier&#160;series&#160;such&#160;as&#160;the&#160;one&#160;presented&#160;in&#160;Example&#160;1&#160;below.&#160;It&#160;was&#160;Fourier&#160;who&#160;first&#160;claimed&#160;that&#160;these&#160;<br/>coefficients&#160;and&#160;series&#160;have&#160;a&#160;much&#160;broader&#160;range&#160;of&#160;applications,&#160;and,&#160;in&#160;particular,&#160;that&#160;they&#160;can&#160;be&#160;used&#160;to&#160;expand&#160;any&#160;<br/>periodic&#160;function.&#160;Fourier's&#160;claim&#160;and&#160;efforts&#160;to&#160;justify&#160;them&#160;led&#160;to&#160;the&#160;development&#160;of&#160;the&#160;theory&#160;of&#160;Fourier&#160;series,&#160;which&#160;are&#160;<br/>named&#160;in&#160;his&#160;horror. &#160;<br/>
+For&#160;a&#160;positive&#160;integer&#160;N,&#160;we&#160;denote&#160;the&#160;Nth&#160;partial&#160;sum&#160;of&#160;the&#160;Fourier&#160;series&#160;of&#160;f&#160;by&#160;s_N&#160;(x).&#160;Thus&#160;&#160;<br/>
+s_N&#160;(x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;N&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;x).&#160;<br/>
+Our&#160;first&#160;example&#160;displays&#160;many&#160;of&#160;the&#160;peculiar&#160;properties&#160;of&#160;Fourier&#160;series.&#160;&#160;<br/>
+Figure&#160;1&#160;Sawtooth&#160;function.&#160;<br/>
+<b>EXAMPLE&#160;1&#160;Fourier&#160;series&#160;of&#160;the&#160;sawtooth&#160;function&#160;&#160;</b><br/>
+The&#160;sawtooth&#160;function,&#160;shown&#160;in&#160;Figure&#160;1,&#160;is&#160;determined&#160;by&#160;the&#160;formulas&#160;&#160;<br/>
+f&#160;(x)&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;(π&#160;−&#160;x)&#160;if&#160;0&#160;&lt;&#160;x&#160;≤&#160;2&#160;×&#160;π,&#160;f&#160;(x&#160;+&#160;2&#160;×&#160;π)&#160;otherwise.&#160;<br/>
+(a)&#160;Find&#160;its&#160;Fourier&#160;series.&#160;&#160;<br/>(b)&#160;With&#160;the&#160;help&#160;of&#160;a&#160;computer,&#160;plot&#160;the&#160;partial&#160;sums&#160;s_1&#160;(x),&#160;s_7&#160;(x),&#160;and&#160;s_20&#160;(x),&#160;and&#160;determine&#160;the&#160;graph&#160;of&#160;the&#160;Fourier&#160;<br/>
+series.&#160;&#160;<br/>
+<b>Solution&#160;&#160;</b><br/>
+(a)&#160;Using&#160;(5)&#160;and&#160;(6),&#160;we&#160;have&#160;&#160;<br/>
+a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;1&#160;÷&#160;2&#160;×&#160;(π&#160;–&#160;x)&#160;dx&#160;=&#160;0;&#160;<br/>
+a_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;1&#160;÷&#160;2&#160;×&#160;(π&#160;–&#160;x)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;<br/>
+=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;{∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;π&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;−&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;x&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx}&#160;=&#160;0;&#160;<br/>
+In&#160;evaluating&#160;a_n,&#160;we&#160;use&#160;the&#160;formula&#160;∫&#160;x&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;=&#160;1&#160;÷&#160;n&#160;^&#160;2&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;x&#160;÷&#160;n&#160;×&#160;sin&#160;n×&#160;x&#160;which&#160;is&#160;obtained&#160;by&#160;integrating&#160;by&#160;<br/>parts.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-13" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-13_1.jpg" alt="Page 13, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-13_2.jpg" alt="Page 13, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-13_3.jpg" alt="Page 13, figure 3"/><br/>
+b_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;1&#160;÷&#160;2&#160;×&#160;(π&#160;–&#160;x)&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;dx&#160;<br/>
+=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;{∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;π&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;dx&#160;−&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;x&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;dx}&#160;=&#160;negative&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;of&#160;x&#160;<br/>
+×&#160;sin&#160;n&#160;×&#160;x&#160;dx&#160;<br/>
+=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;{negative&#160;1&#160;÷&#160;n&#160;^&#160;2&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;+&#160;x&#160;÷&#160;n&#160;×&#160;cos&#160;n&#160;×&#160;x}&#160;from&#160;0&#160;to&#160;2&#160;×&#160;π&#160;(integration&#160;by&#160;parts)&#160;<br/>
+=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;2&#160;×&#160;π&#160;÷&#160;n&#160;=&#160;1&#160;÷&#160;n.&#160;<br/>
+Substituting&#160;these&#160;values&#160;for&#160;a_n&#160;and&#160;b_n&#160;into&#160;(1),&#160;we&#160;obtain&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n&#160;as&#160;the&#160;Fourier&#160;series&#160;of&#160;f.&#160;<br/>
+Figure&#160;2&#160;Here&#160;the&#160;nth&#160;partial&#160;sum&#160;of&#160;the&#160;Fourier&#160;series&#160;is&#160;s_n&#160;(x)&#160;=&#160;∑&#160;from&#160;k&#160;=&#160;1&#160;to&#160;n&#160;of&#160;sin&#160;k&#160;×&#160;x&#160;÷&#160;k.&#160;To&#160;distinguish&#160;the&#160;graphs,&#160;note&#160;<br/>
+that&#160;as&#160;n&#160;increases,&#160;the&#160;frequencies&#160;of&#160;the&#160;sine&#160;terms&#160;increase.&#160;This&#160;causes&#160;the&#160;graphs&#160;of&#160;the&#160;higher&#160;partial&#160;sums&#160;to&#160;be&#160;more&#160;<br/>
+wiggly.&#160;The&#160;limiting&#160;graph&#160;is&#160;the&#160;graph&#160;of&#160;the&#160;whole&#160;Fourier&#160;series,&#160;shown&#160;in&#160;Figure&#160;3.&#160;It&#160;is&#160;identical&#160;to&#160;the&#160;graph&#160;of&#160;the&#160;function,&#160;<br/>
+except&#160;at&#160;points&#160;of&#160;discontinuity.&#160;&#160;<br/>
+(b)&#160;Figure&#160;2&#160;shows&#160;the&#160;first,&#160;seventh,&#160;and&#160;twentieth&#160;partial&#160;sums&#160;of&#160;the&#160;Fourier&#160;series.&#160;We&#160;see&#160;clearly&#160;that&#160;the&#160;Fourier&#160;series&#160;of&#160;f&#160;<br/>converges&#160;to&#160;f&#160;(x)&#160;at&#160;each&#160;point&#160;x&#160;where&#160;f&#160;is&#160;continuous.&#160;In&#160;particular,&#160;for&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;2×&#160;π,&#160;we&#160;have&#160;&#160;<br/>
+∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;(π&#160;−&#160;x).&#160;<br/>
+At&#160;the&#160;points&#160;of&#160;discontinuity&#160;(x&#160;=&#160;2&#160;×&#160;k&#160;×&#160;π,&#160;k&#160;=&#160;0,&#160;±1,&#160;±2,&#160;...),&#160;the&#160;series&#160;converges&#160;to&#160;0.&#160;The&#160;graph&#160;of&#160;the&#160;Fourier&#160;series&#160;∑&#160;from&#160;n&#160;=&#160;<br/>1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n&#160;is&#160;shown&#160;in&#160;Figure&#160;3.&#160;It&#160;agrees&#160;with&#160;the&#160;graph&#160;of&#160;the&#160;function,&#160;except&#160;at&#160;the&#160;points&#160;of&#160;discontinuity.&#160;<br/>
+Figure&#160;3&#160;The&#160;graph&#160;of&#160;the&#160;Fourier&#160;series&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n&#160;coincides&#160;with&#160;the&#160;graph&#160;of&#160;the&#160;function,&#160;except&#160;at&#160;the&#160;<br/>
+points&#160;of&#160;the&#160;discontinuity.&#160;<br/>
+Two&#160;important&#160;facts&#160;are&#160;worth&#160;noting&#160;concerning&#160;the&#160;behavior&#160;of&#160;Fourier&#160;series&#160;near&#160;points&#160;of&#160;discontinuity.&#160;&#160;<br/>
+Note&#160;1:&#160;At&#160;the&#160;points&#160;of&#160;discontinuity&#160;(x&#160;=&#160;2&#160;×&#160;k&#160;×&#160;π)&#160;in&#160;Example&#160;1,&#160;the&#160;Fourier&#160;series&#160;converges&#160;to&#160;0&#160;which&#160;is&#160;the&#160;average&#160;value&#160;of&#160;<br/>the&#160;function&#160;from&#160;the&#160;left&#160;and&#160;the&#160;right&#160;at&#160;these&#160;points.&#160;&#160;<br/>
+Note&#160;2:&#160;Near&#160;the&#160;points&#160;of&#160;discontinuity,&#160;the&#160;Fourier&#160;series&#160;overshoots&#160;its&#160;limiting&#160;values.&#160;This&#160;is&#160;apparent&#160;in&#160;Figure&#160;2,&#160;where&#160;<br/>humps&#160;form&#160;on&#160;the&#160;graphs&#160;of&#160;the&#160;partial&#160;sums&#160;near&#160;the&#160;points&#160;of&#160;discontinuity.&#160;This&#160;curious&#160;phenomenon,&#160;known&#160;as&#160;the&#160;Gibbs&#160;<br/>(or&#160;Wilbraham-Gibbs)&#160;phenomenon,&#160;is&#160;investigated&#160;in&#160;the&#160;exercises.&#160;It&#160;was&#160;first&#160;observed&#160;by&#160;Wilbraham&#160;in&#160;1848&#160;&#160;<br/>
+<hr/>
+<span id="anchor-14" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-14_1.jpg" alt="Page 14, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-14_2.jpg" alt="Page 14, figure 2"/><br/>
+in&#160;studying&#160;particular&#160;Fourier&#160;series.&#160;In&#160;1899,&#160;Gibbs&#160;rediscovered&#160;this&#160;phe-nomenon&#160;and&#160;initiated&#160;its&#160;study&#160;with&#160;the&#160;example&#160;of&#160;<br/>the&#160;sawtooth&#160;function.&#160;Although&#160;Gibbs&#160;did&#160;not&#160;offer&#160;complete&#160;proofs&#160;of&#160;his&#160;assertions,&#160;he&#160;did&#160;high-light&#160;the&#160;importance&#160;of&#160;this&#160;<br/>phenomenon,&#160;which&#160;now&#160;bears&#160;his&#160;name.&#160;For&#160;an&#160;interesting&#160;account&#160;of&#160;this&#160;subject,&#160;see&#160;the&#160;paper&#160;&#34;The&#160;Gibbs-Wilbraham&#160;<br/>phenomenon:&#160;an&#160;episode&#160;in&#160;Fourier&#160;analysis,&#34;&#160;E.&#160;Hewitt&#160;and&#160;R.&#160;Hewitt,&#160;Archive&#160;for&#160;the&#160;History&#160;of&#160;Exact&#160;Sciences&#160;21&#160;(1979),&#160;129-<br/>160.&#160;&#160;<br/>
+As&#160;we&#160;will&#160;see&#160;shortly,&#160;these&#160;observations&#160;are&#160;true&#160;in&#160;a&#160;very&#160;general&#160;sense.&#160;Recall&#160;that&#160;f&#160;is&#160;piecewise&#160;smooth&#160;if&#160;f&#160;and&#160;f'&#160;are&#160;<br/>piecewise&#160;continuous.&#160;If&#160;f&#160;is&#160;piecewise&#160;continuous,&#160;the&#160;average&#160;(or&#160;arithmetic&#160;average)&#160;of&#160;f&#160;at&#160;c&#160;is&#160;&#160;<br/>
+f&#160;(c^−)&#160;+&#160;f&#160;(c^+)&#160;÷&#160;2,&#160;<br/>
+where&#160;f&#160;(c^+)&#160;=&#160;lim&#160;as&#160;x&#160;→&#160;c^+&#160;f&#160;(x)&#160;and&#160;f&#160;(c^−)&#160;=&#160;lim&#160;as&#160;x&#160;→&#160;c^−&#160;f&#160;(x).&#160;If&#160;f&#160;is&#160;continuous&#160;at&#160;c,&#160;then&#160;f&#160;(c^+)&#160;=&#160;f&#160;(c^−)&#160;=&#160;f&#160;(c)&#160;and&#160;so&#160;the&#160;<br/>average&#160;of&#160;f&#160;at&#160;c&#160;is&#160;f&#160;(c).&#160;Thus&#160;the&#160;notion&#160;of&#160;average&#160;will&#160;be&#160;of&#160;interest&#160;only&#160;at&#160;points&#160;of&#160;discontinuity.&#160;&#160;<br/>
+The&#160;function&#160;in&#160;Figure&#160;4&#160;has&#160;a&#160;discontinuity&#160;at&#160;x&#160;=&#160;1.&#160;Its&#160;average&#160;there&#160;is&#160;1&#160;–&#160;1&#160;÷&#160;2&#160;÷&#160;2&#160;=&#160;3&#160;÷&#160;4.&#160;<br/>
+As&#160;a&#160;further&#160;illustration,&#160;you&#160;should&#160;check&#160;that&#160;the&#160;average&#160;of&#160;the&#160;saw-tooth&#160;function&#160;(Figure&#160;1)&#160;at&#160;all&#160;the&#160;points&#160;of&#160;discontinuity&#160;<br/>is&#160;0.&#160;&#160;<br/>
+We&#160;can&#160;now&#160;state&#160;a&#160;fundamental&#160;result&#160;in&#160;the&#160;theory&#160;of&#160;Fourier&#160;series.&#160;&#160;<br/>
+Figure&#160;4&#160;Average&#160;of&#160;f&#160;(x)&#160;at&#160;x&#160;=&#160;1&#160;<br/>
+<b>THEOREM&#160;1&#160;FOURIER&#160;SERIES&#160;REPRESENTATION&#160;&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;is&#160;a&#160;2&#160;×&#160;π-periodic&#160;piecewise&#160;smooth&#160;function.&#160;Then&#160;for&#160;all&#160;x&#160;we&#160;have&#160;<br/>
+(7)&#160;f&#160;(x^+)&#160;+&#160;f&#160;(x^−)&#160;÷&#160;2&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;x),&#160;<br/>
+where&#160;the&#160;Fourier&#160;coefficients&#160;a_0,&#160;a_n,&#160;b_n&#160;are&#160;given&#160;by&#160;(2)-(4).&#160;In&#160;particular,&#160;if&#160;f&#160;is&#160;piecewise&#160;smooth&#160;and&#160;continuous&#160;at&#160;x,&#160;then&#160;<br/>
+(8)&#160;f&#160;(x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;x).&#160;<br/>
+Thus,&#160;at&#160;a&#160;point&#160;of&#160;continuity&#160;of&#160;a&#160;piecewise&#160;smooth&#160;function&#160;the&#160;Fourier&#160;series&#160;converges&#160;to&#160;the&#160;value&#160;of&#160;the&#160;function.&#160;At&#160;a&#160;point&#160;<br/>of&#160;discontinuity,&#160;the&#160;Fourier&#160;series&#160;does&#160;its&#160;best&#160;to&#160;converge,&#160;and&#160;having&#160;no&#160;reason&#160;to&#160;favor&#160;one&#160;side&#160;over&#160;the&#160;other,&#160;it&#160;converges&#160;<br/>to&#160;the&#160;average&#160;of&#160;the&#160;left&#160;and&#160;right&#160;limits&#160;(see&#160;Figure&#160;5).&#160;&#160;<br/>
+We&#160;note&#160;that&#160;in&#160;(7)&#160;the&#160;value&#160;of&#160;the&#160;Fourier&#160;series&#160;of&#160;f&#160;at&#160;a&#160;given&#160;point&#160;x&#160;does&#160;not&#160;depend&#160;on&#160;f(x),&#160;but&#160;on&#160;the&#160;limit&#160;of&#160;f&#160;from&#160;the&#160;<br/>left&#160;and&#160;right&#160;at&#160;&#160;<br/>
+<hr/>
+<span id="anchor-15" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-15_1.jpg" alt="Page 15, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-15_2.jpg" alt="Page 15, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-15_3.jpg" alt="Page 15, figure 3"/><br/>
+x.&#160;For&#160;this&#160;reason,&#160;we&#160;may&#160;define&#160;(or&#160;redefine)&#160;f&#160;at&#160;isolated&#160;points&#160;without&#160;affecting&#160;its&#160;Fourier&#160;series.&#160;This&#160;is&#160;illustrated&#160;by&#160;the&#160;<br/>behavior&#160;of&#160;the&#160;Fourier&#160;series&#160;in&#160;Example&#160;1,&#160;where&#160;at&#160;the&#160;points&#160;of&#160;discontinuity&#160;we&#160;could&#160;have&#160;assigned&#160;any&#160;values&#160;for&#160;the&#160;<br/>function&#160;without&#160;affecting&#160;the&#160;behavior&#160;of&#160;the&#160;Fourier&#160;series.&#160;If&#160;we&#160;redefine&#160;the&#160;function&#160;at&#160;points&#160;of&#160;discontinuity&#160;to&#160;be&#160;f&#160;(c^−)&#160;+&#160;<br/>f&#160;(c^+)&#160;÷&#160;2,&#160;we&#160;then&#160;have&#160;the&#160;equality&#160;&#160;<br/>
+f(x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;x)&#160;<br/>
+holding&#160;at&#160;all&#160;x.&#160;We&#160;will&#160;often&#160;assume&#160;such&#160;a&#160;modification&#160;at&#160;the&#160;points&#160;of&#160;discontinuity&#160;and&#160;not&#160;worry&#160;about&#160;the&#160;more&#160;precise,&#160;<br/>but&#160;cumbersome,&#160;equality&#160;(7). &#160;<br/>
+We&#160;will&#160;present&#160;the&#160;complete&#160;proof&#160;of&#160;Theorem&#160;1&#160;in&#160;Section&#160;2.8.&#160;The&#160;proof&#160;is&#160;a&#160;nice&#160;combination&#160;of&#160;ideas&#160;from&#160;Fourier&#160;series&#160;and&#160;<br/>basic&#160;tools&#160;from&#160;calculus.&#160;Further&#160;topics&#160;related&#160;to&#160;the&#160;convergence&#160;of&#160;Fourier&#160;series&#160;are&#160;presented&#160;in&#160;Sections&#160;2.9&#160;and&#160;2.10.&#160;&#160;<br/>
+It&#160;is&#160;important&#160;to&#160;keep&#160;in&#160;mind&#160;that&#160;continuity&#160;off&#160;alone&#160;is&#160;not&#160;enough&#160;to&#160;ensure&#160;the&#160;convergence&#160;of&#160;its&#160;Fourier&#160;series.&#160;Although&#160;<br/>we&#160;will&#160;not&#160;encounter&#160;such&#160;functions,&#160;there&#160;are&#160;continuous&#160;functions&#160;with&#160;Fourier&#160;series&#160;that&#160;di-verge&#160;at&#160;an&#160;infinite&#160;number&#160;of&#160;<br/>points&#160;in&#160;[O,&#160;27r].&#160;But,&#160;as&#160;our&#160;next&#160;example&#160;illustrates,&#160;if&#160;f&#160;is&#160;continuous&#160;and&#160;piecewise&#160;smooth,&#160;then&#160;its&#160;Fourier&#160;series&#160;will&#160;in&#160;fact&#160;<br/>converge&#160;uniformly&#160;to&#160;f.&#160;For&#160;a&#160;proof&#160;of&#160;this&#160;fact,&#160;see&#160;Section&#160;2.9&#160;where&#160;we&#160;study&#160;uniform&#160;convergence&#160;in&#160;detail.&#160;&#160;<br/>
+Figure&#160;5&#160;&#160;<br/>
+(a)&#160;a&#160;piecewise&#160;smooth&#160;function,&#160;<br/>(b)&#160;its&#160;Fourier&#160;series.&#160;<br/>
+<b>EXAMPLE&#160;2&#160;Triangular&#160;wave&#160;&#160;</b><br/>
+The&#160;2&#160;×&#160;π-periodic&#160;triangular&#160;wave&#160;is&#160;given&#160;on&#160;the&#160;interval&#160;[negative&#160;π,&#160;π]&#160;by&#160;&#160;<br/>
+g&#160;(x)&#160;=&#160;π&#160;+x&#160;if&#160;negative&#160;π&#160;≤&#160;x&#160;≤&#160;0,&#160;π&#160;−&#160;x&#160;if&#160;0&#160;≤&#160;x&#160;≤&#160;π.&#160;<br/>
+(a)&#160;Find&#160;its&#160;Fourier&#160;series.&#160;&#160;<br/>(b)&#160;Plot&#160;some&#160;partial&#160;sums&#160;and&#160;the&#160;Fourier&#160;series.&#160;&#160;<br/>
+<b>Solution&#160;&#160;</b><br/>
+From&#160;Figure&#160;6&#160;we&#160;see&#160;that&#160;g&#160;(x)&#160;is&#160;piecewise&#160;smooth&#160;and&#160;continuous&#160;for&#160;all&#160;x&#160;(g'&#160;(x)&#160;does&#160;not&#160;exist&#160;at&#160;x&#160;=k&#160;×&#160;π).&#160;So,&#160;from&#160;the&#160;<br/>second&#160;part&#160;of&#160;Theorem&#160;1,&#160;we&#160;expect&#160;the&#160;Fourier&#160;series&#160;to&#160;converge&#160;to&#160;g&#160;(x)&#160;for&#160;all x.&#160;Using&#160;(2),&#160;we&#160;have&#160;&#160;<br/>
+a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;g&#160;(x)&#160;dx&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;π&#160;^&#160;2&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π.&#160;<br/>
+Figure&#160;6&#160;Triangular&#160;wave.&#160;<br/>
+(This&#160;is&#160;the&#160;area&#160;of&#160;the&#160;triangular&#160;region&#160;in&#160;Figure&#160;6&#160;with&#160;base&#160;[negative&#160;π,&#160;π]&#160;divided&#160;by&#160;&#160;<br/>
+<hr/>
+<span id="anchor-16" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-16_1.jpg" alt="Page 16, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-16_2.jpg" alt="Page 16, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-16_3.jpg" alt="Page 16, figure 3"/><br/>
+2&#160;×&#160;π.)&#160;Using&#160;(3),&#160;we&#160;have&#160;&#160;<br/>
+a_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;0&#160;of&#160;(π&#160;+&#160;x)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;+&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;π&#160;of&#160;(π&#160;−&#160;x)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;<br/>
+=&#160;2&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;π&#160;of&#160;(π&#160;−&#160;x)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx&#160;(change&#160;x&#160;to&#160;negative&#160;x&#160;in&#160;the&#160;first&#160;integral)&#160;<br/>
+=&#160;2&#160;÷&#160;π&#160;×&#160;{1&#160;÷&#160;n&#160;^&#160;2&#160;–&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;n&#160;^&#160;2}&#160;(integration&#160;by&#160;parts).&#160;<br/>
+Since&#160;cos&#160;π&#160;×&#160;r&#160;=&#160;(negative&#160;1)&#160;^&#160;n,&#160;we&#160;see&#160;that&#160;a_n&#160;=&#160;0&#160;if&#160;n&#160;is&#160;even,&#160;and&#160;a_n&#160;=&#160;4&#160;÷&#160;π&#160;×&#160;n&#160;^&#160;2&#160;if&#160;n&#160;is&#160;odd.&#160;Finally,&#160;using&#160;(4),&#160;we&#160;find&#160;&#160;<br/>
+b_n&#160;=&#160;1÷&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;{g&#160;(x)&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;dx}&#160;odd&#160;function&#160;=&#160;0,&#160;<br/>
+since&#160;we&#160;are&#160;integrating&#160;an&#160;odd&#160;function&#160;over&#160;a&#160;symmetric&#160;interval.&#160;Now&#160;Theorem&#160;1&#160;implies&#160;that&#160;&#160;<br/>
+g&#160;(x)&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;+&#160;∑&#160;from&#160;off&#160;of&#160;4&#160;÷&#160;π&#160;×&#160;n&#160;^&#160;2&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;+4&#160;÷&#160;π&#160;×&#160;∑&#160;from&#160;k&#160;=&#160;0&#160;to&#160;∞&#160;of&#160;1&#160;÷&#160;(2&#160;×&#160;k&#160;+&#160;1)&#160;^&#160;2&#160;×&#160;cos&#160;(2&#160;×&#160;k&#160;+&#160;1)&#160;<br/>
+×&#160;x&#160;<br/>
+for&#160;all&#160;x.&#160;Since&#160;the&#160;function&#160;and&#160;its&#160;Fourier&#160;series&#160;are&#160;equal&#160;at&#160;all&#160;points,&#160;their&#160;graphs&#160;coincide&#160;(compare&#160;Figures&#160;6&#160;and&#160;8).&#160;&#160;<br/>
+The&#160;partial&#160;sums&#160;of&#160;the&#160;Fourier&#160;series,&#160;illustrated&#160;in&#160;Figure&#160;7,&#160;are&#160;converging&#160;very&#160;fast,&#160;much&#160;faster&#160;than&#160;those&#160;in&#160;Example&#160;1.&#160;This&#160;<br/>is&#160;due&#160;to&#160;the&#160;magnitudes&#160;of&#160;the&#160;Fourier&#160;coefficients.&#160;In&#160;Example&#160;1&#160;the&#160;coefficients&#160;are&#160;of&#160;the&#160;order&#160;1&#160;÷&#160;n,&#160;while&#160;in&#160;Example&#160;2&#160;the&#160;<br/>coefficients&#160;are&#160;of&#160;the&#160;order&#160;1&#160;÷&#160;n&#160;^&#160;2.&#160;&#160;<br/>
+Figure&#160;7&#160;Partial&#160;sums&#160;of&#160;the&#160;Fourier&#160;series.&#160;&#160;<br/>
+Figure&#160;8&#160;The&#160;Fourier&#160;series&#160;&#160;<br/>
+In&#160;(9),&#160;letting&#160;k&#160;run&#160;from&#160;0&#160;to&#160;1,&#160;2,&#160;and&#160;5,&#160;respectively,&#160;we&#160;generate&#160;the&#160;third,&#160;fifth,&#160;and&#160;eleventh&#160;partial&#160;sums&#160;of&#160;the&#160;Fourier&#160;<br/>series.&#160;These&#160;are&#160;plotted&#160;in&#160;Figure&#160;7.&#160;Comparing&#160;Figure&#160;7&#160;to&#160;Figure&#160;2,&#160;we&#160;note&#160;one&#160;major&#160;difference.&#160;While&#160;in&#160;both&#160;cases&#160;the&#160;<br/>partial&#160;sums&#160;are&#160;converging&#160;to&#160;the&#160;limit&#160;functions,&#160;the&#160;partial&#160;sums&#160;in&#160;Figure&#160;7&#160;are&#160;approaching&#160;g(x)&#160;at&#160;the&#160;same&#160;rate&#160;for&#160;all&#160;x.&#160;This&#160;<br/>is&#160;what&#160;uniform&#160;convergence&#160;means.&#160;It&#160;is&#160;a&#160;result&#160;of&#160;the&#160;fact&#160;that&#160;g&#160;(x)&#160;is&#160;continuous&#160;and&#160;piecewise&#160;smooth.&#160;The&#160;partial&#160;sums&#160;in&#160;<br/>Figure&#160;2&#160;do&#160;not&#160;have&#160;this&#160;property.&#160;&#160;<br/>
+To&#160;illustrate&#160;the&#160;power&#160;of&#160;Theorem&#160;1,&#160;we&#160;present&#160;a&#160;simple&#160;application&#160;that&#160;yields&#160;a&#160;remarkable&#160;identity.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-17" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-17_1.jpg" alt="Page 17, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-17_2.jpg" alt="Page 17, figure 2"/><br/>
+<b>EXAMPLE&#160;3&#160;Using&#160;Fourier&#160;series&#160;to&#160;sum&#160;series&#160;&#160;</b><br/>
+If&#160;we&#160;take&#160;x&#160;=&#160;0&#160;on&#160;both&#160;sides&#160;of&#160;(9),&#160;we&#160;get&#160;&#160;<br/>
+π&#160;=&#160;g&#160;(0)&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;+&#160;4&#160;÷&#160;π&#160;×&#160;∑&#160;from&#160;k&#160;=&#160;0&#160;to&#160;∞&#160;of&#160;1&#160;÷&#160;(2&#160;×&#160;k&#160;+&#160;1)&#160;^&#160;2.&#160;<br/>
+Subtracting&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;from&#160;both&#160;sides&#160;and&#160;then&#160;multiplying&#160;by&#160;π&#160;÷&#160;4&#160;we&#160;get&#160;the&#160;interesting&#160;identity&#160;&#160;<br/>
+π&#160;^&#160;2÷&#160;8&#160;=&#160;1&#160;+&#160;1&#160;÷&#160;3&#160;^&#160;2&#160;+&#160;1&#160;÷&#160;5&#160;^&#160;2&#160;+&#160;1&#160;÷&#160;7&#160;^&#160;2&#160;+&#160;...,&#160;<br/>
+which&#160;can&#160;be&#160;used&#160;to&#160;approximate&#160;π&#160;^&#160;2&#160;(and&#160;hence&#160;also&#160;π).&#160;<br/>
+<b>Operations&#160;on&#160;Fourier&#160;Series&#160;&#160;</b><br/>
+The&#160;Fourier&#160;series&#160;in&#160;Examples&#160;1&#160;and&#160;2&#160;are&#160;special&#160;in&#160;the&#160;sense&#160;that&#160;one&#160;is&#160;an&#160;odd&#160;function&#160;and&#160;contains&#160;only&#160;sine&#160;terms,&#160;while&#160;<br/>the&#160;other&#160;one&#160;is&#160;an&#160;even&#160;function&#160;and&#160;contains&#160;only&#160;cosine&#160;terms.&#160;Fourier&#160;series&#160;of&#160;this&#160;type&#160;will&#160;be&#160;studied&#160;in&#160;detail&#160;in&#160;the&#160;next&#160;<br/>two&#160;sections.&#160;Our&#160;next&#160;examples&#160;involve&#160;Fourier&#160;series&#160;that&#160;contain&#160;both&#160;sine&#160;and&#160;cosine&#160;terms.&#160;We&#160;will&#160;derive&#160;these&#160;series&#160;<br/>without&#160;computing&#160;Fourier&#160;coefficients&#160;but&#160;by&#160;applying&#160;operations&#160;such&#160;as&#160;multiplying&#160;a&#160;Fourier&#160;series&#160;by&#160;a&#160;constant,&#160;adding&#160;two&#160;<br/>Fourier&#160;series,&#160;changing&#160;variables&#160;(x&#160;to&#160;negative&#160;x),&#160;and&#160;translating.&#160;These&#160;simple&#160;operations&#160;are&#160;very&#160;useful&#160;in&#160;deriving&#160;new&#160;<br/>Fourier&#160;series&#160;from&#160;known&#160;ones.&#160;&#160;<br/>
+<b>EXAMPLE&#160;4&#160;Linear&#160;combinations&#160;of&#160;Fourier&#160;series&#160;</b><br/>
+The&#160;2&#160;×&#160;π-periodic&#160;function&#160;<br/>
+h&#160;(x)&#160;=&#160;π&#160;–&#160;x&#160;if&#160;0&#160;&lt;&#160;x&#160;≤&#160;π,&#160;0&#160;if&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;2&#160;×&#160;π&#160;<br/>
+is&#160;related&#160;to&#160;the&#160;functions&#160;in&#160;Examples&#160;1&#160;and&#160;2&#160;by&#160;h&#160;(x)&#160;=&#160;f&#160;(x)&#160;+&#160;1&#160;÷&#160;2&#160;×&#160;g&#160;(x).&#160;This&#160;can&#160;be&#160;verified&#160;by&#160;using&#160;the&#160;formulas&#160;for&#160;f&#160;and&#160;g&#160;<br/>or&#160;directly&#160;by&#160;adding&#160;the&#160;graphs&#160;in&#160;Figures&#160;1&#160;and&#160;6&#160;and&#160;comparing&#160;with&#160;the&#160;graph&#160;in&#160;Figure&#160;9.&#160;To&#160;compute&#160;the&#160;Fourier&#160;series&#160;of&#160;h,&#160;<br/>we&#160;can&#160;use&#160;the&#160;Euler&#160;formulas,&#160;or&#160;better&#160;yet&#160;we&#160;can&#160;simply&#160;form&#160;the&#160;appropriate&#160;linear&#160;combination&#160;of&#160;the&#160;Fourier&#160;series&#160;of&#160;<br/>Examples&#160;1&#160;and&#160;2,&#160;as&#160;follows:&#160;<br/>
+h&#160;(x)&#160;=&#160;f&#160;(x)&#160;+&#160;1&#160;÷&#160;2&#160;×&#160;g&#160;(x)&#160;<br/>
+=&#160;{∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n}&#160;=&#160;f&#160;(x)&#160;+&#160;{π&#160;÷&#160;4&#160;+&#160;1&#160;÷&#160;π&#160;×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(1&#160;÷&#160;n&#160;^&#160;2&#160;–&#160;(negative&#160;1)&#160;^&#160;n&#160;÷&#160;n&#160;^&#160;2)&#160;×&#160;cos&#160;n&#160;×&#160;x}&#160;=&#160;<br/>
+1&#160;÷&#160;2&#160;×&#160;g&#160;(x)&#160;<br/>
+=&#160;π&#160;÷&#160;4&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;{1&#160;÷&#160;π&#160;×&#160;(1&#160;÷&#160;n&#160;^&#160;2&#160;–&#160;(negative&#160;1)&#160;^&#160;n&#160;÷&#160;n&#160;^&#160;2)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n}&#160;<br/>
+Figure&#160;9&#160;The&#160;function&#160;in&#160;Example&#160;4.&#160;&#160;<br/>
+The&#160;convergence&#160;of&#160;the&#160;partial&#160;sums&#160;of&#160;the&#160;Fourier&#160;series&#160;to&#160;h&#160;(x)&#160;is&#160;illustrated&#160;in&#160;Figure&#160;10.&#160;Note&#160;the&#160;Gibbs&#160;phenomenon&#160;near&#160;<br/>the&#160;points&#160;of&#160;discontinuity,&#160;x&#160;=&#160;2&#160;×&#160;k&#160;×&#160;π,&#160;&#160;<br/>
+<hr/>
+<span id="anchor-18" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_1.jpg" alt="Page 18, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_2.jpg" alt="Page 18, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_3.jpg" alt="Page 18, figure 3"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-18_4.jpg" alt="Page 18, figure 4"/><br/>
+k&#160;an&#160;integer.&#160;At&#160;these&#160;points,&#160;the&#160;Fourier&#160;series&#160;converges&#160;to&#160;the&#160;average&#160;value&#160;π&#160;÷&#160;2.&#160;At&#160;all&#160;other&#160;points,&#160;the&#160;Fourier&#160;series&#160;<br/>converges&#160;to&#160;h&#160;(x).&#160;&#160;<br/>
+Figure&#160;10&#160;Note&#160;the&#160;Gibbs&#160;phenomenon&#160;at&#160;the&#160;points&#160;of&#160;discontinuity&#160;(x&#160;=&#160;2&#160;×&#160;k&#160;×&#160;π).&#160;This&#160;is&#160;due&#160;to&#160;the&#160;fact&#160;that&#160;the&#160;Fourier&#160;series&#160;<br/>
+consists&#160;of&#160;a&#160;cosine&#160;part&#160;that&#160;is&#160;converging&#160;very&#160;fast&#160;(Figure&#160;7)&#160;and&#160;a&#160;sine&#160;part&#160;that&#160;overshoots&#160;at&#160;the&#160;points&#160;of&#160;discontinuity.&#160;&#160;<br/>
+The&#160;previous&#160;example&#160;illustrates&#160;the&#160;linearity&#160;of&#160;Fourier&#160;series&#160;(see&#160;Exercise&#160;23).&#160;The&#160;following&#160;examples&#160;illustrate&#160;changing&#160;<br/>variables&#160;and&#160;translating&#160;a&#160;Fourier&#160;series&#160;(see&#160;Exercise&#160;24).&#160;&#160;<br/>
+<b>EXAMPLE&#160;5&#160;Changing&#160;variables&#160;and&#160;translating&#160;&#160;</b><br/>
+(a)&#160;The&#160;graph&#160;of&#160;the&#160;function&#160;k&#160;(x)&#160;in&#160;Figure&#160;11&#160;is&#160;obtained&#160;by&#160;reflecting&#160;through&#160;the&#160;y-axis&#160;the&#160;graph&#160;in&#160;Figure&#160;9&#160;and&#160;then&#160;<br/>translating&#160;by&#160;π&#160;units&#160;to&#160;the&#160;left&#160;or&#160;right.&#160;Thus&#160;k&#160;(x)&#160;=&#160;h&#160;(negative&#160;x&#160;–&#160;π)&#160;and&#160;the&#160;Fourier&#160;series&#160;representation&#160;of&#160;k&#160;(x)&#160;is&#160;<br/>
+k&#160;(x)&#160;=&#160;h&#160;(negative&#160;x&#160;–&#160;π)&#160;=&#160;π&#160;÷&#160;4&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;{1&#160;÷&#160;π&#160;×&#160;(1&#160;÷&#160;n&#160;^&#160;2&#160;–&#160;(negative&#160;1)&#160;^&#160;n&#160;÷&#160;n&#160;^&#160;2)&#160;×&#160;cos&#160;n&#160;×&#160;(negative&#160;x&#160;–&#160;π)&#160;+&#160;sin&#160;<br/>
+n&#160;×&#160;(negative&#160;x&#160;–&#160;π)&#160;÷&#160;n}&#160;<br/>
+But&#160;cos&#160;n&#160;×&#160;(negative&#160;x&#160;–&#160;π)&#160;=&#160;(negative&#160;1)&#160;^&#160;n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;and&#160;sin&#160;n&#160;×&#160;(negative&#160;x&#160;–&#160;π)&#160;=&#160;(negative&#160;1)&#160;^&#160;n&#160;+&#160;1&#160;×&#160;sin&#160;n&#160;×&#160;x.&#160;So&#160;&#160;<br/>
+k&#160;(x)&#160;=&#160;π&#160;÷&#160;4&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;{1&#160;÷&#160;π&#160;×&#160;((negative&#160;1)&#160;^&#160;n&#160;÷&#160;n&#160;^&#160;2&#160;–&#160;1&#160;÷&#160;n&#160;^&#160;2)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;(negative&#160;1)&#160;^&#160;n&#160;+&#160;1&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n}&#160;<br/>
+Figure&#160;11&#160;the&#160;function&#160;in&#160;Example&#160;5&#160;(a).&#160;<br/>
+(b)&#160;The&#160;square&#160;wave&#160;w&#160;(x)&#160;in&#160;Figure&#160;12&#160;is&#160;the&#160;sum&#160;of&#160;the&#160;functions&#160;h&#160;(x)&#160;and&#160;k&#160;(x),&#160;as&#160;can&#160;be&#160;verified&#160;directly&#160;by&#160;adding&#160;the&#160;graphs&#160;<br/>in&#160;Figures&#160;9&#160;and&#160;11.&#160;Using&#160;the&#160;Fourier&#160;series&#160;of&#160;h&#160;and&#160;k&#160;and&#160;the&#160;relation&#160;w&#160;(x)&#160;=&#160;h&#160;(x)&#160;+&#160;k&#160;(x),&#160;we&#160;obtain&#160;the&#160;Fourier&#160;series&#160;<br/>representation&#160;of&#160;the&#160;square&#160;wave&#160;<br/>
+w&#160;(x)&#160;=&#160;π&#160;÷&#160;2&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(1&#160;+&#160;(negative&#160;1)&#160;^&#160;n&#160;+&#160;1)&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n&#160;=&#160;π&#160;÷&#160;2&#160;+&#160;2&#160;×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;(2&#160;×&#160;k&#160;+&#160;1)&#160;×&#160;x&#160;÷&#160;2&#160;<br/>
+×&#160;k&#160;+&#160;1.&#160;<br/>
+Of&#160;course&#160;you&#160;can&#160;derive&#160;this&#160;Fourier&#160;series&#160;by&#160;using&#160;the&#160;Euler&#160;formulas&#160;and&#160;the&#160;explicit&#160;formula&#160;<br/>
+w&#160;(x)&#160;=&#160;π&#160;if&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;π,&#160;0&#160;if&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;2&#160;×&#160;π.&#160;<br/>
+The&#160;approach&#160;that&#160;we&#160;took&#160;shows&#160;you&#160;a&#160;relationship&#160;between&#160;various&#160;Fourier&#160;series&#160;and&#160;thus&#160;gives&#160;you&#160;a&#160;way&#160;to&#160;compare&#160;their&#160;<br/>rates&#160;of&#160;convergence.&#160;<br/>
+Figure&#160;12&#160;Square&#160;wave&#160;in&#160;Example&#160;5(b).&#160;<br/>
+<hr/>
+<span id="anchor-19" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_1.png" alt="Page 19, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_2.png" alt="Page 19, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_3.png" alt="Page 19, figure 3"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_4.png" alt="Page 19, figure 4"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-19_5.png" alt="Page 19, figure 5"/><br/>
+<b>Exercises&#160;2.2&#160;&#160;</b><br/>
+[Hint:&#160;You&#160;can&#160;compute&#160;directly,&#160;or,&#160;if&#160;you&#160;have&#160;done&#160;<br/>Exercise&#160;7,&#160;substitute&#160;x&#160;–&#160;π&#160;÷&#160;2&#160;for&#160;x.]&#160;&#160;<br/>
+In&#160;Exercises&#160;1-4,&#160;a&#160;2&#160;×&#160;π-periodic&#160;function&#160;is&#160;specified&#160;on&#160;the&#160;<br/>interval&#160;[negative&#160;π,&#160;π].&#160;&#160;<br/>
+<b>9.&#160;&#160;</b><br/>
+(a)&#160;Plot&#160;the&#160;function&#160;on&#160;the&#160;interval&#160;[negative&#160;3&#160;×&#160;π,&#160;3&#160;×&#160;<br/>
+f&#160;(x)&#160;=&#160;x&#160;^&#160;2&#160;if&#160;negative&#160;π&#160;≤&#160;x&#160;≤&#160;π.&#160;Fourier&#160;series:&#160;π&#160;^&#160;2&#160;÷&#160;3&#160;+&#160;4&#160;<br/>
+π].&#160;&#160;<br/>
+×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(negative&#160;1)&#160;^&#160;n&#160;÷&#160;n&#160;^&#160;2&#160;×&#160;cos&#160;n&#160;×&#160;x.&#160;<br/>
+(b)&#160;Plot&#160;its&#160;Fourier&#160;series&#160;(without&#160;computing&#160;it)&#160;on&#160;the&#160;<br/>
+<b>10.&#160;&#160;</b><br/>
+interval&#160;[negative&#160;3&#160;×&#160;π,&#160;3&#160;×&#160;π].&#160;<br/>
+<b>1.&#160;</b><br/>
+f&#160;(x)&#160;=&#160;1&#160;−&#160;sin&#160;x&#160;+&#160;3&#160;×&#160;cos&#160;2&#160;×&#160;x.&#160;Fourier&#160;series:&#160;same&#160;as&#160;f&#160;(x).&#160;&#160;<br/>
+<b>11.&#160;&#160;</b><br/>
+f&#160;(x)&#160;=&#160;sin^2&#160;x;&#160;f&#160;(x)&#160;=&#160;cos^2&#160;x.&#160;Fourier&#160;series:&#160;1&#160;÷&#160;2&#160;–&#160;cos&#160;2&#160;×&#160;x&#160;<br/>
+<b>2.&#160;</b><br/>
+÷&#160;2;&#160;Fourier&#160;series:&#160;1&#160;÷&#160;2&#160;+&#160;cos&#160;2&#160;×&#160;x&#160;÷&#160;2.&#160;<br/>
+<b>3.&#160;</b><br/>
+<b>4.&#160;</b><br/>
+In&#160;Exercises&#160;5-16,&#160;the&#160;equation&#160;of&#160;a&#160;2&#160;×&#160;π-periodic&#160;function&#160;is&#160;<br/>given&#160;on&#160;an&#160;interval&#160;of&#160;length&#160;2&#160;×&#160;π.&#160;You&#160;are&#160;also&#160;given&#160;the&#160;<br/>Fourier&#160;series&#160;of&#160;the&#160;function.&#160;&#160;<br/>
+(a)&#160;Derive&#160;the&#160;given&#160;Fourier&#160;series.&#160;&#160;<br/>(b)&#160;Plot&#160;the&#160;function&#160;and&#160;the&#160;Nth&#160;partial&#160;sums&#160;of&#160;its&#160;<br/>
+Fourier&#160;series&#160;for&#160;N&#160;=&#160;1,&#160;2,&#160;...,&#160;20.&#160;Discuss&#160;the&#160;<br/>convergence&#160;of&#160;the&#160;partial&#160;sums&#160;by&#160;considering&#160;<br/>their&#160;graphs.&#160;Be&#160;specific&#160;at&#160;the&#160;points&#160;of&#160;<br/>discontinuity.&#160;&#160;<br/>
+<b>5.&#160;&#160;</b><br/>
+f&#160;(x)&#160;=&#160;|x|&#160;if&#160;negative&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;π.&#160;Fourier&#160;series:&#160;π&#160;÷&#160;2&#160;–&#160;4&#160;÷&#160;π&#160;×&#160;<br/>∑&#160;from&#160;k&#160;=&#160;0&#160;to&#160;∞&#160;of&#160;1&#160;÷&#160;(2&#160;×&#160;k&#160;+&#160;1)&#160;^&#160;2&#160;×&#160;cos&#160;(2&#160;×&#160;k&#160;+&#160;1)&#160;×.&#160;&#160;<br/>
+<b>6.&#160;</b><br/>
+f&#160;(x)&#160;=&#160;1&#160;if&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;π&#160;÷&#160;2,&#160;negative&#160;1&#160;if&#160;negative&#160;π&#160;÷&#160;2&#160;&lt;&#160;x&#160;&lt;&#160;0,&#160;0&#160;<br/>if&#160;π&#160;÷&#160;2&#160;&lt;&#160;|x|&#160;&lt;&#160;π.&#160;Fourier&#160;series:&#160;2&#160;÷&#160;π&#160;×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;<br/>1&#160;÷&#160;n&#160;×&#160;(1&#160;–&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;2)&#160;×&#160;sin&#160;n&#160;×&#160;x.&#160;&#160;<br/>
+<b>7.&#160;&#160;</b><br/>
+f&#160;(x)&#160;=&#160;|sin&#160;x|&#160;if&#160;negative&#160;π&#160;≤&#160;x&#160;≤&#160;π.&#160;Fourier&#160;series:&#160;2&#160;÷&#160;π&#160;−&#160;4&#160;÷&#160;<br/>π&#160;×&#160;∑&#160;from&#160;k&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;1&#160;÷&#160;(2&#160;×&#160;k)&#160;^&#160;2&#160;–&#160;1&#160;×&#160;cos&#160;2&#160;×&#160;k&#160;×&#160;x.&#160;&#160;<br/>
+<b>8.&#160;&#160;</b><br/>
+f&#160;(x)&#160;=&#160;|cos&#160;x|&#160;if&#160;negative&#160;π&#160;≤&#160;x&#160;≤&#160;π.&#160;Fourier&#160;series:&#160;2&#160;÷&#160;π&#160;−&#160;4&#160;÷&#160;<br/>π&#160;×&#160;∑&#160;from&#160;k&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(negative&#160;1)&#160;^&#160;k&#160;÷&#160;(2&#160;×&#160;k)&#160;^&#160;2&#160;–&#160;1&#160;×&#160;<br/>cos&#160;2&#160;×&#160;k&#160;×&#160;x.&#160;<br/>
+<hr/>
+<span id="anchor-20" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_1.jpg" alt="Page 20, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_2.jpg" alt="Page 20, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_3.jpg" alt="Page 20, figure 3"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-20_4.jpg" alt="Page 20, figure 4"/><br/>
+<b>12.&#160;&#160;</b><br/>
+Derive&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;given&#160;function&#160;as&#160;indicated,&#160;<br/>without&#160;computing&#160;its&#160;Fourier&#160;coefficients.&#160;&#160;<br/>
+f(x)=&#160;π&#160;^&#160;2&#160;×&#160;x&#160;–&#160;x&#160;^&#160;3&#160;if&#160;negative&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;π.&#160;Fourier&#160;series:&#160;12&#160;<br/>×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(negative&#160;1)&#160;^&#160;n&#160;+&#160;1&#160;÷&#160;n&#160;^&#160;3&#160;×&#160;sin&#160;n&#160;×&#160;x.&#160;&#160;<br/>
+(a)&#160;The&#160;function&#160;in&#160;Exercise&#160;1,&#160;by&#160;using&#160;the&#160;Fourier&#160;<br/>
+series&#160;of&#160;the&#160;square&#160;wave&#160;in&#160;&#160;<br/>
+<b>13.&#160;&#160;</b><br/>
+f(x)&#160;=&#160;x&#160;if&#160;negative&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;π.&#160;Fourier&#160;series:&#160;2&#160;×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;<br/>to&#160;∞&#160;of&#160;(negative&#160;1)&#160;^&#160;n&#160;+&#160;1&#160;÷&#160;n&#160;×&#160;sin n&#160;×&#160;x.&#160;&#160;<br/>
+[Hint:&#160;Let&#160;x=&#160;π&#160;−&#160;t&#160;Example&#160;1.]&#160;<br/>
+<b>14.&#160;&#160;</b><br/>
+For&#160;parts&#160;(a)&#160;and&#160;(b),&#160;take&#160;c,&#160;d&#160;&gt;&#160;0&#160;and&#160;d&#160;&lt;&#160;π.&#160;For&#160;part&#160;(c),&#160;<br/>take&#160;c&#160;=&#160;d&#160;=&#160;π&#160;÷&#160;2.&#160;<br/>
+f&#160;(x)&#160;=&#160;0&#160;if&#160;negative&#160;π&#160;≤&#160;x&#160;≤&#160;negative&#160;d,&#160;c&#160;÷&#160;d&#160;×&#160;(x&#160;+&#160;d)&#160;if&#160;<br/>negative&#160;d&#160;≤&#160;x&#160;≤&#160;0,&#160;negative&#160;c&#160;÷&#160;d&#160;×&#160;(x&#160;–&#160;d)&#160;if&#160;0&#160;≤&#160;x&#160;≤&#160;d,&#160;0&#160;if&#160;d&#160;≤&#160;<br/>x&#160;≤&#160;π.&#160;Fourier&#160;series:&#160;c&#160;×&#160;d&#160;÷&#160;2&#160;×&#160;π&#160;+&#160;4&#160;×&#160;c&#160;÷&#160;d&#160;×&#160;π&#160;×&#160;∑&#160;from&#160;n&#160;=&#160;<br/>1&#160;to&#160;∞&#160;of&#160;sin^2&#160;(d&#160;×&#160;n&#160;÷&#160;2)&#160;÷&#160;n&#160;^&#160;2×&#160;cos&#160;n&#160;×&#160;x.&#160;<br/>
+<b>15.&#160;&#160;</b><br/>
+f&#160;(x)&#160;=&#160;e&#160;^&#160;negative&#160;|x|&#160;if&#160;negative&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;π.&#160;<br/>
+Fourier&#160;series:&#160;e&#160;^&#160;π&#160;−&#160;1&#160;÷&#160;π&#160;×&#160;e&#160;^&#160;π&#160;+&#160;2&#160;÷&#160;π&#160;×&#160;e&#160;^&#160;π&#160;×&#160;∑&#160;from&#160;n&#160;<br/>=&#160;1&#160;to&#160;∞&#160;of&#160;1&#160;÷&#160;n&#160;^&#160;2&#160;+&#160;1&#160;×&#160;(e&#160;^&#160;π&#160;–&#160;(negative&#160;1)&#160;^&#160;n)&#160;×&#160;cos&#160;n&#160;×&#160;<br/>x.&#160;<br/>
+<b>16.&#160;&#160;</b><br/>
+f&#160;(x)&#160;=&#160;1&#160;÷&#160;(2&#160;×&#160;c)&#160;if&#160;|x&#160;–&#160;d|&#160;&lt;&#160;c,&#160;0&#160;if&#160;c&#160;&lt;&#160;|x&#160;–&#160;d|&#160;&lt;&#160;π,&#160;where&#160;0&#160;&lt;&#160;c&#160;<br/>&lt;&#160;π&#160;and&#160;d&#160;is&#160;arbitrary.&#160;Fourier&#160;series:&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;+&#160;1&#160;÷&#160;c&#160;×&#160;π&#160;×&#160;∑&#160;<br/>from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(sin&#160;(n&#160;×&#160;c)&#160;×&#160;cos&#160;(n&#160;×&#160;d)&#160;÷&#160;n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;<br/>sin&#160;(n&#160;×&#160;c)&#160;×&#160;cos&#160;(n&#160;×&#160;d)&#160;÷&#160;n&#160;×&#160;sin&#160;n&#160;×&#160;x).&#160;<br/>
+For&#160;part&#160;(c),&#160;take&#160;c&#160;=&#160;d&#160;=&#160;π&#160;÷&#160;4.&#160;<br/>
+<b>17.&#160;&#160;</b><br/>
+Use&#160;the&#160;Fourier&#160;series&#160;of&#160;Exercise&#160;9&#160;to&#160;obtain&#160;&#160;<br/>
+π&#160;^&#160;2&#160;÷&#160;6&#160;=&#160;1&#160;+&#160;1&#160;÷&#160;2&#160;^&#160;2&#160;+&#160;1&#160;÷&#160;3&#160;^&#160;2&#160;+&#160;1&#160;÷&#160;4&#160;^&#160;2&#160;+&#160;…&#160;<br/>
+<b>18.&#160;&#160;</b><br/>
+Use&#160;the&#160;Fourier&#160;series&#160;of&#160;Exercise&#160;13&#160;to&#160;obtain&#160;&#160;<br/>
+π&#160;÷&#160;4&#160;=&#160;1&#160;–&#160;1&#160;÷&#160;3&#160;+&#160;1&#160;÷&#160;5&#160;–&#160;1&#160;÷&#160;7&#160;+&#160;…&#160;<br/>
+Figure&#160;13&#160;&#160;<br/>
+Figure&#160;14&#160;&#160;<br/>
+Figure&#160;15&#160;&#160;<br/>
+<b>19.&#160;&#160;</b><br/>
+<hr/>
+<span id="anchor-21" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-21_1.jpg" alt="Page 21, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-21_2.jpg" alt="Page 21, figure 2"/><br/>
+Example&#160;5.&#160;&#160;<br/>
+<b>Gibbs&#160;Phenomenon&#160;&#160;</b><br/>
+(b)&#160;The&#160;function&#160;in&#160;Exercise&#160;2,&#160;by&#160;using&#160;the&#160;preceding&#160;<br/>
+<b>Project&#160;Problem:&#160;&#160;</b><br/>
+part&#160;(a).&#160;&#160;<br/>
+(c)&#160;The&#160;function&#160;in&#160;Figure&#160;13,&#160;by&#160;using&#160;the&#160;Fourier&#160;series&#160;<br/>
+Do&#160;Exercises&#160;25-27&#160;to&#160;investigate&#160;the&#160;Gibbs&#160;phenomenon&#160;<br/>
+from&#160;(a).&#160;&#160;<br/>
+for&#160;the&#160;sawtooth&#160;function.&#160;&#160;<br/>
+(d)&#160;The&#160;function&#160;in&#160;Exercise&#160;3,&#160;by&#160;using&#160;the&#160;preceding&#160;<br/>
+<b>25.&#160;&#160;</b><br/>
+part&#160;(c).&#160;&#160;<br/>
+Consider&#160;the&#160;2&#160;×&#160;π-periodic&#160;function&#160;of&#160;Example&#160;1.&#160;&#160;<br/>
+<b>20.&#160;&#160;</b><br/>
+(a)&#160;Sketch&#160;the&#160;graphs&#160;of&#160;f&#160;and&#160;its&#160;Nth&#160;partial&#160;sums&#160;s_N&#160;<br/>
+(a)&#160;Derive&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;function&#160;in&#160;Figure&#160;14&#160;<br/>
+(x)&#160;for&#160;N&#160;=&#160;5,&#160;10,&#160;15,&#160;on&#160;the&#160;interval&#160;negative&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;<br/>
+by&#160;using&#160;the&#160;Fourier&#160;series&#160;in&#160;Exercise&#160;7.&#160;[Hint:&#160;<br/>
+3&#160;×&#160;π.&#160;&#160;<br/>
+Consider&#160;the&#160;function&#160;sin&#160;x.]&#160;<br/>
+(b)&#160;To&#160;see&#160;how&#160;well&#160;the&#160;partial&#160;sums&#160;approximate&#160;f,&#160;<br/>
+(b)&#160;Derive&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;function&#160;in&#160;Figure&#160;<br/>
+sketch&#160;the&#160;graphs&#160;of&#160;|f&#160;−&#160;s_N|&#160;for&#160;N&#160;=&#160;5,&#160;10,&#160;15.&#160;&#160;<br/>
+15.&#160;&#160;<br/>
+(c)&#160;Note&#160;that&#160;near&#160;x&#160;=&#160;0&#160;and&#160;x&#160;=&#160;2&#160;×&#160;π&#160;(points&#160;of&#160;<br/>
+discontinuity&#160;of&#160;f)&#160;the&#160;partial&#160;sums&#160;overshoot&#160;the&#160;<br/>
+<b>21.&#160;&#160;</b><br/>
+values&#160;of&#160;f&#160;(x)&#160;by&#160;a&#160;certain&#160;positive&#160;amount.&#160;By&#160;<br/>
+(a)&#160;Let&#160;f&#160;(x)&#160;be&#160;the&#160;2&#160;×&#160;π-periodic&#160;function&#160;shown&#160;in&#160;<br/>
+analyzing&#160;the&#160;graphs&#160;of&#160;|f&#160;(x)&#160;–&#160;s_N&#160;(x)|&#160;for&#160;N&#160;=&#160;5,&#160;<br/>
+Figure&#160;16&#160;over&#160;the&#160;interval&#160;[negative&#160;π,&#160;π].&#160;Use&#160;the&#160;<br/>
+10,&#160;15,&#160;…,&#160;show&#160;that&#160;this&#160;amount&#160;is&#160;approximately&#160;<br/>
+Euler&#160;formulas&#160;to&#160;find&#160;its&#160;Fourier&#160;series.&#160;&#160;<br/>
+.28.&#160;&#160;<br/>
+(b)&#160;Plot&#160;the&#160;function&#160;g&#160;(x)&#160;=&#160;f&#160;(negative&#160;x)&#160;and&#160;find&#160;its&#160;<br/>
+<b>26.&#160;&#160;</b><br/>
+Fourier&#160;series.&#160;&#160;<br/>
+Consider&#160;the&#160;partial&#160;sums&#160;of&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;<br/>
+Figure&#160;16&#160;for&#160;Exercise&#160;21.&#160;<br/>
+sawtooth&#160;function,&#160;&#160;<br/>
+<b>22.&#160;&#160;</b><br/>
+s_N&#160;(x)&#160;=&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;N&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n.&#160;<br/>
+Find&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;function&#160;in&#160;Exercise&#160;4&#160;by&#160;<br/>
+(a)&#160;Take&#160;x&#160;=&#160;π&#160;÷&#160;N,&#160;and&#160;show&#160;that&#160;s_N&#160;(π&#160;÷&#160;N)&#160;=&#160;∑&#160;from&#160;n&#160;<br/>
+combining&#160;the&#160;results&#160;of&#160;Exercises&#160;19&#160;(c)&#160;and&#160;21.&#160;&#160;<br/>
+=&#160;1&#160;to&#160;N&#160;of&#160;π&#160;÷&#160;N&#160;×&#160;sin&#160;(n&#160;×&#160;π&#160;÷&#160;N)&#160;÷&#160;n&#160;×&#160;π&#160;÷&#160;N.&#160;<br/>
+(b)&#160;Conclude&#160;that&#160;s_N&#160;(π&#160;÷&#160;N)&#160;→&#160;∫&#160;from&#160;0&#160;to&#160;π&#160;of&#160;sin&#160;x&#160;÷&#160;<br/>
+<b>23.&#160;Linearity&#160;of&#160;Fourier&#160;coefficients&#160;and&#160;</b><br/>
+x&#160;dx,&#160;as&#160;N&#160;→&#160;∞.&#160;<br/>
+<b>Fourier&#160;series.&#160;&#160;</b><br/>
+[Hint:&#160;Approximate&#160;the&#160;integral&#160;by&#160;Riemann&#160;sums&#160;as&#160;those&#160;<br/>
+Let&#160;α&#160;and&#160;β&#160;be&#160;any&#160;real&#160;numbers.&#160;Show&#160;that&#160;if&#160;f&#160;and&#160;g&#160;have&#160;<br/>
+in&#160;(a).]&#160;&#160;<br/>
+Fourier&#160;coefficients&#160;a_0,&#160;a_1,&#160;a_2,&#160;...,&#160;b_1,&#160;b_2,&#160;...,&#160;<br/>respectively,&#160;a_0^*,&#160;a_1^*,&#160;a_2^*,&#160;...,&#160;b_1^*,&#160;b_2^*,&#160;...,&#160;<br/>then&#160;the&#160;function&#160;α&#160;×&#160;f&#160;+&#160;β&#160;×&#160;g&#160;has&#160;Fourier&#160;coefficients&#160;α&#160;×&#160;<br/>a_0&#160;+&#160;β&#160;×&#160;a_0^*,&#160;α&#160;×&#160;a_1&#160;+&#160;β&#160;×&#160;a_1^*,&#160;α&#160;×&#160;a_2&#160;+&#160;β&#160;×&#160;a_2^*,&#160;<br/>…,&#160;α&#160;×&#160;b_1&#160;+&#160;β&#160;×&#160;b_1^*,&#160;α&#160;×&#160;b_2&#160;+&#160;β&#160;×&#160;b_2^*,&#160;…&#160;<br/>
+<b>24.&#160;Reflecting&#160;and&#160;translating&#160;a&#160;Fourier&#160;series.&#160;&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;is&#160;2&#160;×&#160;π-periodic&#160;and&#160;let&#160;g&#160;(x)&#160;=&#160;f&#160;(negative&#160;x)&#160;<br/>and&#160;h&#160;(x)&#160;=&#160;f&#160;(x&#160;−&#160;α),&#160;where&#160;a&#160;is&#160;a&#160;fixed&#160;real number.&#160;To&#160;<br/>distinguish&#160;Fourier&#160;coefficients,&#160;we&#160;will&#160;use&#160;a&#160;(f,&#160;n)&#160;and&#160;b&#160;(f,&#160;<br/>n)&#160;instead&#160;of&#160;a_n&#160;and&#160;b_n&#160;to&#160;denote&#160;the&#160;Fourier&#160;coefficients&#160;<br/>of&#160;f.&#160;&#160;<br/>
+(a)&#160;Show&#160;that&#160;a&#160;(f,&#160;0)&#160;=&#160;a&#160;(g,&#160;0),&#160;a&#160;(f,&#160;n)&#160;=&#160;a&#160;(g,&#160;n),&#160;and&#160;b&#160;(f,&#160;n)&#160;=&#160;<br/>negative&#160;b&#160;(g,&#160;n)&#160;for&#160;all&#160;n&#160;≥&#160;1.&#160;&#160;<br/>
+(b)&#160;Show&#160;that&#160;a&#160;(f,&#160;0)&#160;=&#160;a&#160;(h,&#160;0),&#160;a&#160;(h,&#160;n)&#160;=&#160;a&#160;(f,&#160;n)&#160;×&#160;cos&#160;n&#160;×&#160;α&#160;–&#160;<br/>b&#160;(f,&#160;n)&#160;×&#160;sin&#160;n&#160;×&#160;α&#160;and&#160;b&#160;(h,&#160;n)&#160;=&#160;a&#160;(f,&#160;n)&#160;×&#160;sin&#160;n&#160;×&#160;α&#160;+&#160;b&#160;(f,&#160;n)&#160;×&#160;<br/>cos&#160;n&#160;×&#160;α&#160;for&#160;all n&#160;≥&#160;1.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-22" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-22_1.jpg" alt="Page 22, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-22_2.jpg" alt="Page 22, figure 2"/><br/>
+(c)&#160;Obtain&#160;the&#160;Taylor&#160;series&#160;expansion&#160;&#160;<br/>
+Consider&#160;the&#160;2&#160;×&#160;π-periodic&#160;function&#160;f&#160;(x)&#160;=&#160;x&#160;if&#160;negative&#160;π&#160;&lt;&#160;x&#160;<br/>
+sin&#160;x&#160;÷&#160;x&#160;=&#160;∑&#160;from&#160;n&#160;=&#160;0&#160;to&#160;∞&#160;of&#160;(negative&#160;1)&#160;^&#160;n&#160;×&#160;x&#160;^&#160;<br/>
+&lt;&#160;π.&#160;From&#160;Exercise&#160;13,&#160;we&#160;have&#160;the&#160;Fourier&#160;series&#160;&#160;<br/>
+2&#160;×&#160;n&#160;÷&#160;(2&#160;×&#160;n&#160;+&#160;1)!&#160;(negative&#160;∞&#160;&lt;&#160;x&lt;&#160;∞).&#160;<br/>
+x&#160;=&#160;2&#160;×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(negative&#160;1)&#160;^&#160;n&#160;+&#160;1&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;<br/>
+(d)&#160;Integrate&#160;the&#160;series&#160;in&#160;(c)&#160;term&#160;by&#160;term,&#160;and&#160;use&#160;the&#160;<br/>
+n,&#160;negative&#160;π&#160;&lt;&#160;x&#160;&lt;&#160;π.&#160;<br/>
+alternating&#160;series&#160;test&#160;to&#160;obtain&#160;the&#160;inequalities&#160;&#160;<br/>1.85&#160;&lt;&#160;∫&#160;from&#160;0&#160;to&#160;π&#160;of&#160;sin&#160;x&#160;÷&#160;x&#160;dx&#160;&lt;&#160;1.86.&#160;&#160;<br/>
+In&#160;this&#160;exercise&#160;we&#160;will&#160;study&#160;the&#160;Gibbs&#160;phenomenon&#160;at&#160;the&#160;<br/>
+(e)&#160;Conclude&#160;that&#160;lim&#160;as&#160;N&#160;→&#160;∞&#160;of&#160;|[f&#160;(π&#160;÷&#160;N)&#160;–&#160;s_N&#160;(π&#160;÷&#160;<br/>
+point&#160;x&#160;=&#160;π.&#160;We&#160;will&#160;proceed&#160;as&#160;in&#160;Exercise&#160;26&#160;and&#160;make&#160;the&#160;<br/>
+N)|&#160;exists&#160;and&#160;is&#160;approximately&#160;.27.&#160;&#160;<br/>
+necessary&#160;modifications.&#160;<br/>
+(f)&#160;Plot&#160;the&#160;graphs&#160;of&#160;f&#160;(x)&#160;and&#160;s_N&#160;(x)&#160;(N&#160;=&#160;1,&#160;2,&#160;...,&#160;7)&#160;<br/>
+and&#160;notice&#160;that,&#160;for&#160;every&#160;N,&#160;there&#160;is&#160;a&#160;hump&#160;on&#160;the&#160;<br/>
+(a)&#160;Take&#160;x&#160;=&#160;π&#160;–&#160;π&#160;÷&#160;N,&#160;and&#160;show&#160;that&#160;s_N&#160;(π&#160;–&#160;π&#160;÷&#160;N)&#160;=&#160;2&#160;×&#160;∑&#160;<br/>
+graph&#160;at&#160;x&#160;=&#160;π&#160;÷&#160;N&#160;+&#160;1.&#160;The&#160;hump&#160;moves&#160;to&#160;the&#160;left&#160;<br/>
+from&#160;n&#160;=&#160;1&#160;to&#160;N&#160;of&#160;π&#160;÷&#160;N&#160;×&#160;(N&#160;÷&#160;n&#160;×&#160;π)&#160;×&#160;sin&#160;(n&#160;×&#160;π&#160;÷&#160;N).&#160;<br/>
+as&#160;N&#160;→&#160;∞.&#160;Does&#160;this&#160;contradict&#160;Theorem&#160;1?&#160;Explain.&#160;&#160;<br/>
+(b)&#160;Conclude&#160;that&#160;s_N&#160;(π&#160;–&#160;π&#160;÷&#160;N)&#160;→&#160;2&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;π&#160;of&#160;sin&#160;x&#160;<br/>
+<b>27.&#160;&#160;</b><br/>
+÷&#160;x&#160;dx,&#160;as&#160;N&#160;→&#160;∞.&#160;<br/>
+Refer&#160;to&#160;the&#160;function&#160;in&#160;Example&#160;1.&#160;Without&#160;repeating&#160;the&#160;<br/>
+(c)&#160;Show&#160;that&#160;lim&#160;as&#160;N&#160;→&#160;∞&#160;of&#160;|f&#160;(π&#160;–&#160;π&#160;÷&#160;N)&#160;–&#160;s_N&#160;(π&#160;–&#160;π&#160;÷&#160;<br/>
+proof&#160;in&#160;Exercise&#160;26,&#160;describe&#160;the&#160;Gibbs&#160;phenomenon&#160;at&#160;x&#160;=&#160;<br/>
+N)|&#160;exist&#160;and&#160;is&#160;approximately&#160;.56.&#160;<br/>
+2&#160;×&#160;π.&#160;That&#160;is,&#160;estimate&#160;its&#160;size,&#160;and&#160;decide&#160;where&#160;the&#160;<br/>
+(d)&#160;Illustrate&#160;the&#160;Gibbs&#160;phenomenon&#160;on&#160;the&#160;graph&#160;of&#160;s_N&#160;(x),&#160;<br/>
+overshoot&#160;of&#160;s_N&#160;(x)&#160;occurs.&#160;&#160;<br/>
+relative&#160;to&#160;the&#160;graph&#160;of&#160;f.&#160;In&#160;particular,&#160;show&#160;graphically&#160;<br/>
+<b>28.&#160;Project&#160;Problem:&#160;&#160;</b><br/>
+that,&#160;for&#160;every&#160;N,&#160;there&#160;is&#160;a&#160;hump&#160;on&#160;the&#160;graph&#160;at&#160;x&#160;=&#160;π&#160;–&#160;π&#160;÷&#160;<br/>N&#160;that&#160;moves&#160;to&#160;the&#160;right&#160;as&#160;N&#160;→&#160;∞<br/>
+<b>2.3&#160;Fourier&#160;Series&#160;of&#160;Functions&#160;with&#160;Arbitrary&#160;Periods&#160;&#160;</b><br/>
+In&#160;the&#160;preceding&#160;section&#160;we&#160;worked&#160;with&#160;functions&#160;of&#160;period&#160;2&#160;×&#160;π.&#160;The&#160;choice&#160;of&#160;this&#160;period&#160;was&#160;merely&#160;for&#160;convenience.&#160;In&#160;this&#160;<br/>section,&#160;we&#160;show&#160;how&#160;to&#160;extend&#160;our&#160;results&#160;to&#160;functions&#160;with&#160;arbitrary&#160;period&#160;(Figure&#160;1)&#160;by&#160;using&#160;a&#160;simple&#160;change&#160;of&#160;variables.&#160;&#160;<br/>
+Suppose&#160;that&#160;f&#160;is&#160;a&#160;function&#160;with&#160;period&#160;T&#160;=&#160;2&#160;×&#160;p&#160;&gt;&#160;0,&#160;and&#160;let&#160;&#160;<br/>
+(1)&#160;g&#160;(x)=&#160;f&#160;(p&#160;÷&#160;π&#160;×&#160;x).&#160;<br/>
+Since&#160;f&#160;is&#160;2&#160;×&#160;p-periodic,&#160;we&#160;have&#160;&#160;<br/>
+g&#160;(x&#160;+&#160;2&#160;×&#160;π)&#160;=&#160;f&#160;(p&#160;÷&#160;π&#160;×&#160;(x&#160;+&#160;2&#160;×&#160;π)&#160;=&#160;f&#160;(p&#160;÷&#160;π&#160;×&#160;x&#160;+&#160;2&#160;×&#160;p)&#160;=&#160;f&#160;(p&#160;÷&#160;π&#160;×&#160;x)&#160;=&#160;g&#160;(x).&#160;<br/>
+Figure&#160;1&#160;A&#160;2&#160;×&#160;p-periodic&#160;function.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-23" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-23_1.jpg" alt="Page 23, figure 1"/><br/>
+Hence&#160;g&#160;is&#160;2&#160;×&#160;π-periodic.&#160;This&#160;reduction&#160;enables&#160;us&#160;to&#160;extend&#160;the&#160;main&#160;results&#160;of&#160;Section&#160;2.2&#160;to&#160;functions&#160;of&#160;arbitrary&#160;period.&#160;&#160;<br/>
+<b>THEOREM&#160;1&#160;FOURIER&#160;SERIES&#160;REPRESENTATION:&#160;ARBITRARY&#160;PERIOD&#160;&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;is&#160;a&#160;2&#160;×&#160;p-periodic&#160;piecewise&#160;smooth&#160;function.&#160;The&#160;Fourier&#160;series&#160;of&#160;f&#160;is&#160;given&#160;by&#160;<br/>
+(2)&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x)&#160;<br/>
+where&#160;<br/>
+(3)&#160;a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;p&#160;×&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;dx,&#160;<br/>
+(4)&#160;a_n&#160;=&#160;1&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;dx&#160;(n&#160;=&#160;1,&#160;2,&#160;…),&#160;<br/>
+(5)&#160;b_n&#160;=&#160;1&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;×&#160;sin&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;dx&#160;(n&#160;=&#160;1,&#160;2,&#160;…).&#160;<br/>
+The&#160;Fourier&#160;series&#160;converges&#160;to&#160;f(x)&#160;if&#160;f&#160;is&#160;continuous&#160;at&#160;x&#160;and&#160;to&#160;f&#160;(x^−)&#160;+&#160;f&#160;(x^+)&#160;÷&#160;2&#160;otherwise.&#160;<br/>
+By&#160;Theorem&#160;1,&#160;Section&#160;2.1,&#160;all&#160;the&#160;integrals&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;can&#160;be&#160;replaced&#160;by&#160;∫&#160;from&#160;0&#160;to&#160;2&#160;×&#160;p&#160;without&#160;changing&#160;the&#160;<br/>values&#160;of&#160;the&#160;coefficients.&#160;&#160;<br/>
+<b>Proof&#160;&#160;</b><br/>
+Since&#160;f&#160;is&#160;piecewise&#160;smooth,&#160;it&#160;follows&#160;that&#160;the&#160;2&#160;×&#160;π-periodic&#160;function&#160;g&#160;defined&#160;by&#160;(1)&#160;is&#160;also&#160;piecewise&#160;smooth.&#160;By&#160;Theorem&#160;1&#160;of&#160;<br/>Section&#160;2.2,&#160;we&#160;have&#160;&#160;<br/>
+(6)&#160;g&#160;(x^−)&#160;+&#160;g&#160;(x^+)&#160;÷&#160;2&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;n&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;x),&#160;(for&#160;all&#160;x)&#160;<br/>
+where&#160;&#160;<br/>
+(7)&#160;a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;g&#160;(x)&#160;dx,&#160;a_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;g&#160;(x)&#160;×&#160;cos&#160;n&#160;×&#160;x&#160;dx;&#160;b_n&#160;=&#160;1&#160;÷&#160;π&#160;×&#160;∫&#160;<br/>
+from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;g(x)&#160;×&#160;sin&#160;n&#160;×&#160;x&#160;dx.&#160;<br/>
+Replacing&#160;x&#160;by&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;in&#160;(6)&#160;and&#160;using&#160;(1)&#160;gives&#160;&#160;<br/>
+(8)&#160;f&#160;(x^−)&#160;+&#160;f&#160;(x^+)&#160;÷&#160;2&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;n&#160;of&#160;(a_n&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x)&#160;<br/>
+where&#160;the&#160;coefficients&#160;are&#160;given&#160;by&#160;(7).&#160;To&#160;express&#160;the&#160;coefficients&#160;in&#160;terms&#160;of&#160;f&#160;as&#160;in&#160;(3)-(5),&#160;we&#160;use&#160;(1)&#160;again.&#160;For&#160;example,&#160;to&#160;<br/>obtain&#160;(3),&#160;start&#160;with&#160;the&#160;first&#160;formula&#160;in&#160;(7),&#160;use&#160;(1),&#160;then&#160;use&#160;the&#160;change&#160;of&#160;variables&#160;t&#160;=&#160;p&#160;÷&#160;π&#160;×&#160;x,&#160;and&#160;get&#160;&#160;<br/>
+a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;g&#160;(x)&#160;dx&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;π&#160;×&#160;∫&#160;from&#160;negative&#160;π&#160;to&#160;π&#160;of&#160;f&#160;(p&#160;÷&#160;π&#160;×&#160;x)&#160;dx&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;p&#160;×&#160;∫&#160;from&#160;<br/>
+negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(t)&#160;dt.&#160;<br/>
+Formulas&#160;(4)&#160;and&#160;(5)&#160;a.re&#160;derived&#160;in&#160;a&#160;similar&#160;way.&#160;The&#160;details&#160;are&#160;left&#160;to&#160;the&#160;exercises.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-24" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_1.jpg" alt="Page 24, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_2.jpg" alt="Page 24, figure 2"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_3.jpg" alt="Page 24, figure 3"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-24_4.jpg" alt="Page 24, figure 4"/><br/>
+<b>EXAMPLE&#160;1&#160;A&#160;Fourier&#160;series&#160;with&#160;arbitrary&#160;period&#160;&#160;</b><br/>
+Find&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;2&#160;×&#160;p-periodic&#160;function&#160;given&#160;by&#160;f&#160;(x)&#160;−&#160;|x|&#160;if&#160;negative&#160;p&#160;≤&#160;x&#160;≤&#160;p&#160;(Figure&#160;2).&#160;&#160;<br/>
+Figure&#160;2&#160;Triangular&#160;wave&#160;with&#160;period&#160;2&#160;×&#160;p.&#160;<br/>
+<b>Solution&#160;&#160;</b><br/>
+We&#160;compute&#160;the&#160;Fourier&#160;coefficients&#160;using&#160;Theorem&#160;1.&#160;The&#160;area&#160;under&#160;the&#160;graph&#160;of&#160;f&#160;in&#160;Figure&#160;2&#160;gives&#160;&#160;<br/>
+a_0&#160;=&#160;1&#160;÷&#160;2&#160;×&#160;p&#160;×&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;p&#160;÷&#160;2.&#160;<br/>
+To&#160;compute&#160;a_n&#160;we&#160;take&#160;advantage&#160;of&#160;the&#160;fact&#160;that&#160;f&#160;(x)&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;is&#160;an&#160;even&#160;function&#160;and&#160;write&#160;<br/>
+a_n&#160;=&#160;1&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;dx&#160;=&#160;2&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;dx&#160;<br/>
+=&#160;2&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;p&#160;of&#160;x&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;dx&#160;=&#160;negative&#160;2&#160;×&#160;p&#160;÷ π&#160;^&#160;2&#160;×&#160;n&#160;^&#160;2&#160;×&#160;(1&#160;–&#160;cos&#160;n&#160;×&#160;π),&#160;<br/>
+where&#160;the&#160;last&#160;integral&#160;is&#160;evaluated&#160;by&#160;parts.&#160;Since&#160;cos&#160;n&#160;×&#160;π&#160;=&#160;(negative&#160;1)&#160;^&#160;n,&#160;a_n&#160;=&#160;0&#160;if&#160;n&#160;is&#160;even,&#160;and&#160;a_n&#160;=&#160;negative&#160;4&#160;×&#160;p&#160;÷&#160;π&#160;^&#160;<br/>2&#160;×&#160;n&#160;^&#160;2&#160;if&#160;n&#160;is&#160;odd.&#160;A&#160;similar&#160;computation&#160;shows&#160;that&#160;b_n&#160;=&#160;0&#160;for&#160;all&#160;n&#160;(since&#160;f&#160;is&#160;even).&#160;We&#160;thus&#160;obtain&#160;the&#160;Fourier&#160;series&#160;&#160;<br/>
+f&#160;(x)&#160;=&#160;p&#160;÷&#160;2&#160;–&#160;4&#160;×&#160;p&#160;÷&#160;π&#160;^&#160;2&#160;×&#160;(cos&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;1&#160;÷&#160;3&#160;^&#160;2&#160;×&#160;cos&#160;3&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;1&#160;÷&#160;5&#160;^&#160;2&#160;×&#160;cos&#160;5&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;…).&#160;<br/>
+Because&#160;f&#160;is&#160;continuous&#160;and&#160;piecewise&#160;smooth,&#160;Theorem&#160;1&#160;implies&#160;that&#160;the&#160;Fourier&#160;series&#160;converges&#160;to&#160;f(x)&#160;for&#160;all&#160;x.&#160;(See&#160;Figure&#160;<br/>3.)&#160;&#160;<br/>
+Figure&#160;3&#160;Partial&#160;sums&#160;of&#160;the&#160;Fourier&#160;series&#160;(p&#160;=&#160;1),&#160;in&#160;Example&#160;1.&#160;<br/>
+In&#160;the&#160;following&#160;two&#160;examples,&#160;we&#160;derive&#160;new&#160;Fourier&#160;series&#160;from&#160;known&#160;ones&#160;without&#160;performing&#160;too&#160;many&#160;additional&#160;<br/>computations.&#160;<br/>
+<b>EXAMPLE&#160;2&#160;Triangular&#160;wave&#160;with&#160;arbitrary&#160;period&#160;and&#160;amplitude&#160;&#160;</b><br/>
+Find&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;2p-periodic&#160;function&#160;given&#160;by&#160;&#160;<br/>
+g&#160;(x)&#160;=&#160;a&#160;×&#160;(1&#160;+&#160;1&#160;÷&#160;p&#160;×&#160;x)&#160;if&#160;negative&#160;p&#160;≤&#160;x&#160;≤&#160;0,&#160;a&#160;×&#160;(1&#160;–&#160;1&#160;÷&#160;p&#160;×&#160;x)&#160;if&#160;0&#160;≤&#160;x&#160;≤&#160;p.&#160;<br/>
+<b>Solution&#160;&#160;</b><br/>
+Comparing&#160;Figures&#160;4&#160;and&#160;2&#160;shows&#160;that&#160;we&#160;can&#160;obtain&#160;the&#160;graph&#160;of&#160;g&#160;by&#160;reflecting&#160;the&#160;graph&#160;of&#160;f&#160;in&#160;the&#160;x-axis,&#160;translating&#160;it&#160;<br/>upward&#160;by&#160;p&#160;units,&#160;and&#160;then&#160;scaling&#160;it&#160;by&#160;a&#160;factor&#160;of&#160;a&#160;÷&#160;p.&#160;This&#160;is&#160;expressed&#160;by&#160;writing&#160;&#160;<br/>
+g&#160;(x)&#160;=&#160;a&#160;÷&#160;p&#160;×&#160;(negative&#160;f&#160;(x)&#160;+&#160;p)&#160;=a&#160;–&#160;a&#160;÷&#160;p&#160;×&#160;f&#160;(x).&#160;<br/>
+Now&#160;to&#160;get&#160;the&#160;Fourier&#160;series&#160;of&#160;g,&#160;all&#160;we&#160;have&#160;to&#160;do&#160;is&#160;perform&#160;these&#160;operations&#160;on&#160;the&#160;Fourier&#160;series&#160;of&#160;f&#160;from&#160;Example&#160;1.&#160;We&#160;<br/>get&#160;&#160;<br/>
+g&#160;(x)&#160;=&#160;a&#160;–&#160;a&#160;×&#160;(1&#160;÷&#160;2&#160;–&#160;4&#160;÷&#160;π&#160;^&#160;2&#160;×&#160;(cos&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;1&#160;÷&#160;3&#160;^&#160;2&#160;×&#160;cos&#160;3&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;1&#160;÷&#160;5&#160;^&#160;2&#160;×&#160;cos&#160;5&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;…))&#160;<br/>
+=&#160;a&#160;÷&#160;2&#160;+&#160;4&#160;×&#160;a&#160;÷&#160;π&#160;^&#160;2&#160;×&#160;(cos&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;1&#160;÷&#160;3&#160;^&#160;2&#160;×&#160;cos&#160;3&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;1&#160;÷&#160;5&#160;^&#160;2&#160;×&#160;cos&#160;5&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;+&#160;…).&#160;<br/>
+Figure&#160;4&#160;A&#160;2&#160;×&#160;p-periodic&#160;triangular&#160;wave.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-25" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-25_1.png" alt="Page 25, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-25_2.png" alt="Page 25, figure 2"/><br/>
+ln&#160;compact&#160;form,&#160;we&#160;have&#160;&#160;<br/>
+g&#160;(x)&#160;=&#160;a&#160;÷&#160;2&#160;+&#160;4&#160;×&#160;a&#160;÷&#160;π&#160;^&#160;2&#160;×&#160;∑&#160;from&#160;k&#160;=&#160;0&#160;to&#160;∞&#160;of&#160;1&#160;÷&#160;(2&#160;×&#160;k&#160;+&#160;1)&#160;^&#160;2&#160;×&#160;cos&#160;(2&#160;×&#160;k&#160;+&#160;1&#160;)&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x.&#160;<br/>
+(You&#160;should&#160;check&#160;that&#160;the&#160;special&#160;case&#160;with&#160;p&#160;=&#160;a&#160;=&#160;π&#160;yields&#160;the&#160;Fourier&#160;series&#160;of&#160;Example&#160;2&#160;of&#160;the&#160;previous&#160;section.)&#160;&#160;<br/>
+Changing&#160;variables&#160;as&#160;we&#160;did&#160;at&#160;the&#160;outset&#160;of&#160;the&#160;section&#160;can&#160;be&#160;very&#160;useful&#160;in&#160;deriving&#160;new&#160;Fourier&#160;series&#160;from&#160;known&#160;ones.&#160;&#160;<br/>
+<b>EXAMPLE&#160;3&#160;Varying&#160;the&#160;period&#160;in&#160;a&#160;Fourier&#160;series&#160;&#160;</b><br/>
+Find&#160;the&#160;Fourier&#160;series&#160;of&#160;the&#160;function&#160;in&#160;Figure&#160;5.&#160;&#160;<br/>
+Figure&#160;5&#160;A&#160;2&#160;×&#160;p-periodic&#160;sawtooth&#160;function.&#160;<br/>
+<b>Solution&#160;&#160;</b><br/>
+Let&#160;us&#160;start&#160;by&#160;defining&#160;the&#160;function&#160;in&#160;Figure&#160;5.&#160;On&#160;the&#160;interval&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;2&#160;×&#160;p,&#160;we&#160;have&#160;f&#160;(x)&#160;=&#160;c&#160;×&#160;(1&#160;–&#160;x&#160;÷&#160;p).&#160;Now,&#160;from&#160;Example&#160;1,&#160;<br/>Section&#160;2.2,&#160;we&#160;have&#160;the&#160;Fourier&#160;series&#160;expansion&#160;&#160;<br/>
+1&#160;÷&#160;2&#160;×&#160;(π&#160;−&#160;x)&#160;=&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;x&#160;÷&#160;n,&#160;for&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;2&#160;×&#160;π&#160;<br/>
+Replacing&#160;x&#160;by&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;in&#160;the&#160;formula&#160;and&#160;the&#160;interval&#160;for&#160;x,&#160;we&#160;get&#160;&#160;<br/>
+1&#160;÷&#160;2&#160;×&#160;(π&#160;−&#160;π&#160;÷&#160;p&#160;×&#160;x)&#160;=&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;÷&#160;n,&#160;for&#160;0&#160;&lt;&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;&lt;&#160;2&#160;×&#160;π&#160;<br/>
+Simplifying&#160;and&#160;multiplying&#160;both&#160;sides&#160;by&#160;2&#160;×&#160;c&#160;÷&#160;π&#160;to&#160;match&#160;the&#160;formula&#160;for&#160;f,&#160;we&#160;get&#160;&#160;<br/>
+c&#160;×&#160;(1&#160;–&#160;x&#160;÷&#160;p)&#160;=&#160;2&#160;×&#160;c&#160;÷&#160;π&#160;×&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;sin&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;÷&#160;n,&#160;for&#160;all&#160;0&#160;&lt;&#160;x&#160;&lt;&#160;2&#160;×&#160;p&#160;<br/>
+which&#160;yields&#160;the&#160;Fourier&#160;series&#160;of&#160;f.&#160;&#160;<br/>
+Continuing&#160;the&#160;operations&#160;on&#160;Fourier&#160;series&#160;that&#160;we&#160;started&#160;in&#160;the&#160;previ-ous&#160;section,&#160;Examples&#160;2&#160;and&#160;3&#160;are&#160;based&#160;on&#160;the&#160;fact&#160;that&#160;<br/>a&#160;Fourier&#160;series&#160;is&#160;really&#160;a&#160;function&#160;and&#160;can&#160;be&#160;manipulated&#160;as&#160;such.&#160;However,&#160;when&#160;you&#160;work&#160;with&#160;a&#160;formula&#160;involving&#160;a&#160;Fourier&#160;<br/>series,&#160;you&#160;must&#160;keep&#160;in&#160;mind&#160;the&#160;interval&#160;on&#160;which&#160;this&#160;formula&#160;is&#160;valid.&#160;In&#160;particular,&#160;when&#160;you&#160;perform&#160;a&#160;change&#160;of&#160;variables&#160;<br/>on&#160;a&#160;Fourier&#160;series,&#160;it&#160;may&#160;affect&#160;the&#160;interval&#160;on&#160;which&#160;the&#160;resulting&#160;series&#160;is&#160;defined.&#160;This&#160;was&#160;the&#160;case&#160;when&#160;we&#160;performed&#160;a&#160;<br/>change&#160;of&#160;variables&#160;in&#160;Example&#160;3.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-26" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-26_1.png" alt="Page 26, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-26_2.png" alt="Page 26, figure 2"/><br/>
+<b>Even&#160;and&#160;Odd&#160;Functions&#160;&#160;</b><br/>
+As&#160;we&#160;noticed&#160;already,&#160;geometric&#160;considerations&#160;are&#160;helpful&#160;in&#160;computing&#160;Fourier&#160;coefficients.&#160;This&#160;is&#160;particularly&#160;the&#160;case&#160;when&#160;<br/>dealing&#160;with&#160;even&#160;and&#160;odd&#160;functions.&#160;&#160;<br/>
+A&#160;function&#160;f&#160;is&#160;even&#160;if&#160;f&#160;(negative&#160;x)&#160;=&#160;f&#160;(x)&#160;for&#160;all&#160;x.&#160;<br/>
+A&#160;function&#160;f&#160;is&#160;odd&#160;if&#160;f&#160;(negative&#160;x)&#160;=&#160;negative&#160;f&#160;(x)&#160;for&#160;all&#160;x.&#160;<br/>
+Figure&#160;6&#160;&#160;<br/>
+(a)&#160;Even&#160;function:&#160;The&#160;graph&#160;is&#160;symmetric&#160;with&#160;respect&#160;to&#160;the&#160;y-axis.&#160;&#160;<br/>(b)&#160;Odd&#160;function:&#160;The&#160;graph&#160;is&#160;symmetric&#160;with&#160;respect&#160;to&#160;the&#160;origin.&#160;<br/>
+It&#160;is&#160;clear&#160;from&#160;Figure&#160;6&#160;(a)&#160;(or&#160;by&#160;a&#160;simple&#160;change&#160;of&#160;variables)&#160;that&#160;if&#160;f&#160;is&#160;even,&#160;then&#160;&#160;<br/>
+(9)&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;2&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;dx;&#160;<br/>
+and&#160;if&#160;f&#160;is&#160;odd&#160;(Figure&#160;6&#160;(b)),&#160;then&#160;&#160;<br/>
+(10)&#160;∫&#160;from&#160;negative&#160;p&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;dx&#160;=&#160;0.&#160;<br/>
+The&#160;following&#160;useful&#160;properties&#160;concerning&#160;the&#160;products&#160;of&#160;these&#160;functions&#160;are&#160;easily&#160;verified. &#160;<br/>
+(Even)&#160;×&#160;(Even)&#160;=&#160;Even&#160;<br/>
+(Even)&#160;×&#160;(Odd)&#160;=&#160;Odd&#160;<br/>
+(Odd)&#160;×&#160;(Odd)&#160;=&#160;Even&#160;<br/>
+These&#160;product&#160;properties&#160;can&#160;be&#160;used&#160;to&#160;simplify&#160;finding&#160;the&#160;Fourier&#160;coefficients&#160;of&#160;even&#160;and&#160;odd&#160;functions,&#160;as&#160;we&#160;now&#160;show.&#160;&#160;<br/>
+<hr/>
+<span id="anchor-27" aria-hidden="true"></span><img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-27_1.jpg" alt="Page 27, figure 1"/><br/>
+<img src="/sessions/zen-eloquent-fermat/mnt/GABAnode-Portfolio/01-CORE-PRODUCT/gabanode-document-engine-Intelligence/brain-training/fixtures/003-scanned-image/reference-tagged-27_2.jpg" alt="Page 27, figure 2"/><br/>
+<b>THEOREM&#160;2&#160;FOURIER&#160;SERIES&#160;OF&#160;EVEN&#160;AND&#160;ODD&#160;FUNCTIONS&#160;&#160;</b><br/>
+Suppose&#160;that&#160;f&#160;is&#160;2&#160;×&#160;p-periodic&#160;and&#160;has&#160;the&#160;Fourier&#160;series&#160;representation&#160;(2).&#160;Then&#160;(i)&#160;f&#160;is&#160;even&#160;if&#160;and&#160;only&#160;if&#160;b_n&#160;=&#160;0&#160;for&#160;all&#160;n.&#160;In&#160;<br/>this&#160;case&#160;&#160;<br/>
+f&#160;(x)&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;a_n&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;<br/>
+where&#160;<br/>
+a_0&#160;=&#160;1&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;dx,&#160;and&#160;a_n&#160;=&#160;2&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;dx&#160;(n&#160;=&#160;1,&#160;2,&#160;…).&#160;<br/>
+(ii)&#160;f&#160;is&#160;odd&#160;if&#160;and&#160;only&#160;if&#160;a_n&#160;=&#160;0&#160;for&#160;all&#160;n.&#160;In&#160;this&#160;case&#160;&#160;<br/>
+f&#160;(x)&#160;=&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;b_n&#160;×&#160;sin&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;<br/>
+where&#160;&#160;<br/>
+b_n&#160;=&#160;2&#160;÷&#160;p&#160;×&#160;∫&#160;from&#160;0&#160;to&#160;p&#160;of&#160;f&#160;(x)&#160;×&#160;sin&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;dx&#160;(n&#160;=&#160;1,&#160;2,&#160;…).&#160;<br/>
+<b>Proof&#160;</b><br/>
+(i)&#160;If&#160;f&#160;(x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;a_n&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x,&#160;then,&#160;for&#160;all&#160;x,&#160;<br/>
+f&#160;(negative&#160;x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;a_n&#160;×&#160;cos&#160;(negative&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x)&#160;=&#160;a_0&#160;+&#160;∑&#160;from&#160;n&#160;=&#160;1&#160;to&#160;∞&#160;of&#160;a_n&#160;×&#160;cos&#160;n&#160;×&#160;π&#160;÷&#160;p&#160;×&#160;x&#160;=&#160;f&#160;<br/>
+(x),&#160;<br/>
+and

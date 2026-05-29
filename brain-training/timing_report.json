@@ -1,0 +1,97 @@
+{
+  "generated": "2026-05-25T07:49:16.782005",
+  "fixtures_tested": 21,
+  "pass_timing_ms": {
+    "fix_lang_attribute": {
+      "mean_ms": 0.46,
+      "max_ms": 1.953,
+      "total_ms": 9.663
+    },
+    "fix_main_landmark": {
+      "mean_ms": 0.213,
+      "max_ms": 1.379,
+      "total_ms": 4.482
+    },
+    "fix_image_alt": {
+      "mean_ms": 1.177,
+      "max_ms": 9.309,
+      "total_ms": 24.711
+    },
+    "fix_empty_anchors": {
+      "mean_ms": 0.264,
+      "max_ms": 2.186,
+      "total_ms": 5.542
+    },
+    "fix_empty_links": {
+      "mean_ms": 0.219,
+      "max_ms": 1.66,
+      "total_ms": 4.594
+    },
+    "fix_form_labels": {
+      "mean_ms": 0.171,
+      "max_ms": 0.661,
+      "total_ms": 3.584
+    },
+    "fix_table_scope": {
+      "mean_ms": 0.087,
+      "max_ms": 0.392,
+      "total_ms": 1.821
+    },
+    "fix_heading_hierarchy": {
+      "mean_ms": 0.106,
+      "max_ms": 0.39,
+      "total_ms": 2.228
+    },
+    "fix_table_headers": {
+      "mean_ms": 15.329,
+      "max_ms": 107.337,
+      "total_ms": 321.907
+    },
+    "fix_form_ids": {
+      "mean_ms": 0.57,
+      "max_ms": 5.794,
+      "total_ms": 11.963
+    },
+    "fix_page_title": {
+      "mean_ms": 0.073,
+      "max_ms": 0.884,
+      "total_ms": 1.538
+    },
+    "fix_duplicate_ids": {
+      "mean_ms": 2.021,
+      "max_ms": 11.972,
+      "total_ms": 42.449
+    },
+    "fix_button_labels": {
+      "mean_ms": 0.172,
+      "max_ms": 1.882,
+      "total_ms": 3.604
+    }
+  },
+  "fixture_totals_ms": {
+    "001-simple-text": 15.182,
+    "002-complex-table": 2.443,
+    "003-scanned-image": 77.707,
+    "004-form-with-fields": 1.832,
+    "005-multi-column": 9.206,
+    "006-images-with-captions": 5.616,
+    "007-nested-lists": 132.672,
+    "008-mixed-content": 92.211,
+    "009-edge-cases": 61.484,
+    "010-heading-skip": 0.785,
+    "011-form-no-labels": 6.964,
+    "012-table-no-headers": 6.023,
+    "013-combined-violations": 4.726,
+    "014-gov-doc-realistic": 5.219,
+    "015-missing-title": 1.735,
+    "016-duplicate-ids": 0.367,
+    "017-empty-buttons": 5.142,
+    "018-grant-application": 2.626,
+    "019-nested-tables": 0.876,
+    "020-unicode-content": 3.297,
+    "021-color-contrast": 1.973
+  },
+  "slowest_pass": "fix_table_headers",
+  "fastest_pass": "fix_page_title",
+  "total_pipeline_avg_ms": 20.861
+}

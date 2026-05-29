@@ -1,0 +1,8 @@
+{
+  "fixture": "003",
+  "doc_type": "scanned-image",
+  "source_pdf": "PDFUA-Ref-2-09_Scanned.pdf",
+  "extraction_target": 70,
+  "healing_target": 70,
+  "combined_target": 70
+}

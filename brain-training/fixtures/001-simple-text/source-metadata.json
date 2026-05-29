@@ -1,0 +1,16 @@
+{
+  "name": "001-simple-text",
+  "title": "Simple Text Document (Baseline)",
+  "description": "Plain 2-3 page article with body text, minimal formatting",
+  "pages": 3,
+  "hasImages": false,
+  "hasTables": false,
+  "hasForms": false,
+  "hasLists": true,
+  "hasMultiColumn": false,
+  "complexity": "low",
+  "estimatedExtractAccuracy": 95,
+  "estimatedHealAccuracy": 85,
+  "estimatedCombined": 90,
+  "notes": "Baseline fixture for simple text extraction. No complex elements. Good for verifying fundamental extraction and heading hierarchy."
+}

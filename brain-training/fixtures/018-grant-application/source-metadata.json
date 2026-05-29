@@ -1,0 +1,8 @@
+{
+  "fixture_id": "018",
+  "name": "grant-application",
+  "description": "Community development grant application PDF with all Phase 3C violations plus pre-existing types: missing title, duplicate anchors, missing lang, heading skip, missing images alt, no main, empty buttons, table headers, unlabeled inputs",
+  "phase": "3C",
+  "violation_types": ["missing_page_title", "duplicate_id", "button_missing_label", "missing_lang_attribute", "heading_hierarchy_broken", "image_missing_alt", "no_main_landmark", "table_missing_header_scope", "form_input_missing_label"],
+  "expected_violations": "multiple"
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Council Meeting Action Center</title>
+  <style>
+    .skip-nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+    }
+    .agenda-link:focus {
+      outline: none;
+    }
+    .search-field:focus {
+      outline: 0;
+    }
+    .filter-select:focus {
+      outline: none !important;
+    }
+    .notice-button:focus {
+      outline: 0 none;
+    }
+    .download-link:focus {
+      outline: none;
+    }
+    .card-toggle:focus {
+      outline: 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <main id="main-content">
+    <h1>Council Meeting Action Center</h1>
+    <section aria-labelledby="agenda-heading">
+      <h2 id="agenda-heading">Agenda Materials</h2>
+      <!-- VIOLATION: focus outline removed without visible replacement (WCAG 2.4.7) -->
+      <a class="agenda-link" href="/meetings/2026-06-04/agenda">June 4 agenda packet</a>
+
+      <form action="/meetings/search" method="get">
+        <label for="agenda-search">Search meeting records</label>
+        <!-- VIOLATION: focus outline removed from search input without visible replacement (WCAG 2.4.7) -->
+        <input class="search-field" id="agenda-search" name="q" type="text">
+
+        <label for="department-filter">Filter by department</label>
+        <!-- VIOLATION: focus outline removed from select control without visible replacement (WCAG 2.4.7) -->
+        <select class="filter-select" id="department-filter" name="department">
+          <option>All departments</option>
+          <option>Public Works</option>
+          <option>Planning</option>
+        </select>
+      </form>
+    </section>
+
+    <section aria-labelledby="updates-heading">
+      <h2 id="updates-heading">Public Notices</h2>
+      <p>Residents may subscribe to council notices and download current attachments.</p>
+      <!-- VIOLATION: focus outline removed from button without visible replacement (WCAG 2.4.7) -->
+      <button class="notice-button" type="button">Subscribe to notices</button>
+
+      <!-- VIOLATION: focus outline removed from document link without visible replacement (WCAG 2.4.7) -->
+      <a class="download-link" href="/documents/council/zoning-amendment.pdf">Download zoning amendment</a>
+
+      <!-- VIOLATION: focus outline removed from disclosure button without visible replacement (WCAG 2.4.7) -->
+      <button class="card-toggle" type="button">Show hearing details</button>
+    </section>
+  </main>
+</body>
+</html>

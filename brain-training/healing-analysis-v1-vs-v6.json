@@ -1,0 +1,492 @@
+{
+  "timestamp": "2026-05-13T19:00:56.933242",
+  "phase": "2C-2-validation",
+  "validator": "rebenchmark_with_wcag.py::count_wcag_violations",
+  "variants": {
+    "v8-deterministic-images": {
+      "fixtures": [
+        {
+          "fixture": "001-simple-text",
+          "baseline": 4,
+          "remaining": 0,
+          "fixed": 4,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "002-complex-table",
+          "baseline": 4,
+          "remaining": 0,
+          "fixed": 4,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "003-scanned-image",
+          "baseline": 93,
+          "remaining": 0,
+          "fixed": 93,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "004-form-with-fields",
+          "baseline": 2,
+          "remaining": 0,
+          "fixed": 2,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "005-multi-column",
+          "baseline": 6,
+          "remaining": 0,
+          "fixed": 6,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "006-images-with-captions",
+          "baseline": 11,
+          "remaining": 0,
+          "fixed": 11,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "007-nested-lists",
+          "baseline": 55,
+          "remaining": 0,
+          "fixed": 55,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "008-mixed-content",
+          "baseline": 138,
+          "remaining": 0,
+          "fixed": 138,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "009-edge-cases",
+          "baseline": 24,
+          "remaining": 0,
+          "fixed": 24,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        }
+      ],
+      "total_baseline": 337,
+      "total_fixed": 337,
+      "overall_pct": 100.0
+    },
+    "v9-deterministic-full": {
+      "fixtures": [
+        {
+          "fixture": "001-simple-text",
+          "baseline": 4,
+          "remaining": 0,
+          "fixed": 4,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "002-complex-table",
+          "baseline": 4,
+          "remaining": 0,
+          "fixed": 4,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "003-scanned-image",
+          "baseline": 93,
+          "remaining": 0,
+          "fixed": 93,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "004-form-with-fields",
+          "baseline": 2,
+          "remaining": 0,
+          "fixed": 2,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "005-multi-column",
+          "baseline": 6,
+          "remaining": 0,
+          "fixed": 6,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "006-images-with-captions",
+          "baseline": 11,
+          "remaining": 0,
+          "fixed": 11,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "007-nested-lists",
+          "baseline": 55,
+          "remaining": 0,
+          "fixed": 55,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "008-mixed-content",
+          "baseline": 138,
+          "remaining": 0,
+          "fixed": 138,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        },
+        {
+          "fixture": "009-edge-cases",
+          "baseline": 24,
+          "remaining": 0,
+          "fixed": 24,
+          "pct": 100.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 0,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 0
+          }
+        }
+      ],
+      "total_baseline": 337,
+      "total_fixed": 337,
+      "overall_pct": 100.0
+    },
+    "v7-deterministic-basic": {
+      "fixtures": [
+        {
+          "fixture": "001-simple-text",
+          "baseline": 4,
+          "remaining": 3,
+          "fixed": 1,
+          "pct": 25.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 3,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 3
+          }
+        },
+        {
+          "fixture": "002-complex-table",
+          "baseline": 4,
+          "remaining": 3,
+          "fixed": 1,
+          "pct": 25.0,
+          "remaining_detail": {
+            "image_missing_alt": 1,
+            "link_empty_text": 2,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 3
+          }
+        },
+        {
+          "fixture": "003-scanned-image",
+          "baseline": 93,
+          "remaining": 92,
+          "fixed": 1,
+          "pct": 1.1,
+          "remaining_detail": {
+            "image_missing_alt": 65,
+            "link_empty_text": 27,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 92
+          }
+        },
+        {
+          "fixture": "004-form-with-fields",
+          "baseline": 2,
+          "remaining": 1,
+          "fixed": 1,
+          "pct": 50.0,
+          "remaining_detail": {
+            "image_missing_alt": 0,
+            "link_empty_text": 1,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 1
+          }
+        },
+        {
+          "fixture": "005-multi-column",
+          "baseline": 6,
+          "remaining": 5,
+          "fixed": 1,
+          "pct": 16.7,
+          "remaining_detail": {
+            "image_missing_alt": 2,
+            "link_empty_text": 3,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 5
+          }
+        },
+        {
+          "fixture": "006-images-with-captions",
+          "baseline": 11,
+          "remaining": 10,
+          "fixed": 1,
+          "pct": 9.1,
+          "remaining_detail": {
+            "image_missing_alt": 1,
+            "link_empty_text": 9,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 10
+          }
+        },
+        {
+          "fixture": "007-nested-lists",
+          "baseline": 55,
+          "remaining": 54,
+          "fixed": 1,
+          "pct": 1.8,
+          "remaining_detail": {
+            "image_missing_alt": 21,
+            "link_empty_text": 33,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 54
+          }
+        },
+        {
+          "fixture": "008-mixed-content",
+          "baseline": 138,
+          "remaining": 137,
+          "fixed": 1,
+          "pct": 0.7,
+          "remaining_detail": {
+            "image_missing_alt": 104,
+            "link_empty_text": 33,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 137
+          }
+        },
+        {
+          "fixture": "009-edge-cases",
+          "baseline": 24,
+          "remaining": 23,
+          "fixed": 1,
+          "pct": 4.2,
+          "remaining_detail": {
+            "image_missing_alt": 1,
+            "link_empty_text": 22,
+            "heading_hierarchy_broken": 0,
+            "form_input_missing_label": 0,
+            "table_missing_header_scope": 0,
+            "no_main_landmark": 0,
+            "missing_lang_attribute": 0,
+            "total": 23
+          }
+        }
+      ],
+      "total_baseline": 337,
+      "total_fixed": 9,
+      "overall_pct": 2.7
+    }
+  },
+  "summary": {
+    "v8-deterministic-images": 100.0,
+    "v9-deterministic-full": 100.0,
+    "v7-deterministic-basic": 2.7
+  }
+}

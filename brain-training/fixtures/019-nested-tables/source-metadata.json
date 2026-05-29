@@ -1,0 +1,6 @@
+{
+  "fixture_id": "019",
+  "name": "nested-tables",
+  "phase": "3C-adversarial",
+  "description": "Deeply nested tables with no <th> headers at any level + empty buttons"
+}

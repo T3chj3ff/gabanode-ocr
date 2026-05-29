@@ -1,0 +1,11 @@
+{
+  "fixture_id": "011-form-no-labels",
+  "description": "Resident registration form with 9 inputs (text/email/tel/textarea/select), none have id or name attributes",
+  "violation_targets": ["form_input_missing_label"],
+  "expected_violations": {
+    "form_input_missing_label": 9
+  },
+  "notes": "All inputs lack id, name, and aria-labelledby. The validator fires when an input has no aria-labelledby AND (no id OR no name). Submit button should be ignored.",
+  "created": "2026-05-18",
+  "phase": "3B-corpus-expansion"
+}

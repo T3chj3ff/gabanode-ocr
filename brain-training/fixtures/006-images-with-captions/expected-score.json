@@ -1,0 +1,8 @@
+{
+  "fixture": "006",
+  "doc_type": "images-with-captions",
+  "source_pdf": "PDFUA-Ref-2-04_Presentation.pdf",
+  "extraction_target": 85,
+  "healing_target": 85,
+  "combined_target": 85
+}

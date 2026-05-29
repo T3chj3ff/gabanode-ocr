@@ -1,0 +1,312 @@
+{
+  "timestamp": "2026-05-13T04-57-02",
+  "promptVariant": "v4-examples-based",
+  "results": [
+    {
+      "fixture": "001",
+      "name": "001-simple-text",
+      "timestamp": "2026-05-13T04:57:02.565Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 30,
+          "performance": 8
+        },
+        "total": 48,
+        "maxScore": 100,
+        "percentage": 48
+      },
+      "healTime": 15.717734549957303,
+      "combined": 74
+    },
+    {
+      "fixture": "002",
+      "name": "002-complex-table",
+      "timestamp": "2026-05-13T04:57:02.577Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 8
+        },
+        "total": 18,
+        "maxScore": 100,
+        "percentage": 18
+      },
+      "healTime": 19.09874672874615,
+      "combined": 59
+    },
+    {
+      "fixture": "003",
+      "name": "003-scanned-image",
+      "timestamp": "2026-05-13T04:57:02.586Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 8
+        },
+        "total": 18,
+        "maxScore": 100,
+        "percentage": 18
+      },
+      "healTime": 18.98367242010436,
+      "combined": 59
+    },
+    {
+      "fixture": "004",
+      "name": "004-form-with-fields",
+      "timestamp": "2026-05-13T04:57:02.592Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 8
+        },
+        "total": 18,
+        "maxScore": 100,
+        "percentage": 18
+      },
+      "healTime": 18.942805180234906,
+      "combined": 59
+    },
+    {
+      "fixture": "005",
+      "name": "005-multi-column",
+      "timestamp": "2026-05-13T04:57:02.596Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 8
+        },
+        "total": 18,
+        "maxScore": 100,
+        "percentage": 18
+      },
+      "healTime": 18.723553502787716,
+      "combined": 59
+    },
+    {
+      "fixture": "006",
+      "name": "006-images-with-captions",
+      "timestamp": "2026-05-13T04:57:02.601Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 8
+        },
+        "total": 18,
+        "maxScore": 100,
+        "percentage": 18
+      },
+      "healTime": 15.122450273123151,
+      "combined": 59
+    },
+    {
+      "fixture": "007",
+      "name": "007-nested-lists",
+      "timestamp": "2026-05-13T04:57:02.607Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 10
+        },
+        "total": 20,
+        "maxScore": 100,
+        "percentage": 20
+      },
+      "healTime": 13.707166203952738,
+      "combined": 60
+    },
+    {
+      "fixture": "008",
+      "name": "008-mixed-content",
+      "timestamp": "2026-05-13T04:57:02.612Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 8
+        },
+        "total": 18,
+        "maxScore": 100,
+        "percentage": 18
+      },
+      "healTime": 15.312668082468747,
+      "combined": 59
+    },
+    {
+      "fixture": "009",
+      "name": "009-edge-cases",
+      "timestamp": "2026-05-13T04:57:02.618Z",
+      "promptVariant": "v4-examples-based",
+      "extraction": {
+        "scores": {
+          "heading_hierarchy": 10,
+          "table_fidelity": 15,
+          "image_descriptions": 10,
+          "list_preservation": 8,
+          "content_completeness": 12,
+          "no_hallucination": 20,
+          "markdown_validity": 15,
+          "wcag_compliance": 10
+        },
+        "total": 100,
+        "maxScore": 100,
+        "percentage": 100
+      },
+      "healing": {
+        "scores": {
+          "violations_fixed": 10,
+          "false_positives": 0,
+          "content_preservation": 0,
+          "performance": 10
+        },
+        "total": 20,
+        "maxScore": 100,
+        "percentage": 20
+      },
+      "healTime": 14.934690480246513,
+      "combined": 60
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "fixture": "004-form-with-fields",
+  "html_size": 1369,
+  "violations": {
+    "image_missing_alt": [],
+    "link_empty_text": [
+      ""
+    ],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [],
+    "no_main_landmark": [
+      "Missing <main> landmark"
+    ],
+    "text_only_lists": [],
+    "missing_lang_attribute": [
+      "HTML missing lang attribute"
+    ],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 3
+  },
+  "timestamp": "2026-05-28T17:25:36.703148"
+}

@@ -1,0 +1,34 @@
+{
+  "fixture": "012-table-no-headers",
+  "html_size": 1296,
+  "violations": {
+    "image_missing_alt": [],
+    "link_empty_text": [],
+    "heading_hierarchy_broken": [],
+    "form_input_missing_label": [],
+    "table_missing_header_scope": [
+      "Table missing <th> elements",
+      "Table missing <th> elements",
+      "Table missing <th> elements"
+    ],
+    "no_main_landmark": [],
+    "text_only_lists": [],
+    "missing_lang_attribute": [],
+    "missing_page_title": [],
+    "duplicate_id": [],
+    "button_missing_label": [],
+    "color_contrast_insufficient": [],
+    "skip_nav_missing": [
+      "No skip navigation link before main content (WCAG 2.4.1)"
+    ],
+    "tabindex_positive_value": [],
+    "iframe_missing_title": [],
+    "svg_missing_accessible_name": [],
+    "focus_visible_removed": [],
+    "autocomplete_missing": [],
+    "aria_live_missing": [],
+    "prefers_reduced_motion_missing": [],
+    "total": 4
+  },
+  "timestamp": "2026-05-28T17:25:37.350013"
+}

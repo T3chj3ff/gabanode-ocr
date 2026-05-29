@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "run": 48,
+    "timestamp": "2026-05-28T22:48:20Z",
+    "trigger": "manual-task: phase-2c-corpus-expansion-run-48",
+    "engine": "deterministic_healer.py (v14 corpus-expansion path)",
+    "corpus_size": 30,
+    "iterations_executed": 2,
+    "stop_reason": "success (v14-corpus-expansion at 100% on WCAG-30)"
+  },
+  "success_criteria": {
+    "v6_or_improved_>=40pct": {
+      "met": true,
+      "value_pct": 100.0,
+      "variant": "v14-corpus-expansion"
+    },
+    "v1_>=20pct_and_v6_>=40pct": {
+      "met": false,
+      "v1_proxy_v7": 6.7,
+      "v6_proxy_v14": 100.0,
+      "note": "v7 remains intentionally minimal; v14 is the Run 48 expansion target."
+    },
+    "improvement_gap_>=10pp": {
+      "met": true,
+      "value_pp": 25.0
+    },
+    "iteration_improvement_<2pp": {
+      "met": false,
+      "value_pp": 6.8,
+      "plateau": false
+    },
+    "max_5_iterations": {
+      "met": true,
+      "used": 2
+    }
+  },
+  "variant_results": [
+    {
+      "variant": "v7-deterministic-basic",
+      "internal_pct": 6.7,
+      "wcag_pct": 3.2,
+      "baseline": 509,
+      "fixed": 34,
+      "wcag_baseline": 527,
+      "wcag_fixed": 17
+    },
+    {
+      "variant": "v8-deterministic-images",
+      "internal_pct": 74.1,
+      "wcag_pct": 68.3,
+      "baseline": 509,
+      "fixed": 377,
+      "wcag_baseline": 527,
+      "wcag_fixed": 360
+    },
+    {
+      "variant": "v9-deterministic-full",
+      "internal_pct": 75.0,
+      "wcag_pct": 69.3,
+      "baseline": 509,
+      "fixed": 382,
+      "wcag_baseline": 527,
+      "wcag_fixed": 365
+    },
+    {
+      "variant": "v10-extended",
+      "internal_pct": 82.5,
+      "wcag_pct": 76.5,
+      "baseline": 509,
+      "fixed": 420,
+      "wcag_baseline": 527,
+      "wcag_fixed": 403
+    },
+    {
+      "variant": "v11-production-ready",
+      "internal_pct": 92.9,
+      "wcag_pct": 93.2,
+      "baseline": 509,
+      "fixed": 473,
+      "wcag_baseline": 527,
+      "wcag_fixed": 491
+    },
+    {
+      "variant": "v12-phase3d",
+      "internal_pct": 92.9,
+      "wcag_pct": 93.2,
+      "baseline": 509,
+      "fixed": 473,
+      "wcag_baseline": 527,
+      "wcag_fixed": 491
+    },
+    {
+      "variant": "v13-phase4",
+      "internal_pct": 92.9,
+      "wcag_pct": 93.2,
+      "baseline": 509,
+      "fixed": 473,
+      "wcag_baseline": 527,
+      "wcag_fixed": 491
+    },
+    {
+      "variant": "v14-corpus-expansion",
+      "internal_pct": 100.0,
+      "wcag_pct": 100.0,
+      "baseline": 509,
+      "fixed": 509,
+      "wcag_baseline": 527,
+      "wcag_fixed": 527
+    }
+  ],
+  "best_variant": "v14-corpus-expansion",
+  "best_pct": 100.0,
+  "production_variants_at_100pct": [
+    "v14-corpus-expansion"
+  ],
+  "iteration_history": [
+    {
+      "iter": 1,
+      "action": "Expand corpus and detectors; run existing v14 before new rules",
+      "v11": 93.2,
+      "v12": 93.2,
+      "v13": 93.2,
+      "v14": 93.2,
+      "wcag_fixed": "491/527",
+      "delta_vs_run47": -6.8
+    },
+    {
+      "iter": 2,
+      "action": "Add v14-only focus/autocomplete/live-region/reduced-motion passes",
+      "v11": 93.2,
+      "v12": 93.2,
+      "v13": 93.2,
+      "v14": 100.0,
+      "wcag_fixed": "527/527",
+      "delta_vs_iter1": 6.8
+    }
+  ],
+  "regressions": [],
+  "recommendation": "Run 48 restored signal by expanding to WCAG-30 and closed it with deterministic v14-only passes. Keep v11/v12/v13 as historical WCAG-26 baselines; use v14-corpus-expansion as the canonical expanded-corpus production candidate."
+}

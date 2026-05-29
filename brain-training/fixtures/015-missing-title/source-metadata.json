@@ -1,0 +1,11 @@
+{
+  "fixture_id": "015",
+  "name": "missing-title",
+  "description": "City services page missing <title> element and containing buttons with no accessible names",
+  "phase": "3C",
+  "violation_types": ["missing_page_title", "button_missing_label"],
+  "expected_violations": {
+    "missing_page_title": 1,
+    "button_missing_label": 3
+  }
+}

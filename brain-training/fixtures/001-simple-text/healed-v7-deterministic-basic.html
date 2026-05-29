@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>More than just digital paper—hidden features of the PDF format</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="generator" content="pdftohtml 0.36"/>
+<meta name="author" content="Dietrich von Seggern, Klaas Posselt, Tamir Hassan, and Thomas Zellmann"/>
+<meta name="keywords" content="PDF, Tagging, Machine-readable structure, Workflows, Document formats"/>
+<meta name="date" content="2019-07-25T17:19:13+00:00"/>
+<meta name="subject" content="- &#160;Applied computing &#160;-&gt; &#160;Publishing; Document preparation;&#160;"/>
+<style type="text/css">
+<!--
+.xflip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+}
+.yflip {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+}
+.xyflip {
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: fliph + flipv;
+}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<main>
+<a name=1></a>More&#160;than&#160;just&#160;digital&#160;paper—hidden&#160;features&#160;of&#160;the&#160;PDF&#160;format&#160;<br/>
+Dietrich&#160;von&#160;Seggern&#160;<br/>
+Klaas&#160;Posselt&#160;<br/>
+Vice&#160;Chair,&#160;PDF&#160;Association&#160;<br/>
+Member,&#160;PDF&#160;Association&#160;<br/>
+callas&#160;software&#160;<br/>
+digital&#160;Prepress&#160;&amp;&#160;ePublishing&#160;Consulting&#160;<br/>
+Berlin,&#160;Germany&#160;<br/>
+Berlin,&#160;Germany&#160;<br/>
+<a href="mailto:d.seggern@callassoftware.com">d.seggern@callassoftware.com&#160;</a><br/>
+<a href="mailto:klaas.posselt@einmanncombo.de">klaas.posselt@einmanncombo.de</a>&#160;<br/>
+Tamir&#160;Hassan&#160;<br/>
+Thomas&#160;Zellmann&#160;<br/>
+Member,&#160;PDF&#160;Association&#160;<br/>
+Managing&#160;Director,&#160;PDF&#160;Association&#160;<br/>
+Round-Trip&#160;PDF&#160;Solutions&#160;<br/>
+Foxit&#160;Europe&#160;<br/>
+Vienna,&#160;Austria&#160;<br/>
+Berlin,&#160;Germany&#160;<br/>
+<a href="mailto:tamir@roundtrippdf.com">tamir@roundtrippdf.com</a>&#160;<br/>
+<a href="mailto:thomas.zellmann@pdfa.org">thomas.zellmann@pdfa.org&#160;</a><br/>
+ABSTRACT&#160;<br/>
+even&#160;many&#160;DocEng&#160;participants&#160;who&#160;do&#160;not&#160;work&#160;directly&#160;with&#160;<br/>
+PDF&#160;has&#160;long&#160;been&#160;established&#160;as&#160;the&#160;de&#160;facto&#160;format&#160;for&#160;the&#160;ex-<br/>
+PDF—are&#160;not&#160;familiar&#160;with&#160;PDF’s&#160;additional&#160;features,&#160;which&#160;have&#160;<br/>
+change&#160;of&#160;print-oriented&#160;documents&#160;and&#160;is&#160;known&#160;for&#160;its&#160;robust&#160;<br/>
+grown&#160;over&#160;the&#160;past&#160;few&#160;years.&#160;<br/>
+visual&#160;presentation&#160;across&#160;a&#160;variety&#160;of&#160;operating&#160;systems&#160;and&#160;plat-<br/>
+The&#160;aim&#160;of&#160;this&#160;tutorial&#160;is&#160;to&#160;introduce&#160;the&#160;audience&#160;to&#160;the&#160;most&#160;<br/>
+forms.&#160;<br/>
+important&#160;of&#160;these&#160;features&#160;and&#160;give&#160;practical&#160;examples&#160;on&#160;how&#160;<br/>
+However,&#160;&#160;relatively&#160;&#160;few&#160;&#160;users&#160;&#160;are&#160;&#160;familiar&#160;&#160;with&#160;&#160;the&#160;&#160;format’s&#160;<br/>
+they&#160;can&#160;beneft&#160;from&#160;generating&#160;and&#160;exchanging&#160;PDF&#160;fles&#160;that&#160;go&#160;<br/>
+newer&#160;features,&#160;such&#160;as&#160;tagging,&#160;forms&#160;and&#160;security.&#160;This&#160;tutorial&#160;<br/>
+beyond&#160;digital&#160;representations&#160;of&#160;the&#160;printed&#160;page.&#160;<br/>
+aims&#160;to&#160;give&#160;an&#160;overview&#160;of&#160;the&#160;most&#160;important&#160;of&#160;these&#160;features&#160;<br/>
+The&#160;following&#160;section&#160;lists&#160;the&#160;topics&#160;that&#160;were&#160;prepared&#160;for&#160;this&#160;<br/>
+and&#160;demonstrate&#160;the&#160;benefts&#160;of&#160;creating&#160;and&#160;exchanging&#160;PDF&#160;fles&#160;<br/>
+half-day&#160;tutorial.&#160;However,&#160;we&#160;also&#160;plan&#160;to&#160;ask&#160;the&#160;audience&#160;about&#160;<br/>
+that&#160;make&#160;use&#160;of&#160;them.&#160;<br/>
+what&#160;interests&#160;them&#160;the&#160;most&#160;and&#160;spend&#160;more&#160;time&#160;on&#160;those&#160;topics.&#160;<br/>
+CCS&#160;CONCEPTS&#160;<br/>
+2&#160;&#160;TOPICS&#160;<br/>
+•&#160;Applied&#160;computing&#160;→&#160;Publishing;&#160;Document&#160;preparation;&#160;<br/>
+•&#160;&#160;Tagged&#160;PDF:&#160;Embedding&#160;logical&#160;structure&#160;in&#160;PDF&#160;for:&#160;<br/>
+–&#160;&#160;accessibility&#160;<br/>
+KEYWORDS&#160;<br/>
+–&#160;&#160;repurposing&#160;of&#160;content&#160;<br/>
+PDF,&#160;Tagging,&#160;Machine-readable&#160;structure,&#160;Workfows,&#160;Document&#160;<br/>
+•&#160;&#160;Hidden,&#160;selectable&#160;text&#160;for&#160;scanned&#160;documents&#160;via&#160;OCR&#160;<br/>
+formats&#160;<br/>
+•&#160;&#160;Structured&#160;data&#160;(measurements,&#160;statistical&#160;data)&#160;as&#160;embed-<br/>
+ACM&#160;Reference&#160;Format:&#160;<br/>
+ded&#160;fles&#160;<br/>
+Dietrich&#160;von&#160;Seggern,&#160;Klaas&#160;Posselt,&#160;Tamir&#160;Hassan,&#160;and&#160;Thomas&#160;Zellmann.&#160;<br/>
+•&#160;&#160;Digital,&#160;fllable&#160;forms&#160;in&#160;PDF&#160;<br/>
+2019.&#160;More&#160;than&#160;just&#160;digital&#160;paper—hidden&#160;features&#160;of&#160;the&#160;PDF&#160;format.&#160;In&#160;<br/>
+•&#160;&#160;Object-level&#160;metadata;&#160;keeping&#160;source&#160;information&#160;for&#160;his-<br/>
+ACM&#160;&#160;Symposium&#160;&#160;on&#160;&#160;Document&#160;&#160;Engineering&#160;&#160;2019&#160;&#160;(DocEng&#160;&#160;’19),&#160;&#160;September&#160;<br/>
+tory&#160;and&#160;license&#160;enforcement&#160;<br/>
+23–26,&#160;&#160;2019,&#160;&#160;Berlin,&#160;&#160;Germany.&#160;&#160;ACM,&#160;&#160;New&#160;&#160;York,&#160;&#160;NY,&#160;&#160;USA,&#160;&#160;2&#160;&#160;pages.&#160;&#160;https:&#160;<br/>
+•&#160;&#160;Commenting&#160;workfows&#160;(annotations)&#160;<br/>
+//doi.org/10.1145/3342558.3351873&#160;<br/>
+•&#160;&#160;Security:&#160;Encryption&#160;and&#160;signatures&#160;<br/>•&#160;&#160;Compression&#160;algorithms&#160;enabling&#160;small&#160;fle&#160;sizes&#160;for&#160;high-<br/>
+1&#160;&#160;SUMMARY&#160;<br/>
+quality&#160;images&#160;<br/>
+PDF&#160;is&#160;the&#160;most&#160;common&#160;fle&#160;format&#160;on&#160;the&#160;Web&#160;after&#160;HTML,&#160;and&#160;<br/>
+•&#160;&#160;Colour&#160;reproduction&#160;(if&#160;requested&#160;by&#160;audience)&#160;<br/>
+everyone&#160;in&#160;the&#160;Document&#160;Engineering&#160;community&#160;without&#160;excep-<br/>
+tion&#160;has&#160;to&#160;deal&#160;with&#160;the&#160;format&#160;in&#160;one&#160;way&#160;or&#160;another.&#160;Just&#160;about&#160;<br/>
+everyone&#160;is&#160;familiar&#160;with&#160;PDF&#160;being&#160;“digital&#160;paper,”&#160;after&#160;all,&#160;that&#160;<br/>
+3&#160;&#160;ABOUT&#160;THE&#160;ORGANIZERS&#160;<br/>
+is&#160;really&#160;how&#160;it&#160;started&#160;out.&#160;But&#160;PDF&#160;has&#160;become&#160;“smarter”&#160;in&#160;the&#160;<br/>
+Dietrich&#160;von&#160;Seggern&#160;received&#160;his&#160;degree&#160;as&#160;a&#160;printing&#160;engineer,&#160;<br/>
+last&#160;few&#160;years,&#160;yet&#160;it&#160;is&#160;still&#160;struggling&#160;to&#160;shake&#160;of&#160;its&#160;reputation&#160;as&#160;<br/>
+and&#160;in&#160;1991&#160;started&#160;his&#160;professional&#160;career&#160;as&#160;head&#160;of&#160;desktop&#160;pre-<br/>
+a&#160;purely&#160;end-of-line,&#160;dumb&#160;fle&#160;format&#160;that&#160;is&#160;unsuitable&#160;for&#160;further&#160;<br/>
+press&#160;production&#160;in&#160;a&#160;reproduction&#160;house.&#160;He&#160;became&#160;involved&#160;in&#160;<br/>
+machine&#160;processing.&#160;Comparatively&#160;few&#160;people—and&#160;this&#160;includes&#160;<br/>
+research&#160;projects&#160;for&#160;digital&#160;transmission&#160;of&#160;print&#160;fles,&#160;and&#160;moved&#160;<br/>
+Permission&#160;to&#160;make&#160;digital&#160;or&#160;hard&#160;copies&#160;of&#160;part&#160;or&#160;all&#160;of&#160;this&#160;work&#160;for&#160;personal&#160;or&#160;<br/>
+to&#160;the&#160;German&#160;Newspaper&#160;Marketing&#160;Organization&#160;(ZMG),&#160;where&#160;<br/>
+classroom&#160;use&#160;is&#160;granted&#160;without&#160;fee&#160;provided&#160;that&#160;copies&#160;are&#160;not&#160;made&#160;or&#160;distributed&#160;<br/>
+he&#160;was&#160;responsible&#160;for&#160;a&#160;project&#160;to&#160;enable&#160;the&#160;digital&#160;transmission&#160;<br/>
+for&#160;proft&#160;or&#160;commercial&#160;advantage&#160;and&#160;that&#160;copies&#160;bear&#160;this&#160;notice&#160;and&#160;the&#160;full&#160;citation&#160;<br/>
+of&#160;newspaper&#160;ads.&#160;In&#160;2002&#160;he&#160;joined&#160;callas&#160;software&#160;as&#160;Director&#160;of&#160;<br/>
+on&#160;the&#160;frst&#160;page.&#160;Copyrights&#160;for&#160;third-party&#160;components&#160;of&#160;this&#160;work&#160;must&#160;be&#160;honored.&#160;<br/>
+For&#160;all&#160;other&#160;uses,&#160;contact&#160;the&#160;owner/author(s).&#160;<br/>
+Product&#160;Management,&#160;and&#160;subsequently&#160;introduced&#160;callas’&#160;PDF/A&#160;<br/>
+DocEng&#160;’19,&#160;September&#160;23–26,&#160;2019,&#160;Berlin,&#160;Germany&#160;<br/>
+related&#160;products&#160;for&#160;the&#160;archiving&#160;industry.&#160;Today,&#160;Dietrich&#160;is&#160;Man-<br/>
+©&#160;2019&#160;Copyright&#160;held&#160;by&#160;the&#160;owner/author(s).&#160;<br/>
+aging&#160;Director&#160;at&#160;callas&#160;software,&#160;and&#160;Vice&#160;Chair&#160;and&#160;ISO&#160;Liaison&#160;<br/>
+ACM&#160;ISBN&#160;978-1-4503-6887-2/19/09.&#160;<br/>
+<a href="https://doi.org/10.1145/3342558.3351873">https://doi.org/10.1145/3342558.3351873&#160;</a><br/>
+Ofcer&#160;at&#160;the&#160;PDF&#160;Association.&#160;<br/>
+<hr/>
+<a name=2></a>DocEng&#160;’19,&#160;September&#160;23–26,&#160;2019,&#160;Berlin,&#160;Germany&#160;<br/>
+Dietrich&#160;von&#160;Seggern,&#160;Klaas&#160;Posselt,&#160;Tamir&#160;Hassan,&#160;and&#160;Thomas&#160;Zellmann&#160;<br/>
+Klaas&#160;Posselt&#160;is&#160;a&#160;graduate&#160;engineer&#160;in&#160;printing&#160;and&#160;media&#160;tech-<br/>
+conversion&#160;of&#160;formatted&#160;documents&#160;to&#160;structured&#160;form&#160;and&#160;the&#160;au-<br/>
+nology&#160;&#160;who,&#160;&#160;following&#160;&#160;a&#160;&#160;number&#160;&#160;of&#160;&#160;lines&#160;&#160;of&#160;&#160;inquiry,&#160;&#160;eventually&#160;<br/>
+tomated&#160;creation&#160;of&#160;of&#160;formatted&#160;documents&#160;from&#160;structured&#160;con-<br/>
+landed&#160;on&#160;the&#160;subject&#160;of&#160;universally&#160;accessible&#160;PDF&#160;documents.&#160;He&#160;<br/>
+tent&#160;or&#160;data).&#160;<br/>
+trains,&#160;assists&#160;and&#160;supports&#160;clients&#160;as&#160;they&#160;implement&#160;and&#160;optimize&#160;<br/>
+Tamir&#160;is&#160;a&#160;regular&#160;contributor&#160;to&#160;DocEng.&#160;In&#160;2016,&#160;he&#160;was&#160;the&#160;<br/>
+publication&#160;processes&#160;and&#160;move&#160;towards&#160;new&#160;digital&#160;output&#160;chan-<br/>
+Program&#160;&#160;Chair&#160;&#160;and&#160;&#160;has&#160;&#160;been&#160;&#160;active&#160;&#160;in&#160;&#160;the&#160;&#160;Steering&#160;&#160;Committee&#160;<br/>
+nels&#160;including&#160;ebooks,&#160;accessible&#160;PDFs&#160;and&#160;web&#160;platforms.&#160;As&#160;a&#160;<br/>
+since&#160;then.&#160;He&#160;has&#160;been&#160;a&#160;member&#160;of&#160;the&#160;PDF&#160;Association&#160;since&#160;<br/>
+member&#160;of&#160;the&#160;PDF&#160;Association’s&#160;PDF/UA&#160;Competence&#160;Center,&#160;he&#160;<br/>
+2017.&#160;<br/>
+is&#160;involved&#160;in&#160;the&#160;ongoing&#160;development&#160;and&#160;growth&#160;of&#160;the&#160;PDF/UA&#160;<br/>
+Thomas&#160;Zellmann&#160;has&#160;been&#160;working&#160;in&#160;electronic&#160;data&#160;pro-<br/>
+standard&#160;for&#160;universally&#160;accessible&#160;PDF&#160;documents.&#160;<br/>
+cessing&#160;(EDP)&#160;for&#160;more&#160;than&#160;30&#160;years&#160;and&#160;has&#160;extensive&#160;experience&#160;<br/>
+Tamir&#160;Hassan&#160;has&#160;over&#160;a&#160;decade&#160;of&#160;experience&#160;in&#160;the&#160;area&#160;of&#160;<br/>
+with&#160;classic&#160;and&#160;modern&#160;IT&#160;solutions.&#160;Prior&#160;to&#160;joining&#160;LuraTech/&#160;<br/>
+document&#160;&#160;engineering.&#160;&#160;After&#160;&#160;writing&#160;&#160;his&#160;&#160;doctoral&#160;&#160;thesis&#160;&#160;on&#160;&#160;the&#160;<br/>
+Foxit&#160;in&#160;2001,&#160;he&#160;worked&#160;for&#160;Softmatic&#160;AG,&#160;Software&#160;AG&#160;and&#160;Nix-<br/>
+topic&#160;User-Guided&#160;Information&#160;Extraction&#160;from&#160;Print-Oriented&#160;Doc-<br/>
+dorf&#160;among&#160;others.&#160;Thomas&#160;focuses&#160;on&#160;the&#160;banking/insurance&#160;and&#160;<br/>
+uments,&#160;he&#160;worked&#160;as&#160;a&#160;researcher&#160;in&#160;academia,&#160;and&#160;more&#160;recently&#160;<br/>
+archives/libraries&#160;segments.&#160;As&#160;Managing&#160;Director&#160;of&#160;the&#160;PDF&#160;As-<br/>
+in&#160;the&#160;Printing&#160;and&#160;Content&#160;Delivery&#160;Laboratory&#160;of&#160;HP&#160;Labs.&#160;He&#160;<br/>
+sociation,&#160;Thomas&#160;coordinates&#160;and&#160;executes&#160;many&#160;of&#160;the&#160;organiza-<br/>
+now&#160;works&#160;as&#160;an&#160;independent&#160;researcher&#160;and&#160;consultant&#160;ofering&#160;<br/>
+tion’s&#160;activities.&#160;<br/>
+solutions&#160;for&#160;round-trip&#160;processing&#160;of&#160;PDF&#160;documents&#160;(i.e.&#160;both&#160;the&#160;<br/>
+<hr/>
+<a name="outline"></a><h1>Document Outline</h1>
+<ul>
+<li><a href="reference-tagged.html#1">Abstract</a></li>
+<li><a href="reference-tagged.html#1">1 Summary</a></li>
+<li><a href="reference-tagged.html#1">2 Topics</a></li>
+<li><a href="reference-tagged.html#1">3 About the Organizers</a></li>
+</ul>
+<hr/>
+</main>
+</body>
+</html>

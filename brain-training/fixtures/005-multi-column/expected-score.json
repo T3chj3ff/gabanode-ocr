@@ -1,0 +1,8 @@
+{
+  "fixture": "005",
+  "doc_type": "multi-column",
+  "source_pdf": "PDFUA-Ref-2-06_Brochure.pdf",
+  "extraction_target": 80,
+  "healing_target": 80,
+  "combined_target": 80
+}

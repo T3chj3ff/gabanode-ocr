@@ -1,0 +1,11 @@
+{
+  "fixture_id": "012-table-no-headers",
+  "description": "Fee schedule document with 3 data tables, none using <th> elements — all header cells are plain <td>",
+  "violation_targets": ["table_missing_header_scope"],
+  "expected_violations": {
+    "table_missing_header_scope": 3
+  },
+  "notes": "Validator checks: if '<th' not in html_content → fires once per table. 3 tables = 3 violations. Fix: convert first row <td> to <th scope='col'>.",
+  "created": "2026-05-18",
+  "phase": "3B-corpus-expansion"
+}

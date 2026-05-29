@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Resilience Grant Intake</title>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <main id="main-content">
+    <h1>Community Resilience Grant Intake</h1>
+    <p>Use this form to request municipal grant support for neighborhood resilience projects.</p>
+
+    <form action="/grants/resilience/apply" method="post">
+      <fieldset>
+        <legend>Applicant information</legend>
+
+        <label for="given-name">First name</label>
+        <!-- VIOLATION: personal information input missing autocomplete token (WCAG 1.3.5) -->
+        <input type="text" id="given-name" name="given-name" autocomplete="given-name">
+
+        <label for="family-name">Last name</label>
+        <!-- VIOLATION: personal information input missing autocomplete token (WCAG 1.3.5) -->
+        <input type="text" id="family-name" name="family_name" autocomplete="family-name">
+
+        <label for="email">Email address</label>
+        <!-- VIOLATION: email input missing autocomplete token (WCAG 1.3.5) -->
+        <input type="email" id="email" name="email" autocomplete="email">
+
+        <label for="telephone">Telephone number</label>
+        <!-- VIOLATION: telephone input missing autocomplete token (WCAG 1.3.5) -->
+        <input type="tel" id="telephone" name="phone" autocomplete="tel">
+      </fieldset>
+
+      <fieldset>
+        <legend>Mailing address</legend>
+
+        <label for="address-line1">Street address</label>
+        <!-- VIOLATION: address input missing autocomplete token (WCAG 1.3.5) -->
+        <input type="text" id="address-line1" name="address_line1" autocomplete="street-address">
+
+        <label for="postal-code">Postal code</label>
+        <!-- VIOLATION: postal code input missing autocomplete token (WCAG 1.3.5) -->
+        <input type="text" id="postal-code" name="zip" autocomplete="postal-code">
+
+        <label for="country-name">Country</label>
+        <!-- VIOLATION: country input missing autocomplete token (WCAG 1.3.5) -->
+        <input type="text" id="country-name" name="country" autocomplete="country-name">
+      </fieldset>
+
+      <button type="submit">Submit grant request</button>
+    </form>
+  </main>
+</body>
+</html>

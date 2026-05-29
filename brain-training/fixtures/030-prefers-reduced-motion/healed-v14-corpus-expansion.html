@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Civic Operations Motion Dashboard</title>
+  <style>
+    @keyframes pulseStatus {
+      0% { opacity: 0.65; }
+      50% { opacity: 1; }
+      100% { opacity: 0.65; }
+    }
+    @keyframes slideInToast {
+      from { transform: translateY(-20px); }
+      to { transform: translateY(0); }
+    }
+    @keyframes rotateSpinner {
+      to { transform: rotate(360deg); }
+    }
+    .status-card {
+      animation: pulseStatus 2s infinite;
+      transition: transform 0.2s ease;
+    }
+    .toast {
+      animation: slideInToast 0.6s ease-out;
+    }
+    .loading-spinner {
+      animation: rotateSpinner 1s linear infinite;
+    }
+    .metric-tile {
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .map-pin {
+      animation: pulseStatus 3s infinite;
+      transition: opacity 0.4s ease;
+    }
+  
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+</style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <main id="main-content">
+    <h1>Civic Operations Motion Dashboard</h1>
+    <section aria-labelledby="operations-heading">
+      <h2 id="operations-heading">Operations Snapshot</h2>
+
+      <!-- VIOLATION: animated status card has no prefers-reduced-motion override (WCAG 2.3.3) -->
+      <article class="status-card">
+        <h3>Road Closure Alert</h3>
+        <p>Emergency paving is active on Ward 3 collector roads.</p>
+      </article>
+
+      <!-- VIOLATION: animated notification toast has no prefers-reduced-motion override (WCAG 2.3.3) -->
+      <div class="toast">311 request exported to public works queue.</div>
+
+      <!-- VIOLATION: rotating loading spinner has no prefers-reduced-motion override (WCAG 2.3.3) -->
+      <div class="loading-spinner" aria-label="Loading inspection routes">Loading</div>
+
+      <!-- VIOLATION: metric tile transition has no prefers-reduced-motion override (WCAG 2.3.3) -->
+      <button class="metric-tile" type="button">View water main repairs</button>
+
+      <!-- VIOLATION: animated map marker has no prefers-reduced-motion override (WCAG 2.3.3) -->
+      <button class="map-pin" type="button">Open Ward 5 outage map</button>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "fixture": "008",
+  "doc_type": "mixed-content",
+  "source_pdf": "PDFUA-Ref-2-01_Magazine-danish.pdf",
+  "extraction_target": 80,
+  "healing_target": 80,
+  "combined_target": 80
+}
