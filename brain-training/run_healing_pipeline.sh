@@ -4,25 +4,20 @@
 #
 # Usage:
 #   chmod +x run_healing_pipeline.sh
-#   ./run_healing_pipeline.sh "REDACTED_REVOKED_GOOGLE_API_KEY"
-#
-# Or set environment variable:
 #   export GEMINI_API_KEY="your-key"
 #   ./run_healing_pipeline.sh
 
 set -e
 
-# Get API key from argument or environment
-API_KEY="${1:-${GEMINI_API_KEY}}"
+# Read credentials from the environment so they are not exposed in process
+# arguments or committed usage examples.
+API_KEY="${GEMINI_API_KEY}"
 
 if [ -z "$API_KEY" ]; then
     echo "❌ Error: Gemini API key not provided"
     echo ""
     echo "Usage:"
-    echo "  ./run_healing_pipeline.sh \"your-api-key\""
-    echo ""
-    echo "Or set environment variable:"
-    echo "  export GEMINI_API_KEY=\"your-api-key\""
+    echo "  export GEMINI_API_KEY=\"your-key\""
     echo "  ./run_healing_pipeline.sh"
     exit 1
 fi
@@ -45,7 +40,7 @@ echo "════════════════════════�
 echo "PHASE 2C-1: Batch Healing Pipeline"
 echo "════════════════════════════════════════════════════════════════════"
 echo ""
-echo "API Key: ${API_KEY:0:20}..."
+echo "API Key: configured via environment"
 echo "Script Directory: $SCRIPT_DIR"
 echo ""
 
