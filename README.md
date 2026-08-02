@@ -1,3 +1,13 @@
+> [!WARNING]
+> **Migration complete; GitHub archive is pending security follow-up.**
+> [`T3chj3ff/project-euclid`](https://github.com/T3chj3ff/project-euclid) is the
+> canonical destination. No code, corpus, prompt, generated result, benchmark,
+> or compliance claim from this repository was migrated. PR #1 removed the
+> committed Gemini credential from the current tree, but provider-side
+> revocation or rotation and the Git-history treatment decision must be
+> confirmed before this repository is archived. Do not deploy this repository
+> or treat historical claims below as accessibility or conformance evidence.
+
 # 🛡️ GABAnode Labs: Core Document Accessibility Engine
 
 Welcome to the internal source for the GABAnode Labs Document Accessibility Engine. This repository dictates the processing of intractable documents (PDFs, images) into strict WCAG 2.2 Level AA semantic Markdown structures.
